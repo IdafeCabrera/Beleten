@@ -186,5 +186,5 @@ La aplicación ha sido diseñada teniendo en cuenta los principios de UX/UI para
 
 ## Enlaces
 
-- [Repositorio en GitHub](https://github.com/tu-usuario/tu-repositorio](https://github.com/IdafeCabrera/Beleten.git))
+- [Repositorio en GitHub]((https://github.com/IdafeCabrera/Beleten.git))
 - [Enlace a Postman](https://www.postman.com/idafe/frases-api-beleten/collection/20683089-0624c61b-d08a-4ca7-b7da-1d9f5b6fe61a/?action=share&creator=20683089)
