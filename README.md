@@ -29,7 +29,7 @@ Este proyecto es una aplicación desarrollada utilizando **Ionic** para el front
 - **Validación de datos**: El backend valida los datos antes de guardarlos en la base de datos.
 - **Sincronización automática**: Sequelize sincroniza los modelos con las tablas de la base de datos.
 
-# RECOMIENDO ENCARECIDAMENTE EL USO DE LA EXTENSION DE VSCODE IONIC PREVIEM
+### RECOMIENDO ENCARECIDAMENTE EL USO DE LA EXTENSION DE VSCODE IONIC PREVIEW para arrancar la parte del BACKEND y FRONTEND
 
 ## Requisitos del sistema
 
