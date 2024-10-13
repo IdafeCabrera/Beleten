@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "allowJs": true,
+      "baseUrl": ".",
+      "paths": {
+        "@models/*": ["src/models/*"],
+        "@controllers/*": ["src/controllers/*"],
+        "@routes/*": ["src/routes/*"]
+      }
+    },
+    "include": [
+      "src/**/*.ts"  // Incluir todos los archivos .ts en la carpeta 'src'
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }
+  
