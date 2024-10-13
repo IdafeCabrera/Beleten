@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beleten.com - Be Better</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Beleten.com</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="cta-button">Únete</button>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <h1>Be Better with Beleten.com</h1>
+        <p>Descubre cómo puedes crecer y mejorar continuamente.</p>
+        <button class="hero-button">Empieza ahora</button>
+    </section>
+    <section class="services-section" id="services">
+        <div class="service-card">
+            <h2>Mejora Continua</h2>
+            <p>Encuentra consejos y herramientas para ser mejor cada día.</p>
+        </div>
+        <div class="service-card">
+            <h2>Inspiración Diaria</h2>
+            <p>Inspiración constante para mantenerte motivado y enfocado.</p>
+        </div>
+        <div class="service-card">
+            <h2>Conéctate</h2>
+            <p>Únete a nuestra comunidad y crece junto con nosotros.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Beleten.com - Todos los derechos reservados</p>
+        <ul class="footer-links">
+            <li><a href="#privacy">Política de Privacidad</a></li>
+            <li><a href="#terms">Términos de Uso</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<style>
+/* Variables de colores */
+:root {
+    --morado-oscuro: #441a5e;
+    --rosa-pastel: #ffc3eb;
+    --blanco: #ffffff;
+    --morado-profundo: #612586;
+    --morado-oscuro-2: #270f36;
+    --blanco-rosado: #fff6fc;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco-rosado);
+    color: var(--morado-oscuro);
+}
+
+/* Header */
+.header {
+    background-color: var(--morado-profundo);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: var(--rosa-pastel);
+    border: none;
+    padding: 10px 20px;
+    color: var(--morado-oscuro);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--rosa-pastel);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--morado-oscuro-2);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--morado-oscuro-2);
+}
+
+.hero-button {
+    background-color: var(--morado-profundo);
+    border: none;
+    padding: 15px 30px;
+    color: var(--blanco);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Servicios Section */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: var(--blanco-rosado);
+}
+
+.service-card {
+    background-color: var(--morado-oscuro);
+    color: var(--blanco);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--morado-profundo);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+</style>

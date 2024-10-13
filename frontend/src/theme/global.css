@@ -1,0 +1,12 @@
+/* Estilos globales para asegurar que el fondo se aplique correctamente */
+body {
+    background-color: #ecf0f1;
+  }
+  
+  ion-content {
+    --background: #ecf0f1;
+  }
+
+  
+  
+  /* Otros estilos globales que puedas necesitar */

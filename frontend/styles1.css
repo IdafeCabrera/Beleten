@@ -1,0 +1,122 @@
+/* Variables de colores */
+:root {
+    --rosa-pastel: #ffc3eb;
+    --azul-claro: #2ea5d1;
+    --negro: #000000;
+    --blanco-rosado: #fff6fc;
+    --rosa-vivo: #ff90da;
+    --azul-medio: #58b7da;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco-rosado);
+    color: var(--negro);
+}
+
+/* Header */
+.header {
+    background-color: var(--azul-medio);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blanco-rosado);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--blanco-rosado);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: var(--rosa-vivo);
+    border: none;
+    padding: 10px 20px;
+    color: var(--blanco-rosado);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--rosa-pastel);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--negro);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--negro);
+}
+
+.hero-button {
+    background-color: var(--azul-claro);
+    border: none;
+    padding: 15px 30px;
+    color: var(--blanco-rosado);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Servicios Section */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: var(--blanco-rosado);
+}
+
+.service-card {
+    background-color: var(--azul-medio);
+    color: var(--blanco-rosado);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--azul-claro);
+    color: var(--blanco-rosado);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links a {
+    color: var(--blanco-rosado);
+    text-decoration: none;
+}

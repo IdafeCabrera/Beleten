@@ -1,0 +1,36 @@
+/* Estilo general para las tarjetas (IonCard) */
+.custom-card {
+    border-radius: 20px; /* Borde redondeado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: #000; /* Color del texto ahora es completamente negro */
+    backdrop-filter: blur(5px); /* Añade un ligero efecto de desenfoque */
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden; /* Ocultar cualquier contenido que se salga del borde redondeado */
+    background: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .custom-card ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; /* Texto del título en negro */
+  }
+  
+  .custom-card .author {
+    font-size: 0.9rem;
+    color: #000; /* Autor en color negro */
+    margin-top: 4px;
+    font-weight: bold; /* También negrita para consistencia */
+  }
+  
+  /* Estilo para las etiquetas (chips) */
+  .etiquetas .chip {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000; /* Color negro para el texto en las etiquetas */
+    border-radius: 12px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold; /* Negrita en las etiquetas también */
+  }
+  

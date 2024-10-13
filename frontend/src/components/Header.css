@@ -1,0 +1,19 @@
+.header-logo {
+  max-height: 40px;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  ion-toolbar ion-buttons[slot="end"] {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  ion-toolbar ion-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
