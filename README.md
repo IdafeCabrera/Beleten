@@ -126,7 +126,8 @@ A continuación se listan los principales endpoints de la API disponibles en el 
 
 Puedes importar la colección de Postman desde el siguiente enlace para probar los endpoints:
 
-[Importar colección de Postman](https://www.getpostman.com/collections/tu-enlace-a-la-coleccion)
+[Importar colección de Postman]([https://www.getpostman.com/collections/tu-enlace-a-la-coleccion](https://www.postman.com/idafe/frases-api-beleten/collection/20683089-0624c61b-d08a-4ca7-b7da-1d9f5b6fe61a/?action=share&creator=20683089))
+
 
 ## Ejemplos de peticiones (Postman)
 
