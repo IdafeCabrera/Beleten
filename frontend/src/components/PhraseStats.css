@@ -1,0 +1,42 @@
+/* PhraseStats.css */
+.stats-card {
+    margin: 16px;
+    border-radius: 12px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .stat-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .stats-container {
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .stat-item {
+      width: 100%;
+      justify-content: center;
+    }
+  }

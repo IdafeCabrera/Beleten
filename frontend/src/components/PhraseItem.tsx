@@ -16,6 +16,13 @@ interface PhraseItemProps {
 
 
 const PhraseItem: React.FC<PhraseItemProps> = ({ phrase, onEdit, onDelete, design }) => {
+
+  const IdBadge = () => (
+    <div className="phrase-id-badge">
+      #{phrase.id}
+    </div>
+  );
+
  
   const handleEdit = (e: React.MouseEvent<HTMLIonButtonElement>) => {
     e.preventDefault();
@@ -30,6 +37,7 @@ const PhraseItem: React.FC<PhraseItemProps> = ({ phrase, onEdit, onDelete, desig
   
   const renderClassicDesign = () => (
     <IonCard className={`custom-card classic-card ${phrase.category?.toLowerCase()}`}>
+      <IdBadge />
       <IonCardHeader>
         <IonCardTitle>{phrase.text}</IonCardTitle>
         
@@ -65,6 +73,7 @@ const PhraseItem: React.FC<PhraseItemProps> = ({ phrase, onEdit, onDelete, desig
 
   const renderModernDesign = () => (
     <IonCard className="modern-card">
+      <IdBadge />
       <div className="card-header">
         <IonIcon icon={heart} className="favorite-icon" />
       </div>
@@ -92,6 +101,7 @@ const PhraseItem: React.FC<PhraseItemProps> = ({ phrase, onEdit, onDelete, desig
 
   const renderGradientDesign = () => (
     <IonCard className="gradient-card">
+      <IdBadge />
       <div className="gradient-overlay">
         <div className="quote-content">
           <h2 className="gradient-quote">{phrase.text}</h2>
@@ -118,6 +128,7 @@ const PhraseItem: React.FC<PhraseItemProps> = ({ phrase, onEdit, onDelete, desig
 
   const renderMinimalDesign = () => (
     <IonCard className="minimal-card">
+      <IdBadge />
       <div className="minimal-content">
         <blockquote className="minimal-quote">
           <p>{phrase.text}</p>

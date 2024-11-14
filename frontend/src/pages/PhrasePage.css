@@ -151,3 +151,47 @@
   opacity: 0.7;
   pointer-events: none;
 }
+
+
+/* PhrasePage.css */
+.initial-loading {
+  padding: 1rem;
+  opacity: 0.8;
+}
+
+.phrases-info {
+  padding: 0.5rem 1rem;
+  background: var(--ion-color-light);
+  color: var(--ion-color-medium);
+  text-align: right;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.loading-more {
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.center-content.error {
+  color: var(--ion-color-danger);
+}
+
+.infinite-scroll-custom {
+  margin: 1rem 0;
+}
+
+/* Dark mode */
+:root[mode=dark] .phrases-info {
+  background: var(--ion-color-step-100);
+}

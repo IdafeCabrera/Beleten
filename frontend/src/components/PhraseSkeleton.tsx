@@ -11,65 +11,54 @@ import './PhraseSkeleton.css';
 
 interface PhraseSkeletonProps {
   viewType: 'grid' | 'list';
-  design?: CardDesign; // Hacemos design opcional
+  design: CardDesign;
+  count?: number;
 }
 
 const PhraseSkeleton: React.FC<PhraseSkeletonProps> = ({ 
   viewType, 
-  design = CardDesign.CLASSIC // Valor por defecto
+  design,
+  count = 3
 }) => {
-  const getSkeletonCount = () => {
-    if (viewType === 'grid') {
-      return window.innerWidth > 1200 ? 9 : 
-             window.innerWidth > 768 ? 6 : 
-             window.innerWidth > 480 ? 4 : 2;
-    }
-    return 3; // Para vista lista
-  };
-
-  const renderSkeletonCard = (index: number) => {
-    const baseClass = `skeleton-card ${design.toLowerCase()}-skeleton`;
-    return (
-      <IonCard key={index} className={baseClass}>
-        <IonCardHeader>
-          <IonSkeletonText 
-            animated={true} 
-            className="skeleton-title"
-          />
-        </IonCardHeader>
-        <IonCardContent>
-          <IonSkeletonText 
-            animated={true} 
-            className="skeleton-content"
-          />
-          
-          <IonSkeletonText 
-            animated={true} 
-            className="skeleton-author"
-          />
-          
-          <div className="skeleton-tags">
-            {Array(3).fill(null).map((_, i) => (
-              <IonSkeletonText 
-                key={i}
-                animated={true} 
-                className="skeleton-tag"
-              />
-            ))}
-          </div>
-          
-          <div className="skeleton-actions">
-            <IonSkeletonText animated={true} className="skeleton-button" />
-            <IonSkeletonText animated={true} className="skeleton-button" />
-          </div>
-        </IonCardContent>
-      </IonCard>
-    );
-  };
-
   return (
-    <div className={`phrase-skeleton ${viewType}-view ${design.toLowerCase()}-layout`}>
-      {Array(getSkeletonCount()).fill(null).map((_, index) => renderSkeletonCard(index))}
+    <div className={`phrase-skeleton ${viewType}-view`}>
+      {Array(count).fill(null).map((_, index) => (
+        <IonCard key={`skeleton-${index}`} className={`skeleton-card ${design.toLowerCase()}`}>
+          <IonCardHeader>
+            <IonSkeletonText 
+              animated={true} 
+              style={{ width: '60%', height: '24px' }}
+            />
+          </IonCardHeader>
+          <IonCardContent>
+            <IonSkeletonText 
+              animated={true} 
+              style={{ width: '100%', height: '60px' }}
+            />
+            <div style={{ marginTop: '12px' }}>
+              <IonSkeletonText 
+                animated={true} 
+                style={{ width: '40%', height: '16px' }}
+              />
+            </div>
+            <div className="skeleton-tags" style={{ marginTop: '12px' }}>
+              {Array(3).fill(null).map((_, i) => (
+                <IonSkeletonText 
+                  key={i}
+                  animated={true} 
+                  style={{ 
+                    width: '60px', 
+                    height: '24px',
+                    borderRadius: '12px',
+                    display: 'inline-block',
+                    marginRight: '8px'
+                  }}
+                />
+              ))}
+            </div>
+          </IonCardContent>
+        </IonCard>
+      ))}
     </div>
   );
 };

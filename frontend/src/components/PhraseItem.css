@@ -240,3 +240,36 @@ ion-content {
   --padding-start: 12px;
   --padding-end: 12px;
 }
+
+/* PhraseItem.css */
+.phrase-id-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--ion-color-medium);
+  color: var(--ion-color-medium-contrast);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* Estilos específicos para cada diseño */
+.classic-card .phrase-id-badge {
+  background: var(--ion-color-primary);
+}
+
+.modern-card .phrase-id-badge {
+  background: var(--ion-color-secondary);
+}
+
+.gradient-card .phrase-id-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.minimal-card .phrase-id-badge {
+  background: var(--ion-color-light);
+  color: var(--ion-color-medium);
+}

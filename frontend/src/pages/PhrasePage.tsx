@@ -1,5 +1,7 @@
 // frontend/src/pages/PhrasePage.tsx
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useMemo } from "react";
+import PhraseSortControls from '../components/PhraseSortControls';
+import type { SortField, SortOrder } from '../components/PhraseSortControls';
 import {
   IonToolbar,
   IonTitle,
@@ -29,6 +31,7 @@ import PhraseSkeleton from "../components/PhraseSkeleton";
 import "./PhrasePage.css";
 import { InfiniteScrollCustomEvent } from "@ionic/core";
 import ViewToggleButton from "../components/ViewToggleButton";
+import PhraseStats from "../components/PhraseStats";
 
 const PhrasePage: React.FC = () => {
   const [selectedDesign, setSelectedDesign] = useState<CardDesign>(
@@ -62,35 +65,98 @@ const PhrasePage: React.FC = () => {
     deletePhrase,
     loadMorePhrases,
     hasMore,
+    totalPhrases
   } = usePhraseController();
 
 
     // Crear un ref para el contenedor de frases
     const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleInfiniteScroll = async (e: InfiniteScrollCustomEvent) => {
-    try {
-      // Prevenir múltiples llamadas
-      if (isLoading || !hasMore) {
-        e.target.complete();
-        return;
-      }
+// En PhrasePage.tsx
 
-      await loadMorePhrases();
-    } catch (error) {
-      console.error("Error loading more phrases:", error);
-    } finally {
+const handleInfiniteScroll = async (e: InfiniteScrollCustomEvent) => {
+  console.log('🔄 Scroll triggered:', {
+    loaded: phrases.length,
+    total: totalPhrases,
+    hasMore,
+    isLoading
+  });
+
+  try {
+    if (isLoading || !hasMore) {
+      console.log('⏹️ Scroll blocked:', { isLoading, hasMore });
       e.target.complete();
+      return;
     }
-  };
 
-  const renderContent = () => {
-    if (isLoading && phrases.length === 0) {
-      return <PhraseSkeleton 
-        viewType={viewType} 
-        design={selectedDesign}
-      />;
+    await loadMorePhrases();
+    console.log('✅ Load more completed');
+  } catch (error) {
+    console.error("❌ Scroll error:", error);
+  } finally {
+    e.target.complete();
+  }
+};
+
+  const [sortConfig, setSortConfig] = useState<{
+    field: SortField;
+    order: SortOrder;
+  }>({
+    field: 'id',
+    order: 'asc'
+  });
+
+ // Ordenar frases
+ const sortedPhrases = useMemo(() => {
+  if (!phrases) return [];
+  
+  return [...phrases].sort((a, b) => {
+    const compareValue = (val1: any, val2: any) => {
+      if (val1 === null || val1 === undefined) return 1;
+      if (val2 === null || val2 === undefined) return -1;
+      if (typeof val1 === 'string') return val1.localeCompare(val2);
+      return val1 - val2;
+    };
+
+    let comparison = 0;
+    switch (sortConfig.field) {
+      case 'id':
+        comparison = compareValue(a.id, b.id);
+        break;
+      case 'author':
+        comparison = compareValue(a.author, b.author);
+        break;
+      case 'createdAt':
+        comparison = compareValue(new Date(a.created_at), new Date(b.created_at));
+        break;
+      case 'category':
+        comparison = compareValue(a.category, b.category);
+        break;
+      default:
+        comparison = compareValue(a.id, b.id);
     }
+
+    return sortConfig.order === 'asc' ? comparison : -comparison;
+  });
+}, [phrases, sortConfig]);
+
+const handleSortChange = (field: SortField, order: SortOrder) => {
+  setSortConfig({ field, order });
+};
+
+
+const renderContent = () => {
+  if (isLoading && phrases.length === 0) {
+    return (
+      <div className="initial-loading">
+        <PhraseSkeleton 
+          viewType={viewType} 
+          design={selectedDesign}
+          count={6} // Mostrar más skeletons inicialmente
+        />
+      </div>
+    );
+  }
 
     if (error) {
       return (
@@ -114,25 +180,37 @@ const PhrasePage: React.FC = () => {
 
     return (
       <>
+           <div className="phrases-info">
+        Mostrando {phrases.length} de {totalPhrases} frases
+        {isLoading && <span> (Cargando más...)</span>}
+      </div>
+
         <div className="add-button-container">
           <IonButton onClick={() => openEditModal()}>
             <IonIcon icon={addOutline} slot="start" />
             Nueva Frase
           </IonButton>
         </div>
-        <PhraseList
-          phrases={phrases}
-          design={selectedDesign}
-          viewType={viewType}
-          onEdit={openEditModal}
-          onDelete={deletePhrase}
-          isLoading={isLoading}
-        />
-        {isLoading && <PhraseSkeleton 
-          viewType={viewType} 
-          design={selectedDesign}
-        />}
-      </>
+
+     <PhraseList
+        phrases={sortedPhrases}
+        design={selectedDesign}
+        viewType={viewType}
+        onEdit={openEditModal}
+        onDelete={deletePhrase}
+        isLoading={isLoading}
+      />
+
+ {isLoading && (
+        <div className="loading-more">
+          <PhraseSkeleton 
+            viewType={viewType} 
+            design={selectedDesign}
+            count={3}
+          />
+        </div>
+      )}
+    </>
     );
   };
 
@@ -176,7 +254,14 @@ const PhrasePage: React.FC = () => {
           </IonButton>
         </IonButtons>
       </IonToolbar>
-
+    {/* Solo mostrar PhraseStats cuando phrases está definido */}
+    {phrases && phrases.length > 0 && (
+      <PhraseStats phrases={phrases} />
+    )}
+          <PhraseSortControls
+        currentSort={sortConfig}
+        onSortChange={handleSortChange}
+      />
       {renderContent()}
       <IonInfiniteScroll
         onIonInfinite={handleInfiniteScroll}
@@ -190,6 +275,9 @@ const PhrasePage: React.FC = () => {
           loadingText="Cargando más frases..."
         >
           {isLoading && <div style={{ height: "20px" }} />}
+          <div className="load-progress">
+  {`${phrases.length} de ${totalPhrases} frases cargadas (${Math.round((phrases.length/totalPhrases)*100)}%)`}
+</div>
         </IonInfiniteScrollContent>
       </IonInfiniteScroll>
 
