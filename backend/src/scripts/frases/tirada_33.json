@@ -1,0 +1,292 @@
+[
+  {
+    "text": "El mayor peligro para la mayoría de nosotros no es que nuestro objetivo sea demasiado alto y no lo alcancemos, sino que sea demasiado bajo y lo consigamos.",
+    "author": "Michelangelo",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1475-03-06",
+    "date_of_death": "1564-02-18",
+    "reflection": "Michelangelo nos recuerda la importancia de apuntar alto en nuestras aspiraciones, ya que el verdadero peligro está en conformarnos con menos de lo que podemos lograr.",
+    "tags": {
+      "es": ["objetivos", "aspiraciones", "logros"],
+      "en": ["goals", "aspirations", "achievements"],
+      "fr": ["objectifs", "aspirations", "réalisations"],
+      "de": ["Ziele", "Bestrebungen", "Erfolge"],
+      "pt": ["objetivos", "aspirações", "conquistas"]
+    },
+    "historical_context": "Michelangelo Buonarroti fue un renombrado escultor, pintor y arquitecto del Renacimiento, conocido por obras maestras como el David y la Capilla Sixtina.",
+    "career": "Artista, Escultor, Arquitecto",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The greater danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le plus grand danger pour la plupart d'entre nous n'est pas que notre objectif soit trop élevé et que nous ne l'atteignions pas, mais qu'il soit trop bas et que nous y parvenions.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die größte Gefahr für die meisten von uns ist nicht, dass unser Ziel zu hoch gesteckt ist und wir es verfehlen, sondern dass es zu niedrig ist und wir es erreichen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O maior perigo para a maioria de nós não é que nosso objetivo seja muito alto e não o alcancemos, mas que seja muito baixo e o consigamos.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El poder tiende a corromper, y el poder absoluto corrompe absolutamente.",
+    "author": "Lord Acton",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1834-01-10",
+    "date_of_death": "1902-06-19",
+    "reflection": "Acton advierte sobre los peligros inherentes al poder, especialmente cuando no tiene límites, y cómo puede afectar la integridad de las personas.",
+    "tags": {
+      "es": ["poder", "corrupción", "absolutismo"],
+      "en": ["power", "corruption", "absolutism"],
+      "fr": ["pouvoir", "corruption", "absolutisme"],
+      "de": ["Macht", "Korruption", "Absolutismus"],
+      "pt": ["poder", "corrupção", "absolutismo"]
+    },
+    "historical_context": "Lord Acton fue un historiador británico, famoso por su insistencia en que la libertad debe estar acompañada de responsabilidad y control.",
+    "career": "Historiador, Político",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Power tends to corrupt, and absolute power corrupts absolutely.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le pouvoir tend à corrompre, et le pouvoir absolu corrompt absolument.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Macht korrumpiert, und absolute Macht korrumpiert absolut.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O poder tende a corromper, e o poder absoluto corrompe absolutamente.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Solo hay un bien: el conocimiento. Solo hay un mal: la ignorancia.",
+    "author": "Sócrates",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-470-01-01",
+    "date_of_death": "-399-01-01",
+    "reflection": "Sócrates destaca que el verdadero bien en la vida proviene del conocimiento y que la ignorancia es la causa fundamental de todo mal.",
+    "tags": {
+      "es": ["conocimiento", "ignorancia", "bien"],
+      "en": ["knowledge", "ignorance", "good"],
+      "fr": ["connaissance", "ignorance", "bien"],
+      "de": ["Wissen", "Unwissenheit", "Gutes"],
+      "pt": ["conhecimento", "ignorância", "bem"]
+    },
+    "historical_context": "Sócrates fue un filósofo griego que sentó las bases de la filosofía occidental, famoso por su método de diálogo y su búsqueda de la verdad.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "There is only one good: knowledge. There is only one evil: ignorance.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il n'y a qu'un seul bien : la connaissance. Il n'y a qu'un seul mal : l'ignorance.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es gibt nur ein Gutes: Wissen. Es gibt nur ein Übel: Unwissenheit.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Só existe um bem: o conhecimento. Só existe um mal: a ignorância.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La mente es como un paracaídas: solo funciona si se abre.",
+    "author": "Albert Einstein",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1879-03-14",
+    "date_of_death": "1955-04-18",
+    "reflection": "Einstein nos anima a mantener nuestras mentes abiertas a nuevas ideas y perspectivas, ya que solo así podemos aprender y avanzar.",
+    "tags": {
+      "es": ["mente", "apertura", "aprendizaje"],
+      "en": ["mind", "openness", "learning"],
+      "fr": ["esprit", "ouverture", "apprentissage"],
+      "de": ["Geist", "Offenheit", "Lernen"],
+      "pt": ["mente", "abertura", "aprendizado"]
+    },
+    "historical_context": "Albert Einstein fue un físico alemán conocido por desarrollar la teoría de la relatividad, lo que revolucionó la comprensión de la física moderna.",
+    "career": "Científico, Físico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The mind is like a parachute: it only works if it's open.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'esprit est comme un parachute : il ne fonctionne que s'il est ouvert.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Geist ist wie ein Fallschirm: Er funktioniert nur, wenn er offen ist.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A mente é como um paraquedas: só funciona se estiver aberta.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La oscuridad no puede expulsar la oscuridad, solo la luz puede hacerlo. El odio no puede expulsar el odio, solo el amor puede hacerlo.",
+    "author": "Martin Luther King Jr.",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1929-01-15",
+    "date_of_death": "1968-04-04",
+    "reflection": "King nos enseña que solo con positividad y amor podemos superar el odio y las adversidades, y que la luz del bien es más poderosa que la oscuridad del mal.",
+    "tags": {
+      "es": ["luz", "amor", "oscuridad", "odio"],
+      "en": ["light", "love", "darkness", "hate"],
+      "fr": ["lumière", "amour", "obscurité", "haine"],
+      "de": ["Licht", "Liebe", "Dunkelheit", "Hass"],
+      "pt": ["luz", "amor", "escuridão", "ódio"]
+    },
+    "historical_context": "Martin Luther King Jr. fue un líder en la lucha por los derechos civiles en Estados Unidos, conocido por su mensaje de amor y no violencia.",
+    "career": "Activista, Pastor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love can do that.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'obscurité ne peut pas chasser l'obscurité, seule la lumière peut le faire. La haine ne peut pas chasser la haine, seul l'amour peut le faire.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Dunkelheit kann keine Dunkelheit vertreiben, nur Licht kann das. Hass kann keinen Hass vertreiben, nur Liebe kann das.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A escuridão não pode expulsar a escuridão, só a luz pode fazer isso. O ódio não pode expulsar o ódio, só o amor pode fazer isso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

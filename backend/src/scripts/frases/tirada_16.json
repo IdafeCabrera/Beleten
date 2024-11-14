@@ -1,0 +1,292 @@
+[
+  {
+    "text": "No hay camino para la paz, la paz es el camino.",
+    "author": "Mahatma Gandhi",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1869-10-02",
+    "date_of_death": "1948-01-30",
+    "reflection": "Gandhi nos recuerda que la paz no es un destino final, sino un proceso continuo que debemos practicar cada día.",
+    "tags": {
+      "es": ["paz", "camino", "justicia"],
+      "en": ["peace", "path", "justice"],
+      "fr": ["paix", "chemin", "justice"],
+      "de": ["Frieden", "Weg", "Gerechtigkeit"],
+      "pt": ["paz", "caminho", "justiça"]
+    },
+    "historical_context": "Mahatma Gandhi lideró el movimiento de independencia de la India con métodos de resistencia no violenta, convirtiéndose en un símbolo global de la paz.",
+    "career": "Activista, Abogado, Político",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "There is no path to peace, peace is the path.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il n'y a pas de chemin vers la paix, la paix est le chemin.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es gibt keinen Weg zum Frieden, der Frieden ist der Weg.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Não há caminho para a paz, a paz é o caminho.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Aprende a vivir y sabrás morir bien.",
+    "author": "Confucio",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-551-09-28",
+    "date_of_death": "-479-04-11",
+    "reflection": "Confucio sugiere que una vida vivida con virtud y sabiduría prepara a las personas para aceptar la muerte con paz y serenidad.",
+    "tags": {
+      "es": ["vida", "muerte", "sabiduría"],
+      "en": ["life", "death", "wisdom"],
+      "fr": ["vie", "mort", "sagesse"],
+      "de": ["Leben", "Tod", "Weisheit"],
+      "pt": ["vida", "morte", "sabedoria"]
+    },
+    "historical_context": "Confucio fue un filósofo chino cuyas enseñanzas sobre la moralidad y la ética siguen siendo una parte fundamental de la cultura china.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Learn to live and you will know how to die well.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Apprends à vivre et tu sauras bien mourir.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Lerne zu leben, und du wirst gut sterben können.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Aprenda a viver e você saberá como morrer bem.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El verdadero viaje de descubrimiento no consiste en buscar nuevos paisajes, sino en tener nuevos ojos.",
+    "author": "Marcel Proust",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1871-07-10",
+    "date_of_death": "1922-11-18",
+    "reflection": "Proust nos invita a entender que el crecimiento personal proviene de cambiar nuestra perspectiva, más que de buscar nuevas experiencias externas.",
+    "tags": {
+      "es": ["descubrimiento", "perspectiva", "crecimiento"],
+      "en": ["discovery", "perspective", "growth"],
+      "fr": ["découverte", "perspective", "croissance"],
+      "de": ["Entdeckung", "Perspektive", "Wachstum"],
+      "pt": ["descoberta", "perspectiva", "crescimento"]
+    },
+    "historical_context": "Marcel Proust fue un novelista francés famoso por su obra 'En busca del tiempo perdido', donde explora el tiempo, la memoria y la percepción.",
+    "career": "Escritor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le véritable voyage de découverte ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die wahre Entdeckungsreise besteht nicht darin, neue Landschaften zu suchen, sondern neue Augen zu haben.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A verdadeira viagem de descoberta não consiste em buscar novas paisagens, mas em ter novos olhos.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El conocimiento habla, pero la sabiduría escucha.",
+    "author": "Jimi Hendrix",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1942-11-27",
+    "date_of_death": "1970-09-18",
+    "reflection": "Hendrix sugiere que la verdadera sabiduría no consiste solo en compartir lo que sabemos, sino también en la capacidad de escuchar y aprender de los demás.",
+    "tags": {
+      "es": ["conocimiento", "sabiduría", "escuchar"],
+      "en": ["knowledge", "wisdom", "listening"],
+      "fr": ["connaissance", "sagesse", "écoute"],
+      "de": ["Wissen", "Weisheit", "Zuhören"],
+      "pt": ["conhecimento", "sabedoria", "escutar"]
+    },
+    "historical_context": "Jimi Hendrix es considerado uno de los mejores guitarristas de todos los tiempos y una figura emblemática de la contracultura de los años 60.",
+    "career": "Músico, Guitarrista, Cantante",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Knowledge speaks, but wisdom listens.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La connaissance parle, mais la sagesse écoute.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wissen spricht, aber Weisheit hört zu.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O conhecimento fala, mas a sabedoria escuta.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La mejor manera de predecir el futuro es crearlo.",
+    "author": "Peter Drucker",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1909-11-19",
+    "date_of_death": "2005-11-11",
+    "reflection": "Drucker nos invita a tomar las riendas de nuestro futuro, sugiriendo que no debemos esperar a que las cosas sucedan, sino actuar para hacer que sucedan.",
+    "tags": {
+      "es": ["futuro", "acción", "creación"],
+      "en": ["future", "action", "creation"],
+      "fr": ["avenir", "action", "création"],
+      "de": ["Zukunft", "Handlung", "Schöpfung"],
+      "pt": ["futuro", "ação", "criação"]
+    },
+    "historical_context": "Peter Drucker es considerado el padre del 'management' moderno, cuyas teorías sobre la gestión empresarial han influido en generaciones de líderes empresariales.",
+    "career": "Escritor, Consultor, Profesor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The best way to predict the future is to create it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La meilleure façon de prédire l'avenir est de le créer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die beste Art, die Zukunft vorherzusagen, ist, sie zu erschaffen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A melhor maneira de prever o futuro é criá-lo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

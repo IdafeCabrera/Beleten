@@ -1,3 +1,4 @@
+// frontend/src/components/SVGComponent.tsx
 import * as React from "react";
 
 import './SVGComponent.css';

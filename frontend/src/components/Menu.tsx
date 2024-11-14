@@ -1,3 +1,4 @@
+// frontend/src/components/Menu.tsx
 import React from 'react';
 import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel } from '@ionic/react';
 import { home, personCircle, notifications, settings } from 'ionicons/icons';

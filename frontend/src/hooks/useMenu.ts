@@ -1,3 +1,4 @@
+// frontend/src/hooks/useMenu.ts
 import { useState, useEffect } from 'react';
 import { menuController } from '@ionic/core';
 

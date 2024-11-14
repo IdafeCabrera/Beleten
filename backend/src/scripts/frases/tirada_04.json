@@ -1,0 +1,292 @@
+[
+  {
+    "text": "No puedo enseñar nada a nadie. Solo puedo hacerles pensar.",
+    "author": "Sócrates",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "469-06-04",
+    "date_of_death": "399-04-01",
+    "reflection": "Sócrates destaca el poder del pensamiento crítico. En lugar de transmitir conocimientos, él guiaba a las personas para que descubrieran las verdades por sí mismas.",
+    "tags": {
+      "es": ["enseñanza", "pensamiento", "filosofía"],
+      "en": ["teaching", "thinking", "philosophy"],
+      "fr": ["enseignement", "réflexion", "philosophie"],
+      "de": ["Lehren", "Denken", "Philosophie"],
+      "pt": ["ensino", "pensamento", "filosofia"]
+    },
+    "historical_context": "Sócrates utilizaba el método socrático para promover la autoexploración en la búsqueda del conocimiento, un enfoque que sigue vigente en la educación moderna.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "I cannot teach anybody anything. I can only make them think.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Je ne peux rien enseigner à personne. Je peux seulement les amener à penser.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Ich kann niemandem etwas lehren. Ich kann sie nur zum Denken bringen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Eu não posso ensinar nada a ninguém. Só posso fazê-los pensar.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La historia me absolverá.",
+    "author": "Fidel Castro",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1926-08-13",
+    "date_of_death": "2016-11-25",
+    "reflection": "Castro expresó su convicción de que el juicio final de su obra y legado lo dictaría la historia, no los eventos inmediatos.",
+    "tags": {
+      "es": ["historia", "juicio", "política"],
+      "en": ["history", "judgment", "politics"],
+      "fr": ["histoire", "jugement", "politique"],
+      "de": ["Geschichte", "Urteil", "Politik"],
+      "pt": ["história", "julgamento", "política"]
+    },
+    "historical_context": "Castro pronunció esta frase durante su defensa en el juicio tras el asalto al cuartel Moncada en 1953, que sería el primer paso hacia la Revolución Cubana.",
+    "career": "Político, Revolucionario",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "History will absolve me.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'histoire m'absoudra.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die Geschichte wird mich freisprechen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A história me absolverá.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La vida es como una bicicleta. Para mantener el equilibrio, debes seguir adelante.",
+    "author": "Albert Einstein",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1879-03-14",
+    "date_of_death": "1955-04-18",
+    "reflection": "Einstein compara la vida con una bicicleta, resaltando la importancia de avanzar constantemente para evitar caer en la inercia o la parálisis.",
+    "tags": {
+      "es": ["vida", "equilibrio", "acción"],
+      "en": ["life", "balance", "action"],
+      "fr": ["vie", "équilibre", "action"],
+      "de": ["Leben", "Gleichgewicht", "Handlung"],
+      "pt": ["vida", "equilíbrio", "ação"]
+    },
+    "historical_context": "Einstein escribió esta frase en una carta personal en 1930, ilustrando su visión del movimiento continuo y la adaptación en la vida.",
+    "career": "Físico, Científico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La vie, c'est comme faire du vélo. Pour garder l'équilibre, il faut continuer d'avancer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Das Leben ist wie Fahrradfahren. Um das Gleichgewicht zu halten, musst du in Bewegung bleiben.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A vida é como andar de bicicleta. Para manter o equilíbrio, você deve continuar em movimento.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El hombre está condenado a ser libre.",
+    "author": "Jean-Paul Sartre",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1905-06-21",
+    "date_of_death": "1980-04-15",
+    "reflection": "Sartre subraya la responsabilidad individual que implica la libertad absoluta del ser humano, incluso cuando esta libertad puede parecer una carga.",
+    "tags": {
+      "es": ["libertad", "existencialismo", "responsabilidad"],
+      "en": ["freedom", "existentialism", "responsibility"],
+      "fr": ["liberté", "existentialisme", "responsabilité"],
+      "de": ["Freiheit", "Existenzialismus", "Verantwortung"],
+      "pt": ["liberdade", "existencialismo", "responsabilidade"]
+    },
+    "historical_context": "Esta frase es uno de los pilares del existencialismo sartriano, que explora la libertad del ser humano como algo ineludible y, a la vez, angustiante.",
+    "career": "Filósofo, Novelista, Dramaturgo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Man is condemned to be free.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'homme est condamné à être libre.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Mensch ist dazu verdammt, frei zu sein.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O homem está condenado a ser livre.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Lo que no te mata te hace más fuerte.",
+    "author": "Friedrich Nietzsche",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1844-10-15",
+    "date_of_death": "1900-08-25",
+    "reflection": "Nietzsche expresa que la adversidad y el sufrimiento, en lugar de debilitar, pueden fortalecer la voluntad y el carácter.",
+    "tags": {
+      "es": ["fortaleza", "adversidad", "superación"],
+      "en": ["strength", "adversity", "overcoming"],
+      "fr": ["force", "adversité", "dépassement"],
+      "de": ["Stärke", "Widrigkeiten", "Überwindung"],
+      "pt": ["força", "adversidade", "superação"]
+    },
+    "historical_context": "Nietzsche exploró esta idea en su obra 'El crepúsculo de los ídolos' (1888), subrayando la capacidad del ser humano para resistir y fortalecerse a través de la dificultad.",
+    "career": "Filósofo, Filólogo, Crítico Cultural",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "What does not kill you makes you stronger.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Ce qui ne te tue pas te rend plus fort.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Was dich nicht umbringt, macht dich stärker.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O que não te mata, te fortalece.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

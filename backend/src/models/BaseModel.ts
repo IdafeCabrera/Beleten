@@ -1,4 +1,4 @@
-// /backend/models/BaseModel.ts
+// backend/src/models/BaseModel.ts
 import { Model, DataTypes, Sequelize } from 'sequelize';
 
 export class BaseModel extends Model {

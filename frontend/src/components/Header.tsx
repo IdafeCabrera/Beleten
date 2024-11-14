@@ -1,3 +1,4 @@
+// frontend/src/components/Header.tsx
 import React from 'react';
 import {
   IonHeader,
@@ -11,7 +12,7 @@ import {
 import { sunny, moon } from 'ionicons/icons';
 import { MenuItem } from '../types/MenuItem';
 import { useDarkMode } from '../hooks/useDarkMode';
-import './Header.css';
+
 
 import Logo from './Logo';
 
@@ -35,12 +36,9 @@ const Header: React.FC<HeaderProps> = React.memo(({ title, menuItems }) => {
       
     
       <IonToolbar color="primary">
-      <div className='logo-container'>
 
-
-    </div>
         <IonButtons slot="start">
-        <Logo />
+         <Logo /> 
           <IonMenuButton />
         </IonButtons>
         

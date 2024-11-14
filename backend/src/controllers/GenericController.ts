@@ -1,3 +1,4 @@
+// backend/src/controllers/GenericController.ts
 import { Request, Response } from 'express';
 import { Model } from 'sequelize';
 
@@ -73,6 +74,31 @@ export class GenericController<T extends Model> {
       }
     } catch (error) {
       res.status(500).json({ message: 'Error al alternar el estado de favorito', error });
+    }
+  };
+
+  // Actualizar solo la apariencia visual de un registro
+  public updateVisual = async (req: Request, res: Response): Promise<void> => {
+    try {
+      const { id } = req.params;
+      const { backgroundColor, fontColor, fontFamily, backgroundImage, backgroundImageSource, customFontSize } = req.body;
+
+      const item = await this.model.findByPk(id);
+      if (item) {
+        await item.update({
+          backgroundColor,
+          fontColor,
+          fontFamily,
+          backgroundImage,
+          backgroundImageSource,
+          customFontSize,
+        });
+        res.json(item);
+      } else {
+        res.status(404).json({ message: 'Registro no encontrado' });
+      }
+    } catch (error) {
+      res.status(500).json({ message: 'Error al actualizar la apariencia visual', error });
     }
   };
 

@@ -1,0 +1,292 @@
+[
+  {
+    "text": "El conocimiento habla, pero la sabiduría escucha.",
+    "author": "Jimi Hendrix",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1942-11-27",
+    "date_of_death": "1970-09-18",
+    "reflection": "Hendrix nos recuerda que tener conocimiento no es suficiente, sino que la verdadera sabiduría reside en saber escuchar a los demás.",
+    "tags": {
+      "es": ["conocimiento", "sabiduría", "escuchar"],
+      "en": ["knowledge", "wisdom", "listening"],
+      "fr": ["connaissance", "sagesse", "écouter"],
+      "de": ["Wissen", "Weisheit", "Zuhören"],
+      "pt": ["conhecimento", "sabedoria", "ouvir"]
+    },
+    "historical_context": "Jimi Hendrix fue un legendario guitarrista y cantante estadounidense, considerado uno de los músicos más influyentes de la historia del rock.",
+    "career": "Músico, Cantante",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Knowledge speaks, but wisdom listens.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La connaissance parle, mais la sagesse écoute.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wissen spricht, aber Weisheit hört zu.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O conhecimento fala, mas a sabedoria escuta.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El hombre está hecho de sus creencias. Como cree, así es.",
+    "author": "Johann Wolfgang von Goethe",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1749-08-28",
+    "date_of_death": "1832-03-22",
+    "reflection": "Goethe destaca que nuestras creencias moldean nuestra identidad y forma de ser, influyendo en cómo actuamos y nos relacionamos con el mundo.",
+    "tags": {
+      "es": ["creencias", "identidad", "convicciones"],
+      "en": ["beliefs", "identity", "convictions"],
+      "fr": ["croyances", "identité", "convictions"],
+      "de": ["Überzeugungen", "Identität", "Glauben"],
+      "pt": ["crenças", "identidade", "convicções"]
+    },
+    "historical_context": "Johann Wolfgang von Goethe fue un poeta, dramaturgo y novelista alemán, una de las figuras literarias más importantes del Romanticismo.",
+    "career": "Escritor, Poeta, Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Man is made of his beliefs. As he believes, so he is.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'homme est fait de ses croyances. Comme il croit, il est.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Mensch ist aus seinen Überzeugungen gemacht. Wie er glaubt, so ist er.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O homem é feito de suas crenças. Como ele acredita, assim ele é.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No es más rico quien más tiene, sino quien menos necesita.",
+    "author": "Proverbio popular",
+    "alias": null,
+    "category": "Proverbio",
+    "date_of_birth": null,
+    "date_of_death": null,
+    "reflection": "Este proverbio nos enseña que la verdadera riqueza no se mide por la acumulación de bienes materiales, sino por la capacidad de ser feliz con poco.",
+    "tags": {
+      "es": ["riqueza", "necesidades", "felicidad"],
+      "en": ["wealth", "needs", "happiness"],
+      "fr": ["richesse", "besoins", "bonheur"],
+      "de": ["Reichtum", "Bedürfnisse", "Glück"],
+      "pt": ["riqueza", "necessidades", "felicidade"]
+    },
+    "historical_context": "Este proverbio forma parte de la sabiduría popular transmitida a lo largo del tiempo y refleja un enfoque simple y profundo sobre la felicidad y la satisfacción personal.",
+    "career": null,
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The richest person is not the one who has the most, but the one who needs the least.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le plus riche n'est pas celui qui possède le plus, mais celui qui a le moins besoin.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Am reichsten ist nicht der, der am meisten besitzt, sondern der, der am wenigsten braucht.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O mais rico não é aquele que tem mais, mas quem menos precisa.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La fuerza no proviene de la capacidad física. Proviene de una voluntad indomable.",
+    "author": "Mahatma Gandhi",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1869-10-02",
+    "date_of_death": "1948-01-30",
+    "reflection": "Gandhi resalta que la verdadera fuerza no reside en el cuerpo, sino en la firmeza y perseverancia de la voluntad.",
+    "tags": {
+      "es": ["fuerza", "voluntad", "perseverancia"],
+      "en": ["strength", "willpower", "perseverance"],
+      "fr": ["force", "volonté", "persévérance"],
+      "de": ["Stärke", "Willenskraft", "Beharrlichkeit"],
+      "pt": ["força", "vontade", "perseverança"]
+    },
+    "historical_context": "Mahatma Gandhi fue un líder político y espiritual de la India, conocido por su lucha pacífica por la independencia y los derechos civiles.",
+    "career": "Líder espiritual, Político",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Strength does not come from physical capacity. It comes from an indomitable will.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La force ne vient pas de la capacité physique. Elle vient d'une volonté indomptable.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Stärke kommt nicht von körperlicher Kraft. Sie kommt von einem unbezwingbaren Willen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A força não vem da capacidade física. Ela vem de uma vontade indomável.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La vida es un diez por ciento lo que te ocurre y un noventa por ciento cómo reaccionas a ello.",
+    "author": "Charles R. Swindoll",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1934-10-18",
+    "date_of_death": null,
+    "reflection": "Swindoll nos enseña que nuestras circunstancias son solo una pequeña parte de la vida; lo realmente importante es nuestra actitud y cómo respondemos a los eventos.",
+    "tags": {
+      "es": ["vida", "actitud", "reacción"],
+      "en": ["life", "attitude", "reaction"],
+      "fr": ["vie", "attitude", "réaction"],
+      "de": ["Leben", "Einstellung", "Reaktion"],
+      "pt": ["vida", "atitude", "reação"]
+    },
+    "historical_context": "Charles R. Swindoll es un pastor y autor estadounidense conocido por sus enseñanzas cristianas y motivacionales sobre la vida y el liderazgo.",
+    "career": "Autor, Pastor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Life is ten percent what happens to you and ninety percent how you react to it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La vie est dix pour cent ce qui vous arrive et quatre-vingt-dix pour cent la façon dont vous y réagissez.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Das Leben besteht zu zehn Prozent aus dem, was dir passiert, und zu neunzig Prozent aus deiner Reaktion darauf.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A vida é dez por cento o que acontece com você e noventa por cento como você reage a isso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

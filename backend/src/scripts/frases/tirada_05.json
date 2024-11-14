@@ -1,0 +1,292 @@
+[
+  {
+    "text": "Haz de cada día tu obra maestra.",
+    "author": "John Wooden",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1910-10-14",
+    "date_of_death": "2010-06-04",
+    "reflection": "Wooden, un legendario entrenador de baloncesto, nos recuerda que la excelencia es el resultado de hacer lo mejor en cada día, sin esperar el momento perfecto.",
+    "tags": {
+      "es": ["excelencia", "trabajo", "perfección"],
+      "en": ["excellence", "work", "perfection"],
+      "fr": ["excellence", "travail", "perfection"],
+      "de": ["Exzellenz", "Arbeit", "Perfektion"],
+      "pt": ["excelência", "trabalho", "perfeição"]
+    },
+    "historical_context": "John Wooden fue conocido por su ética de trabajo y su habilidad para inspirar a sus jugadores a enfocarse en el presente.",
+    "career": "Entrenador, Jugador de Baloncesto",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Make each day your masterpiece.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Fais de chaque jour ton chef-d'œuvre.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Mache jeden Tag zu deinem Meisterwerk.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Faça de cada dia sua obra-prima.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El único modo de hacer un gran trabajo es amar lo que haces.",
+    "author": "Steve Jobs",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1955-02-24",
+    "date_of_death": "2011-10-05",
+    "reflection": "Jobs nos recuerda que la pasión por lo que hacemos es la clave para alcanzar la excelencia en nuestro trabajo.",
+    "tags": {
+      "es": ["trabajo", "pasión", "éxito"],
+      "en": ["work", "passion", "success"],
+      "fr": ["travail", "passion", "succès"],
+      "de": ["Arbeit", "Leidenschaft", "Erfolg"],
+      "pt": ["trabalho", "paixão", "sucesso"]
+    },
+    "historical_context": "Steve Jobs mencionó esta frase en su discurso en la Universidad de Stanford en 2005, alentando a los estudiantes a buscar lo que aman.",
+    "career": "Empresario, Inventor, Fundador de Apple",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The only way to do great work is to love what you do.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La seule façon de faire un excellent travail est d'aimer ce que vous faites.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der einzige Weg, großartige Arbeit zu leisten, ist, zu lieben, was man tut.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El que tiene un porqué para vivir puede soportar casi cualquier cómo.",
+    "author": "Friedrich Nietzsche",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1844-10-15",
+    "date_of_death": "1900-08-25",
+    "reflection": "Nietzsche destaca la importancia de encontrar un propósito en la vida que nos permita superar las adversidades.",
+    "tags": {
+      "es": ["propósito", "vida", "resiliencia"],
+      "en": ["purpose", "life", "resilience"],
+      "fr": ["but", "vie", "résilience"],
+      "de": ["Zweck", "Leben", "Resilienz"],
+      "pt": ["propósito", "vida", "resiliência"]
+    },
+    "historical_context": "Nietzsche expresó esta idea en su obra 'El ocaso de los ídolos', conectando la búsqueda de sentido con la resistencia ante el sufrimiento.",
+    "career": "Filósofo, Filólogo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "He who has a why to live can bear almost any how.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Celui qui a un pourquoi pour vivre peut supporter presque n'importe quel comment.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wer ein Warum zum Leben hat, erträgt fast jedes Wie.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Aquele que tem um porquê para viver pode suportar quase qualquer como.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No hay nada más fuerte en el mundo que el corazón de un voluntario.",
+    "author": "James Doolittle",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1896-12-14",
+    "date_of_death": "1993-09-27",
+    "reflection": "Doolittle destaca la fuerza y la determinación de aquellos que eligen voluntariamente luchar por una causa más grande que ellos mismos.",
+    "tags": {
+      "es": ["voluntad", "fuerza", "corazón"],
+      "en": ["will", "strength", "heart"],
+      "fr": ["volonté", "force", "cœur"],
+      "de": ["Wille", "Stärke", "Herz"],
+      "pt": ["vontade", "força", "coração"]
+    },
+    "historical_context": "James Doolittle, un general estadounidense, expresó esta frase en el contexto de la Segunda Guerra Mundial, reconociendo la valentía de los voluntarios militares.",
+    "career": "Militar, Aviador",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "There is nothing stronger in the world than the heart of a volunteer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il n'y a rien de plus fort au monde que le cœur d'un volontaire.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es gibt nichts Stärkeres auf der Welt als das Herz eines Freiwilligen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Não há nada mais forte no mundo do que o coração de um voluntário.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Los grandes espíritus siempre han encontrado una violenta oposición de parte de mentes mediocres.",
+    "author": "Albert Einstein",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1879-03-14",
+    "date_of_death": "1955-04-18",
+    "reflection": "Einstein enfatiza que aquellos con ideas revolucionarias suelen enfrentarse a críticas por parte de aquellos que no pueden entender o aceptar el cambio.",
+    "tags": {
+      "es": ["genio", "oposición", "innovación"],
+      "en": ["genius", "opposition", "innovation"],
+      "fr": ["génie", "opposition", "innovation"],
+      "de": ["Genie", "Opposition", "Innovation"],
+      "pt": ["gênio", "oposição", "inovação"]
+    },
+    "historical_context": "Einstein expresó esta idea refiriéndose a las dificultades que enfrentó en su carrera debido a su pensamiento no convencional.",
+    "career": "Físico, Científico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Great spirits have always encountered violent opposition from mediocre minds.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Les grands esprits ont toujours rencontré une opposition violente de la part d'esprits médiocres.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Große Geister haben immer heftigen Widerstand von mittelmäßigen Köpfen erfahren.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Grandes espíritos sempre encontraram uma violenta oposição por parte de mentes medíocres.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

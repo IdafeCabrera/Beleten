@@ -1,3 +1,4 @@
+// frontend/src/pages/Home.tsx
 import React from "react";
 import {
   IonContent,
@@ -31,8 +32,9 @@ import {
 import { MenuItem } from "../types/MenuItem";
 import "./Home.css";
 
-import ExpandableFab from "../components/ExpandableFab";
-import Layout from "../components/Layout";
+
+
+import Layout from '../components/layout/Layout';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -43,6 +45,8 @@ import {
   faVrCardboard,
 } from "@fortawesome/free-solid-svg-icons";
 import IonCardWelcome from "../components/Cards/IonCardWelcome";
+import Menu from "../components/Menu";
+import Logo from "../components/Logo";
 
 const menuItems: MenuItem[] = [
   { icon: home, text: "Inicio", url: "/home" },
@@ -63,21 +67,22 @@ const Home: React.FC = () => {
     { icon: share, onClick: () => console.log("Share clicked") },
   ];
   return (
-    <Layout>
-      <IonPage id="main-content" style={{ color: "red" }}>
-        <IonContent>
-          <ExpandableFab buttons={fabButtons} vertical={true} />
+    
+
+        
+        <Layout>
+          {/* <ExpandableFab buttons={fabButtons} vertical={true} /> */}
           <IonCardWelcome />
           <div className="feature-grid">
             <IonCard style={{ backgroundColor: "white" }}>
               <IonCardHeader style={{ textAlign: "center", color: "" }}>
-                <IonCardTitle>Citas ilustres <FontAwesomeIcon icon={faQuoteRight} /></IonCardTitle>
+                <IonCardTitle>Frases célebres, pensamientos, palabras y citas de la vida <FontAwesomeIcon icon={faQuoteRight} /></IonCardTitle>
               </IonCardHeader>
               <IonCardContent>
-                Inspirate o gestiona tus citas favoritas.
+                ¡Inspírate! Gestiona tus favoritas.
               </IonCardContent>
               <IonButton
-                routerLink="/frases"
+                routerLink="/phrases"
                 expand="block"
                 color="secondary"
                 className="ion-margin"
@@ -150,9 +155,9 @@ const Home: React.FC = () => {
               </IonButton>
             </IonCard>
           </div>
-        </IonContent>
-      </IonPage>
-    </Layout>
+          </Layout>
+
+    
   );
 };
 

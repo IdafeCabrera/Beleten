@@ -3,18 +3,17 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { sequelize } from './models/index';
-import todoRoutes from './routes/todoRoutes';
-import fraseRoutes from './routes/fraseRoutes';
+import phraseRoutes from './routes/phraseRoutes';
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 // RUTAS
-app.use('/api/todos', todoRoutes);
-app.use('/api/frases', fraseRoutes);
 
-// Iniciar la base de datos y sincronizar tablas
-sequelize.sync({ alter: true })
+app.use('/api/phrases', phraseRoutes);
+
+// Iniciar la base de datos y sincronizar tablas 
+sequelize.sync({ alter: true }) // Al usar { force: true } eliminas y recreas las tablas
   .then(() => {
     console.log('Base de datos sincronizada correctamente.');
     // Iniciar el servidor

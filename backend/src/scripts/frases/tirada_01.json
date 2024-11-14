@@ -1,0 +1,176 @@
+[
+  {
+    "text": "Solo sé que no sé nada.",
+    "author": "Sócrates",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "469-06-04",
+    "date_of_death": "399-04-01",
+    "reflection": "Sócrates expresa la humildad intelectual y el reconocimiento de que el conocimiento es vasto y siempre hay más por aprender.",
+    "tags": {
+      "es": ["sabiduría", "ignorancia", "humildad"],
+      "en": ["wisdom", "ignorance", "humility"],
+      "fr": ["sagesse", "ignorance", "humilité"],
+      "de": ["Weisheit", "Unwissenheit", "Demut"],
+      "pt": ["sabedoria", "ignorância", "humildade"]
+    },
+    "historical_context": "Esta frase fue dicha por Sócrates como parte de su método de enseñanza, conocido como el método socrático.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "I only know that I know nothing.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Je ne sais qu'une chose, c'est que je ne sais rien.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Ich weiß nur, dass ich nichts weiß.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Eu só sei que nada sei.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Pienso, luego existo.",
+    "author": "René Descartes",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1596-03-31",
+    "date_of_death": "1650-02-11",
+    "reflection": "Descartes afirma que el pensamiento es la prueba fundamental de la existencia, dado que para dudar o pensar, uno debe existir.",
+    "tags": {
+      "es": ["existencia", "pensamiento", "razón"],
+      "en": ["existence", "thought", "reason"],
+      "fr": ["existence", "pensée", "raison"],
+      "de": ["Existenz", "Denken", "Vernunft"],
+      "pt": ["existência", "pensamento", "razão"]
+    },
+    "historical_context": "Esta frase fue pronunciada por Descartes como parte de su meditación sobre la duda y la certeza en su obra 'Meditaciones Metafísicas'.",
+    "career": "Filósofo, Matemático, Científico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "I think, therefore I am.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Je pense, donc je suis.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Ich denke, also bin ich.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Penso, logo existo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El poder tiende a corromper, y el poder absoluto corrompe absolutamente.",
+    "author": "John Dalberg-Acton",
+    "alias": "Lord Acton",
+    "category": "Frase ilustre",
+    "date_of_birth": "1834-01-10",
+    "date_of_death": "1902-06-19",
+    "reflection": "Acton advierte sobre los peligros de la acumulación de poder sin límites, ya que este tiende a desvirtuar la moral y la ética.",
+    "tags": {
+      "es": ["poder", "corrupción", "moral"],
+      "en": ["power", "corruption", "morality"],
+      "fr": ["pouvoir", "corruption", "moralité"],
+      "de": ["Macht", "Korruption", "Moral"],
+      "pt": ["poder", "corrupção", "moralidade"]
+    },
+    "historical_context": "Esta frase fue escrita en una carta de Acton en 1887, en la que reflexionaba sobre el comportamiento de los líderes y la influencia del poder.",
+    "career": "Historiador, Político, Escritor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Power tends to corrupt, and absolute power corrupts absolutely.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le pouvoir tend à corrompre, et le pouvoir absolu corrompt absolument.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Macht neigt zur Korruption, und absolute Macht korrumpiert absolut.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O poder tende a corromper, e o poder absoluto corrompe absolutamente.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

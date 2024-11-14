@@ -1,0 +1,292 @@
+[
+  {
+    "text": "La esperanza es un sueño despierto.",
+    "author": "Aristóteles",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-384-01-01",
+    "date_of_death": "-322-01-01",
+    "reflection": "Aristóteles describe la esperanza como una visión optimista del futuro, donde el sueño es la realidad deseada que aún no ha llegado.",
+    "tags": {
+      "es": ["esperanza", "sueño", "optimismo"],
+      "en": ["hope", "dream", "optimism"],
+      "fr": ["espoir", "rêve", "optimisme"],
+      "de": ["Hoffnung", "Traum", "Optimismus"],
+      "pt": ["esperança", "sonho", "otimismo"]
+    },
+    "historical_context": "Aristóteles fue uno de los filósofos más influyentes de la antigua Grecia, con ideas que han permeado diversas disciplinas a lo largo de la historia.",
+    "career": "Filósofo, Científico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Hope is a waking dream.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'espoir est un rêve éveillé.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Hoffnung ist ein wacher Traum.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A esperança é um sonho acordado.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El que tiene paciencia, obtendrá lo que desea.",
+    "author": "Benjamin Franklin",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1706-01-17",
+    "date_of_death": "1790-04-17",
+    "reflection": "Franklin subraya la importancia de la paciencia como una virtud clave para alcanzar los objetivos y deseos en la vida.",
+    "tags": {
+      "es": ["paciencia", "deseos", "objetivos"],
+      "en": ["patience", "desires", "goals"],
+      "fr": ["patience", "désirs", "objectifs"],
+      "de": ["Geduld", "Wünsche", "Ziele"],
+      "pt": ["paciência", "desejos", "objetivos"]
+    },
+    "historical_context": "Benjamin Franklin fue uno de los Padres Fundadores de los Estados Unidos y un hombre de gran intelecto, conocido por su sabiduría práctica.",
+    "career": "Político, Inventor, Científico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "He that can have patience can have what he will.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Celui qui a de la patience obtiendra ce qu'il désire.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wer Geduld hat, wird das bekommen, was er will.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Aquele que tem paciência, obterá o que deseja.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Todo lo que puedes imaginar es real.",
+    "author": "Pablo Picasso",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1881-10-25",
+    "date_of_death": "1973-04-08",
+    "reflection": "Picasso nos invita a ver la imaginación como una herramienta poderosa que puede moldear la realidad y crear nuevas posibilidades.",
+    "tags": {
+      "es": ["imaginación", "realidad", "creación"],
+      "en": ["imagination", "reality", "creation"],
+      "fr": ["imagination", "réalité", "création"],
+      "de": ["Phantasie", "Realität", "Schöpfung"],
+      "pt": ["imaginação", "realidade", "criação"]
+    },
+    "historical_context": "Pablo Picasso fue un pintor y escultor español que revolucionó el arte del siglo XX con su estilo innovador y su enfoque cubista.",
+    "career": "Pintor, Escultor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Everything you can imagine is real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Tout ce que tu peux imaginer est réel.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Alles, was du dir vorstellen kannst, ist real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Tudo o que você pode imaginar é real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La ciencia no conoce país, porque el conocimiento pertenece a la humanidad y es la antorcha que ilumina el mundo.",
+    "author": "Louis Pasteur",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1822-12-27",
+    "date_of_death": "1895-09-28",
+    "reflection": "Pasteur resalta el carácter universal de la ciencia y el conocimiento, destacando que su objetivo es mejorar la vida de todos los seres humanos.",
+    "tags": {
+      "es": ["ciencia", "conocimiento", "humanidad"],
+      "en": ["science", "knowledge", "humanity"],
+      "fr": ["science", "connaissance", "humanité"],
+      "de": ["Wissenschaft", "Wissen", "Menschheit"],
+      "pt": ["ciência", "conhecimento", "humanidade"]
+    },
+    "historical_context": "Louis Pasteur fue un químico y microbiólogo francés que realizó descubrimientos fundamentales en la prevención de enfermedades infecciosas y la pasteurización.",
+    "career": "Científico, Químico, Microbiólogo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Science knows no country, because knowledge belongs to humanity, and it is the torch which illuminates the world.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La science ne connaît pas de pays, car la connaissance appartient à l'humanité et c'est la torche qui éclaire le monde.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wissenschaft kennt kein Land, denn Wissen gehört der Menschheit und ist die Fackel, die die Welt erleuchtet.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A ciência não conhece país, pois o conhecimento pertence à humanidade, e é a tocha que ilumina o mundo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Es mejor ser rey de tu silencio que esclavo de tus palabras.",
+    "author": "William Shakespeare",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1564-04-23",
+    "date_of_death": "1616-04-23",
+    "reflection": "Shakespeare nos advierte sobre el poder de las palabras, sugiriendo que a veces el silencio es más valioso que hablar sin control.",
+    "tags": {
+      "es": ["silencio", "palabras", "control"],
+      "en": ["silence", "words", "control"],
+      "fr": ["silence", "mots", "contrôle"],
+      "de": ["Stille", "Worte", "Kontrolle"],
+      "pt": ["silêncio", "palavras", "controle"]
+    },
+    "historical_context": "William Shakespeare fue un dramaturgo y poeta inglés cuyas obras han tenido un impacto duradero en la literatura y la cultura global.",
+    "career": "Dramaturgo, Poeta",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "It is better to be king of your silence than slave of your words.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il vaut mieux être roi de son silence qu'esclave de ses mots.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es ist besser, der König deiner Stille zu sein als der Sklave deiner Worte.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "É melhor ser rei do seu silêncio do que escravo das suas palavras.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

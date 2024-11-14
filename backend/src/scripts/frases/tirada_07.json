@@ -1,0 +1,292 @@
+[
+  {
+    "text": "La mente es todo. En lo que piensas, te conviertes.",
+    "author": "Buda",
+    "alias": "Siddhartha Gautama",
+    "category": "Frase ilustre",
+    "date_of_birth": "563-04-08",
+    "date_of_death": "483-02-15",
+    "reflection": "Buda subraya la importancia de los pensamientos, ya que lo que albergamos en la mente influye profundamente en nuestra realidad.",
+    "tags": {
+      "es": ["mente", "pensamientos", "realidad"],
+      "en": ["mind", "thoughts", "reality"],
+      "fr": ["esprit", "pensées", "réalité"],
+      "de": ["Geist", "Gedanken", "Realität"],
+      "pt": ["mente", "pensamentos", "realidade"]
+    },
+    "historical_context": "Esta enseñanza proviene del budismo, una religión y filosofía que busca la iluminación a través del control de la mente y los deseos.",
+    "career": "Filósofo, Líder Espiritual",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The mind is everything. What you think, you become.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'esprit est tout. Ce que vous pensez, vous le devenez.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Geist ist alles. Was du denkst, wirst du.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A mente é tudo. O que você pensa, você se torna.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El amor no mira con los ojos, sino con el alma.",
+    "author": "William Shakespeare",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1564-04-23",
+    "date_of_death": "1616-04-23",
+    "reflection": "Shakespeare nos recuerda que el amor verdadero trasciende las apariencias físicas, centrándose en la conexión profunda entre las almas.",
+    "tags": {
+      "es": ["amor", "alma", "conexión"],
+      "en": ["love", "soul", "connection"],
+      "fr": ["amour", "âme", "connexion"],
+      "de": ["Liebe", "Seele", "Verbindung"],
+      "pt": ["amor", "alma", "conexão"]
+    },
+    "historical_context": "Esta frase proviene de 'El sueño de una noche de verano', una de las obras más populares de Shakespeare.",
+    "career": "Dramaturgo, Poeta",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Love looks not with the eyes, but with the mind.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'amour ne regarde pas avec les yeux, mais avec l'âme.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Liebe schaut nicht mit den Augen, sondern mit der Seele.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O amor não olha com os olhos, mas com a alma.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La mejor manera de predecir el futuro es inventarlo.",
+    "author": "Alan Kay",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1940-05-17",
+    "date_of_death": null,
+    "reflection": "Kay, un pionero en la informática, destaca que podemos crear el futuro que deseamos si tomamos la iniciativa y actuamos.",
+    "tags": {
+      "es": ["futuro", "innovación", "creación"],
+      "en": ["future", "innovation", "creation"],
+      "fr": ["avenir", "innovation", "création"],
+      "de": ["Zukunft", "Innovation", "Schöpfung"],
+      "pt": ["futuro", "inovação", "criação"]
+    },
+    "historical_context": "Alan Kay es uno de los padres de la computación personal, y sus ideas sobre la innovación han influido profundamente en la tecnología moderna.",
+    "career": "Científico Informático, Pionero de la Computación",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The best way to predict the future is to invent it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La meilleure façon de prédire l'avenir est de l'inventer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erfinden.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A melhor maneira de prever o futuro é inventá-lo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La paz comienza con una sonrisa.",
+    "author": "Madre Teresa de Calcuta",
+    "alias": "Santa Teresa de Calcuta",
+    "category": "Frase ilustre",
+    "date_of_birth": "1910-08-26",
+    "date_of_death": "1997-09-05",
+    "reflection": "Madre Teresa nos recuerda que la paz y la bondad comienzan con gestos simples y pequeños, como una sonrisa, que puede cambiar el mundo.",
+    "tags": {
+      "es": ["paz", "sonrisa", "bondad"],
+      "en": ["peace", "smile", "kindness"],
+      "fr": ["paix", "sourire", "bonté"],
+      "de": ["Frieden", "Lächeln", "Güte"],
+      "pt": ["paz", "sorriso", "bondade"]
+    },
+    "historical_context": "Madre Teresa fue una misionera y filántropa conocida por su trabajo con los más pobres en la India y su mensaje de amor y compasión.",
+    "career": "Misionera, Filántropa",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Peace begins with a smile.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La paix commence par un sourire.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Frieden beginnt mit einem Lächeln.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A paz começa com um sorriso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No hay nada permanente excepto el cambio.",
+    "author": "Heráclito",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-535-01-01",
+    "date_of_death": "-475-01-01",
+    "reflection": "Heráclito nos enseña que la única constante en la vida es el cambio, y que debemos aceptarlo y adaptarnos a él.",
+    "tags": {
+      "es": ["cambio", "impermanencia", "adaptación"],
+      "en": ["change", "impermanence", "adaptation"],
+      "fr": ["changement", "impermanence", "adaptation"],
+      "de": ["Veränderung", "Vergänglichkeit", "Anpassung"],
+      "pt": ["mudança", "impermanência", "adaptação"]
+    },
+    "historical_context": "Heráclito fue un filósofo presocrático griego conocido por su pensamiento sobre la naturaleza del cambio y el flujo constante de la realidad.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "There is nothing permanent except change.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il n'y a rien de permanent à part le changement.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es gibt nichts Permanentes außer der Veränderung.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Não há nada permanente, exceto a mudança.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

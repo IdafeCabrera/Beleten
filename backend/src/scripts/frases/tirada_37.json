@@ -1,0 +1,292 @@
+[
+  {
+    "text": "La imaginación es más importante que el conocimiento.",
+    "author": "Albert Einstein",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1879-03-14",
+    "date_of_death": "1955-04-18",
+    "reflection": "Einstein subraya que el conocimiento tiene límites, pero la imaginación no tiene fronteras, y es lo que impulsa la innovación y el progreso.",
+    "tags": {
+      "es": ["imaginación", "conocimiento", "innovación"],
+      "en": ["imagination", "knowledge", "innovation"],
+      "fr": ["imagination", "connaissance", "innovation"],
+      "de": ["Vorstellungskraft", "Wissen", "Innovation"],
+      "pt": ["imaginação", "conhecimento", "inovação"]
+    },
+    "historical_context": "Albert Einstein fue un físico teórico, famoso por su teoría de la relatividad, que transformó nuestra comprensión del universo.",
+    "career": "Científico, Físico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Imagination is more important than knowledge.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'imagination est plus importante que la connaissance.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die Vorstellungskraft ist wichtiger als das Wissen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A imaginação é mais importante que o conhecimento.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El hombre es mortal por sus temores e inmortal por sus deseos.",
+    "author": "Pitágoras",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-570-01-01",
+    "date_of_death": "-495-01-01",
+    "reflection": "Pitágoras plantea que el miedo limita y hace vulnerable al ser humano, mientras que los deseos y aspiraciones lo proyectan más allá de su finitud.",
+    "tags": {
+      "es": ["miedo", "deseo", "inmortalidad"],
+      "en": ["fear", "desire", "immortality"],
+      "fr": ["peur", "désir", "immortalité"],
+      "de": ["Angst", "Verlangen", "Unsterblichkeit"],
+      "pt": ["medo", "desejo", "imortalidade"]
+    },
+    "historical_context": "Pitágoras fue un filósofo y matemático griego cuyas ideas sobre los números y la armonía del universo influyeron profundamente en la filosofía occidental.",
+    "career": "Filósofo, Matemático",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Man is mortal by his fears and immortal by his desires.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'homme est mortel par ses peurs et immortel par ses désirs.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Mensch ist sterblich durch seine Ängste und unsterblich durch seine Wünsche.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O homem é mortal pelos seus medos e imortal pelos seus desejos.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La mejor manera de predecir el futuro es inventarlo.",
+    "author": "Alan Kay",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1940-05-17",
+    "date_of_death": null,
+    "reflection": "Kay nos recuerda que no debemos esperar a que el futuro simplemente suceda; tenemos la capacidad de moldearlo con nuestras acciones e innovaciones.",
+    "tags": {
+      "es": ["futuro", "innovación", "creación"],
+      "en": ["future", "innovation", "creation"],
+      "fr": ["avenir", "innovation", "création"],
+      "de": ["Zukunft", "Innovation", "Schöpfung"],
+      "pt": ["futuro", "inovação", "criação"]
+    },
+    "historical_context": "Alan Kay es un científico informático pionero, conocido por su trabajo en la creación de la interfaz gráfica de usuario y el desarrollo del concepto de computación personal.",
+    "career": "Científico, Informático",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The best way to predict the future is to invent it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La meilleure façon de prédire l'avenir est de l'inventer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die beste Art, die Zukunft vorherzusagen, ist, sie zu erfinden.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A melhor maneira de prever o futuro é inventá-lo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El éxito depende de la preparación previa, y sin ella seguro que llega el fracaso.",
+    "author": "Confucio",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-551-09-28",
+    "date_of_death": "-479-04-11",
+    "reflection": "Confucio enseña que el éxito no es un accidente, sino el resultado de una preparación constante y meticulosa.",
+    "tags": {
+      "es": ["preparación", "éxito", "fracaso"],
+      "en": ["preparation", "success", "failure"],
+      "fr": ["préparation", "succès", "échec"],
+      "de": ["Vorbereitung", "Erfolg", "Misserfolg"],
+      "pt": ["preparação", "sucesso", "fracasso"]
+    },
+    "historical_context": "Confucio fue un filósofo chino cuyas enseñanzas influyeron en la cultura y el pensamiento chino durante siglos, destacando la importancia de la ética y la educación.",
+    "career": "Filósofo, Maestro",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Success depends upon previous preparation, and without such preparation there is sure to be failure.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le succès dépend de la préparation préalable, et sans elle, l'échec est assuré.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Erfolg hängt von der vorherigen Vorbereitung ab, und ohne diese ist das Scheitern sicher.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O sucesso depende da preparação prévia, e sem ela o fracasso é certo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El valor de una idea radica en su uso.",
+    "author": "Thomas Edison",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1847-02-11",
+    "date_of_death": "1931-10-18",
+    "reflection": "Edison nos recuerda que las ideas no son valiosas solo por existir, sino por la capacidad de llevarlas a la acción y hacerlas útiles.",
+    "tags": {
+      "es": ["ideas", "valor", "acción"],
+      "en": ["ideas", "value", "action"],
+      "fr": ["idées", "valeur", "action"],
+      "de": ["Ideen", "Wert", "Handlung"],
+      "pt": ["ideias", "valor", "ação"]
+    },
+    "historical_context": "Thomas Edison fue un inventor y empresario estadounidense, conocido por desarrollar la bombilla eléctrica y por sus numerosas patentes que revolucionaron la tecnología.",
+    "career": "Inventor, Empresario",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The value of an idea lies in the using of it.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La valeur d'une idée réside dans son utilisation.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Wert einer Idee liegt in ihrer Anwendung.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O valor de uma ideia está em seu uso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

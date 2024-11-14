@@ -1,8 +1,9 @@
+// frontend/src/App.tsx
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
-import Frases from './pages/Frases';
+import PhrasesPage from './pages/PhrasePage';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,7 +36,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 import './theme/variables.css';
 import './theme/global.css';
-import Header from './components/Header';
+
 
 
 setupIonicReact();
@@ -48,8 +49,10 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
-        <Route exact path="/frases">
-          <Frases />
+
+      
+        <Route exact path="/phrases">
+          <PhrasesPage />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

@@ -1,0 +1,292 @@
+[
+  {
+    "text": "La felicidad no es algo hecho. Viene de tus propias acciones.",
+    "author": "Dalai Lama",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1935-07-06",
+    "date_of_death": null,
+    "reflection": "El Dalai Lama nos enseña que la verdadera felicidad proviene de las acciones positivas que realizamos, y no de las circunstancias externas.",
+    "tags": {
+      "es": ["felicidad", "acciones", "vida"],
+      "en": ["happiness", "actions", "life"],
+      "fr": ["bonheur", "actions", "vie"],
+      "de": ["Glück", "Handlungen", "Leben"],
+      "pt": ["felicidade", "ações", "vida"]
+    },
+    "historical_context": "El Dalai Lama es el líder espiritual del Tíbet y un defensor de la paz, la compasión y la felicidad a través del bienestar espiritual.",
+    "career": "Líder espiritual",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Happiness is not something ready made. It comes from your own actions.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le bonheur n'est pas quelque chose de fait. Il vient de tes propres actions.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Glück ist nicht etwas Vorgefertigtes. Es kommt von deinen eigenen Handlungen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El hombre está condenado a ser libre.",
+    "author": "Jean-Paul Sartre",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1905-06-21",
+    "date_of_death": "1980-04-15",
+    "reflection": "Sartre sostiene que la libertad es una condición inherente del ser humano, y con ella viene la responsabilidad de tomar decisiones en la vida.",
+    "tags": {
+      "es": ["libertad", "responsabilidad", "decisión"],
+      "en": ["freedom", "responsibility", "decision"],
+      "fr": ["liberté", "responsabilité", "décision"],
+      "de": ["Freiheit", "Verantwortung", "Entscheidung"],
+      "pt": ["liberdade", "responsabilidade", "decisão"]
+    },
+    "historical_context": "Jean-Paul Sartre fue un filósofo existencialista francés, conocido por sus ideas sobre la libertad, la responsabilidad individual y el existencialismo.",
+    "career": "Filósofo, Escritor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Man is condemned to be free.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'homme est condamné à être libre.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Mensch ist dazu verurteilt, frei zu sein.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O homem está condenado a ser livre.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Todo parece imposible hasta que se hace.",
+    "author": "Nelson Mandela",
+    "alias": "Madiba",
+    "category": "Frase ilustre",
+    "date_of_birth": "1918-07-18",
+    "date_of_death": "2013-12-05",
+    "reflection": "Mandela resalta que los obstáculos que parecen insuperables pueden ser superados con determinación y esfuerzo.",
+    "tags": {
+      "es": ["imposible", "esfuerzo", "determinación"],
+      "en": ["impossible", "effort", "determination"],
+      "fr": ["impossible", "effort", "détermination"],
+      "de": ["unmöglich", "Anstrengung", "Entschlossenheit"],
+      "pt": ["impossível", "esforço", "determinação"]
+    },
+    "historical_context": "Nelson Mandela fue un activista sudafricano que luchó contra el apartheid, pasó 27 años en prisión y luego se convirtió en el primer presidente negro de Sudáfrica.",
+    "career": "Activista, Político, Presidente",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "It always seems impossible until it's done.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Tout semble impossible jusqu'à ce que ce soit fait.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Alles scheint unmöglich, bis es erledigt ist.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Tudo parece impossível até que seja feito.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La mente lo es todo. En lo que piensas te conviertes.",
+    "author": "Buda",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-563-01-01",
+    "date_of_death": "-483-01-01",
+    "reflection": "Buda nos enseña que nuestros pensamientos determinan nuestra realidad y que lo que pensamos influye directamente en lo que somos.",
+    "tags": {
+      "es": ["mente", "pensamientos", "realidad"],
+      "en": ["mind", "thoughts", "reality"],
+      "fr": ["esprit", "pensées", "réalité"],
+      "de": ["Geist", "Gedanken", "Realität"],
+      "pt": ["mente", "pensamentos", "realidade"]
+    },
+    "historical_context": "Buda, el fundador del budismo, enseñó sobre el camino hacia la iluminación y la liberación del sufrimiento a través de la comprensión de la naturaleza de la mente.",
+    "career": "Líder espiritual",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The mind is everything. What you think you become.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'esprit est tout. Ce à quoi tu penses, tu le deviens.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der Geist ist alles. Was du denkst, wirst du.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A mente é tudo. No que você pensa, você se torna.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Las personas exitosas no son bendecidas; simplemente trabajan duro y luego tienen éxito a propósito.",
+    "author": "G.K. Nielson",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": null,
+    "date_of_death": null,
+    "reflection": "Nielson nos enseña que el éxito no es fruto de la suerte, sino del esfuerzo constante y la intención deliberada.",
+    "tags": {
+      "es": ["éxito", "trabajo duro", "esfuerzo"],
+      "en": ["success", "hard work", "effort"],
+      "fr": ["succès", "travail acharné", "effort"],
+      "de": ["Erfolg", "harte Arbeit", "Anstrengung"],
+      "pt": ["sucesso", "trabalho duro", "esforço"]
+    },
+    "historical_context": "G.K. Nielson es conocido por sus reflexiones sobre el éxito y la importancia del trabajo duro como factor clave para lograrlo.",
+    "career": null,
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Successful people aren't blessed; they simply work hard and succeed on purpose.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Les personnes à succès ne sont pas bénies; elles travaillent dur et réussissent délibérément.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Erfolgreiche Menschen sind nicht gesegnet; sie arbeiten einfach hart und haben absichtlich Erfolg.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "As pessoas de sucesso não são abençoadas; elas simplesmente trabalham duro e têm sucesso de propósito.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "text": "El hombre nunca sabe de lo que es capaz hasta que lo intenta.",
+    "author": "Charles Dickens",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1812-02-07",
+    "date_of_death": "1870-06-09",
+    "reflection": "Dickens nos recuerda que nuestros límites no los conocemos hasta que nos enfrentamos a desafíos, por lo que es vital intentarlo siempre.",
+    "tags": {
+      "es": ["capacidad", "esfuerzo", "intento"],
+      "en": ["capacity", "effort", "attempt"],
+      "fr": ["capacité", "effort", "tentative"],
+      "de": ["Fähigkeit", "Anstrengung", "Versuch"],
+      "pt": ["capacidade", "esforço", "tentativa"]
+    },
+    "historical_context": "Charles Dickens fue uno de los novelistas más influyentes de la era victoriana, autor de clásicos como 'Oliver Twist' y 'Cuento de Navidad'.",
+    "career": "Escritor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "A man never knows what he is capable of until he tries.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'homme ne sait jamais de quoi il est capable avant d'essayer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Ein Mensch weiß nie, wozu er fähig ist, bis er es versucht.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O homem nunca sabe do que é capaz até tentar.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No es el más fuerte de las especies el que sobrevive, ni el más inteligente, sino el que mejor se adapta al cambio.",
+    "author": "Charles Darwin",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1809-02-12",
+    "date_of_death": "1882-04-19",
+    "reflection": "Darwin nos enseña que la adaptabilidad es la clave para la supervivencia, ya que las especies que se ajustan mejor a los cambios en su entorno son las que perduran.",
+    "tags": {
+      "es": ["adaptación", "cambio", "supervivencia"],
+      "en": ["adaptation", "change", "survival"],
+      "fr": ["adaptation", "changement", "survie"],
+      "de": ["Anpassung", "Veränderung", "Überleben"],
+      "pt": ["adaptação", "mudança", "sobrevivência"]
+    },
+    "historical_context": "Charles Darwin fue un naturalista británico, famoso por su teoría de la evolución mediante selección natural, que revolucionó la biología moderna.",
+    "career": "Naturalista, Biólogo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "It is not the strongest of the species that survives, nor the most intelligent, but the one most adaptable to change.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Ce n'est pas le plus fort des espèces qui survit, ni le plus intelligent, mais celui qui s'adapte le mieux au changement.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es ist nicht die stärkste oder intelligenteste Art, die überlebt, sondern diejenige, die sich am besten an Veränderungen anpasst.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Não é o mais forte das espécies que sobrevive, nem o mais inteligente, mas o que melhor se adapta à mudança.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La simplicidad es la máxima sofisticación.",
+    "author": "Leonardo da Vinci",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1452-04-15",
+    "date_of_death": "1519-05-02",
+    "reflection": "Da Vinci resalta que la verdadera sofisticación no reside en la complejidad, sino en la capacidad de simplificar sin perder esencia o profundidad.",
+    "tags": {
+      "es": ["simplicidad", "sofisticación", "elegancia"],
+      "en": ["simplicity", "sophistication", "elegance"],
+      "fr": ["simplicité", "sophistication", "élégance"],
+      "de": ["Einfachheit", "Raffinesse", "Eleganz"],
+      "pt": ["simplicidade", "sofisticação", "elegância"]
+    },
+    "historical_context": "Leonardo da Vinci fue uno de los grandes genios del Renacimiento, famoso por sus aportes al arte, la ciencia y la ingeniería, y por obras como 'La Mona Lisa'.",
+    "career": "Artista, Científico, Ingeniero",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Simplicity is the ultimate sophistication.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La simplicité est la sophistication ultime.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Einfachheit ist die höchste Form der Raffinesse.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A simplicidade é a máxima sofisticação.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El conocimiento es poder.",
+    "author": "Francis Bacon",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1561-01-22",
+    "date_of_death": "1626-04-09",
+    "reflection": "Bacon destaca la capacidad del conocimiento para transformar vidas y sociedades, sugiriendo que con el conocimiento uno puede ejercer un control efectivo sobre su entorno.",
+    "tags": {
+      "es": ["conocimiento", "poder", "transformación"],
+      "en": ["knowledge", "power", "transformation"],
+      "fr": ["connaissance", "pouvoir", "transformation"],
+      "de": ["Wissen", "Macht", "Veränderung"],
+      "pt": ["conhecimento", "poder", "transformação"]
+    },
+    "historical_context": "Francis Bacon fue un filósofo y estadista inglés que promovió el método científico y la empiricidad como bases del conocimiento.",
+    "career": "Filósofo, Político",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Knowledge is power.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La connaissance, c'est le pouvoir.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wissen ist Macht.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O conhecimento é poder.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Haz las cosas lo más simples posible, pero no más simples.",
+    "author": "Albert Einstein",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1879-03-14",
+    "date_of_death": "1955-04-18",
+    "reflection": "Einstein sugiere que el verdadero desafío en la ciencia y la vida es simplificar sin sacrificar la esencia o el significado de las cosas.",
+    "tags": {
+      "es": ["simplicidad", "precisión", "esencia"],
+      "en": ["simplicity", "precision", "essence"],
+      "fr": ["simplicité", "précision", "essence"],
+      "de": ["Einfachheit", "Präzision", "Wesen"],
+      "pt": ["simplicidade", "precisão", "essência"]
+    },
+    "historical_context": "Albert Einstein revolucionó la física con la teoría de la relatividad, influyendo en nuestra comprensión del tiempo, el espacio y la energía.",
+    "career": "Científico, Físico",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Make things as simple as possible, but not simpler.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Rends les choses aussi simples que possible, mais pas plus simples.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Mache die Dinge so einfach wie möglich, aber nicht einfacher.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Faça as coisas tão simples quanto possível, mas não mais simples.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

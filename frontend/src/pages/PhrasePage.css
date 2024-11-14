@@ -1,0 +1,153 @@
+/* PhrasePage.css */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 200px;
+  }
+  
+  .center-content.error {
+    color: var(--ion-color-danger);
+  }
+  
+  .add-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ion-background-color);
+  }
+  
+  /* Estilos para el spinner */
+  .center-content ion-spinner {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  
+  /* Ajuste para los botones de vista */
+  .view-toggle-buttons {
+    padding-right: 16px;
+  }
+  
+  .view-toggle-buttons ion-button {
+    margin-left: 8px;
+  }
+  
+  /* Ajuste para modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    .add-button-container {
+      background: var(--ion-background-color-dark);
+    }
+  }
+
+  /* PhrasePage.css */
+/* Estilos para el skeleton */
+.skeleton-card {
+    margin: 16px;
+    --background: var(--ion-card-background);
+  }
+  
+  .skeleton-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .skeleton-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  ion-skeleton-text {
+    --border-radius: 9999px;
+    --background: rgba(var(--ion-color-primary-rgb), 0.065);
+    --background-rgb: var(--ion-color-primary-rgb);
+  }
+  
+  /* Estilos para el scroll infinito */
+  .infinite-scroll-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .infinite-scroll-content svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  
+  /* Ajustes para la vista grid en el skeleton */
+  .grid-view .skeleton-card {
+    margin: 8px;
+    height: 100%;
+  }
+  
+  /* Ajustes para la vista lista en el skeleton */
+  .list-view .skeleton-card {
+    margin: 8px 16px;
+  }
+  
+  /* Modo oscuro */
+  :root[mode=dark] ion-skeleton-text {
+    --background: rgba(var(--ion-color-primary-rgb), 0.11);
+  }
+
+  .view-toggle-btn {
+    position: relative;
+  }
+  
+  .view-toggle-btn::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .view-toggle-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Estilos para el scroll infinito */
+.infinite-scroll-custom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infinite-scroll-content {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevenir saltos de scroll */
+.phrase-list {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Mantener la posición del scroll durante la carga */
+.loading-more {
+  opacity: 0.7;
+  pointer-events: none;
+}

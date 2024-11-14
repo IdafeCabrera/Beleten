@@ -1,0 +1,292 @@
+[
+  {
+    "text": "El mayor error que puedes cometer en la vida es tener miedo de cometer errores.",
+    "author": "John C. Maxwell",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1947-02-20",
+    "date_of_death": null,
+    "reflection": "Maxwell nos recuerda que el miedo al fracaso puede impedirnos crecer y aprender, mientras que los errores son una parte esencial del camino hacia el éxito.",
+    "tags": {
+      "es": ["errores", "miedo", "crecimiento"],
+      "en": ["mistakes", "fear", "growth"],
+      "fr": ["erreurs", "peur", "croissance"],
+      "de": ["Fehler", "Angst", "Wachstum"],
+      "pt": ["erros", "medo", "crescimento"]
+    },
+    "historical_context": "John C. Maxwell es un autor, orador y pastor estadounidense, reconocido por sus libros sobre liderazgo y desarrollo personal.",
+    "career": "Autor, Orador, Pastor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "The greatest mistake you can make in life is to be continually fearing you will make one.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La plus grande erreur que vous puissiez faire dans la vie est d'avoir continuellement peur d'en faire une.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Der größte Fehler, den man im Leben machen kann, ist die ständige Angst, einen Fehler zu machen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O maior erro que você pode cometer na vida é ter medo de cometer erros.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No se puede desatar un nudo sin saber cómo está hecho.",
+    "author": "Aristóteles",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-384-01-01",
+    "date_of_death": "-322-01-01",
+    "reflection": "Aristóteles destaca la importancia del conocimiento y la comprensión profunda de un problema antes de intentar resolverlo.",
+    "tags": {
+      "es": ["conocimiento", "problemas", "soluciones"],
+      "en": ["knowledge", "problems", "solutions"],
+      "fr": ["connaissance", "problèmes", "solutions"],
+      "de": ["Wissen", "Probleme", "Lösungen"],
+      "pt": ["conhecimento", "problemas", "soluções"]
+    },
+    "historical_context": "Aristóteles fue un filósofo griego cuyas enseñanzas han influido en casi todos los aspectos del conocimiento humano, desde la ética hasta la ciencia.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "You cannot untie a knot without knowing how it was made.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Vous ne pouvez pas défaire un nœud sans savoir comment il a été fait.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Man kann keinen Knoten lösen, ohne zu wissen, wie er gemacht wurde.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Você não pode desfazer um nó sem saber como ele foi feito.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Todo lo que puedas imaginar es real.",
+    "author": "Pablo Picasso",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1881-10-25",
+    "date_of_death": "1973-04-08",
+    "reflection": "Picasso nos invita a explorar el poder de la imaginación y cómo aquello que podemos concebir en nuestra mente puede convertirse en realidad.",
+    "tags": {
+      "es": ["imaginación", "realidad", "creatividad"],
+      "en": ["imagination", "reality", "creativity"],
+      "fr": ["imagination", "réalité", "créativité"],
+      "de": ["Fantasie", "Realität", "Kreativität"],
+      "pt": ["imaginação", "realidade", "criatividade"]
+    },
+    "historical_context": "Pablo Picasso fue uno de los artistas más influyentes del siglo XX, conocido por su papel en el desarrollo del cubismo y otras corrientes artísticas.",
+    "career": "Artista",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Everything you can imagine is real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Tout ce que vous pouvez imaginer est réel.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Alles, was du dir vorstellen kannst, ist real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Tudo o que você pode imaginar é real.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El éxito no es el final, el fracaso no es fatal: lo que cuenta es el valor para continuar.",
+    "author": "Winston Churchill",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1874-11-30",
+    "date_of_death": "1965-01-24",
+    "reflection": "Churchill nos enseña que el verdadero éxito radica en la perseverancia y la capacidad de seguir adelante, sin importar los fracasos o logros momentáneos.",
+    "tags": {
+      "es": ["éxito", "fracaso", "perseverancia"],
+      "en": ["success", "failure", "perseverance"],
+      "fr": ["succès", "échec", "persévérance"],
+      "de": ["Erfolg", "Scheitern", "Ausdauer"],
+      "pt": ["sucesso", "fracasso", "perseverança"]
+    },
+    "historical_context": "Winston Churchill fue un estadista británico que lideró al Reino Unido durante la Segunda Guerra Mundial, conocido por su valentía y determinación.",
+    "career": "Político, Primer Ministro",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le succès n'est pas final, l'échec n'est pas fatal : ce qui compte, c'est le courage de continuer.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Erfolg ist nicht endgültig, Misserfolg ist nicht tödlich: Es ist der Mut, weiterzumachen, der zählt.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O sucesso não é o fim, o fracasso não é fatal: o que conta é a coragem de continuar.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Haz de tu vida un sueño, y de tu sueño una realidad.",
+    "author": "Antoine de Saint-Exupéry",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1900-06-29",
+    "date_of_death": "1944-07-31",
+    "reflection": "Saint-Exupéry nos invita a vivir de tal manera que nuestros sueños se conviertan en metas alcanzables y nuestra realidad se forje en función de ellos.",
+    "tags": {
+      "es": ["sueños", "realidad", "vida"],
+      "en": ["dreams", "reality", "life"],
+      "fr": ["rêves", "réalité", "vie"],
+      "de": ["Träume", "Realität", "Leben"],
+      "pt": ["sonhos", "realidade", "vida"]
+    },
+    "historical_context": "Antoine de Saint-Exupéry fue un escritor y aviador francés, autor de 'El principito', y su obra se centra en temas como la amistad, el amor y la responsabilidad.",
+    "career": "Escritor, Aviador",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Make your life a dream, and your dream a reality.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Fais de ta vie un rêve, et de ton rêve une réalité.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Mache dein Leben zu einem Traum und deinen Traum zur Realität.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Faça de sua vida um sonho, e de seu sonho uma realidade.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

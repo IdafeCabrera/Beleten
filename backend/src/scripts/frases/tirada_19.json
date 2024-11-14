@@ -1,0 +1,292 @@
+[
+  {
+    "text": "El conocimiento es poder.",
+    "author": "Francis Bacon",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1561-01-22",
+    "date_of_death": "1626-04-09",
+    "reflection": "Bacon nos recuerda que el conocimiento es una herramienta esencial para el desarrollo personal y la influencia en el mundo.",
+    "tags": {
+      "es": ["conocimiento", "poder", "sabiduría"],
+      "en": ["knowledge", "power", "wisdom"],
+      "fr": ["connaissance", "pouvoir", "sagesse"],
+      "de": ["Wissen", "Macht", "Weisheit"],
+      "pt": ["conhecimento", "poder", "sabedoria"]
+    },
+    "historical_context": "Francis Bacon fue un filósofo y estadista inglés, conocido por desarrollar el método científico y por sus ideas sobre la investigación empírica.",
+    "career": "Filósofo, Estadista",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Knowledge is power.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le savoir, c'est le pouvoir.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wissen ist Macht.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O conhecimento é poder.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "No hay atajos para llegar a los lugares que valen la pena.",
+    "author": "Beverly Sills",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1929-05-25",
+    "date_of_death": "2007-07-02",
+    "reflection": "Sills nos recuerda que el éxito y la satisfacción requieren esfuerzo constante y no se obtienen fácilmente.",
+    "tags": {
+      "es": ["esfuerzo", "perseverancia", "logro"],
+      "en": ["effort", "perseverance", "achievement"],
+      "fr": ["effort", "persévérance", "réalisation"],
+      "de": ["Anstrengung", "Beharrlichkeit", "Leistung"],
+      "pt": ["esforço", "perseverança", "conquista"]
+    },
+    "historical_context": "Beverly Sills fue una destacada cantante de ópera estadounidense que alcanzó fama mundial por su talento y dedicación al arte.",
+    "career": "Cantante de ópera",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "There are no shortcuts to any place worth going.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Il n'y a pas de raccourcis pour les endroits qui en valent la peine.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Es gibt keine Abkürzungen zu Orten, die sich lohnen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Não há atalhos para chegar a lugares que valem a pena.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Haz lo que puedas, con lo que tengas, donde estés.",
+    "author": "Theodore Roosevelt",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1858-10-27",
+    "date_of_death": "1919-01-06",
+    "reflection": "Roosevelt enfatiza que no es necesario esperar las circunstancias perfectas para actuar, sino que debemos utilizar lo que tenemos en el momento presente.",
+    "tags": {
+      "es": ["acción", "recursos", "presente"],
+      "en": ["action", "resources", "present"],
+      "fr": ["action", "ressources", "présent"],
+      "de": ["Handlung", "Ressourcen", "Gegenwart"],
+      "pt": ["ação", "recursos", "presente"]
+    },
+    "historical_context": "Theodore Roosevelt fue el 26.º presidente de los Estados Unidos y defensor de la conservación ambiental y las reformas sociales progresistas.",
+    "career": "Político, Escritor, Presidente",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Do what you can, with what you have, where you are.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Faites ce que vous pouvez, avec ce que vous avez, là où vous êtes.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Tu, was du kannst, mit dem, was du hast, dort, wo du bist.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Faça o que puder, com o que tiver, onde estiver.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "La libertad no tiene su valor en sí misma: hay que apreciarla por las cosas que con ella se consiguen.",
+    "author": "Ramón de Campoamor",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1817-09-24",
+    "date_of_death": "1901-02-11",
+    "reflection": "Campoamor señala que la libertad es un medio para alcanzar otros fines, y su valor reside en lo que nos permite lograr.",
+    "tags": {
+      "es": ["libertad", "valor", "logros"],
+      "en": ["freedom", "value", "achievements"],
+      "fr": ["liberté", "valeur", "réalisations"],
+      "de": ["Freiheit", "Wert", "Leistungen"],
+      "pt": ["liberdade", "valor", "conquistas"]
+    },
+    "historical_context": "Ramón de Campoamor fue un poeta y filósofo español conocido por sus ideas liberales y su capacidad de reflexión filosófica en su poesía.",
+    "career": "Poeta, Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Freedom has no value in itself: it must be appreciated for the things it allows us to achieve.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "La liberté n'a pas de valeur en soi : il faut l'apprécier pour les choses qu'elle permet de réaliser.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Freiheit hat keinen Wert an sich: Man muss sie für die Dinge schätzen, die man damit erreicht.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A liberdade não tem valor em si mesma: deve ser apreciada pelas coisas que com ela se consegue.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Quien tiene paciencia, obtendrá lo que desea.",
+    "author": "Benjamin Franklin",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1706-01-17",
+    "date_of_death": "1790-04-17",
+    "reflection": "Franklin subraya la importancia de la paciencia como una virtud esencial para alcanzar el éxito y lograr nuestros objetivos.",
+    "tags": {
+      "es": ["paciencia", "éxito", "deseo"],
+      "en": ["patience", "success", "desire"],
+      "fr": ["patience", "succès", "désir"],
+      "de": ["Geduld", "Erfolg", "Verlangen"],
+      "pt": ["paciência", "sucesso", "desejo"]
+    },
+    "historical_context": "Benjamin Franklin fue uno de los Padres Fundadores de los Estados Unidos, además de científico, inventor y diplomático.",
+    "career": "Político, Científico, Inventor",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "He who has patience will get what he desires.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Celui qui a de la patience obtiendra ce qu'il désire.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wer Geduld hat, wird das bekommen, was er will.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Aquele que tem paciência, obterá o que deseja.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]

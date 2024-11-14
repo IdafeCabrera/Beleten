@@ -1,3 +1,4 @@
+// frontend/src/components/Logo.tsx
 import React from 'react';
 import './Logo.css';
 import SVGComponent from './SVGComponent';

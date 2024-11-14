@@ -1,0 +1,292 @@
+[
+  {
+    "text": "La educación es el arma más poderosa que puedes usar para cambiar el mundo.",
+    "author": "Nelson Mandela",
+    "alias": "Madiba",
+    "category": "Frase ilustre",
+    "date_of_birth": "1918-07-18",
+    "date_of_death": "2013-12-05",
+    "reflection": "Mandela destaca que la educación es la clave para transformar la sociedad y promover un cambio duradero, empoderando a las personas para alcanzar su potencial.",
+    "tags": {
+      "es": ["educación", "cambio", "mundo"],
+      "en": ["education", "change", "world"],
+      "fr": ["éducation", "changement", "monde"],
+      "de": ["Bildung", "Veränderung", "Welt"],
+      "pt": ["educação", "mudança", "mundo"]
+    },
+    "historical_context": "Nelson Mandela fue un activista y político sudafricano que luchó contra el apartheid y se convirtió en el primer presidente negro de Sudáfrica.",
+    "career": "Político, Activista",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Education is the most powerful weapon which you can use to change the world.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "L'éducation est l'arme la plus puissante que vous puissiez utiliser pour changer le monde.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Bildung ist die mächtigste Waffe, die du nutzen kannst, um die Welt zu verändern.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "A educação é a arma mais poderosa que você pode usar para mudar o mundo.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El que tiene un porqué para vivir puede soportar casi cualquier cómo.",
+    "author": "Friedrich Nietzsche",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1844-10-15",
+    "date_of_death": "1900-08-25",
+    "reflection": "Nietzsche nos enseña que cuando tenemos una razón clara y poderosa para vivir, podemos superar cualquier adversidad o dificultad que se nos presente.",
+    "tags": {
+      "es": ["propósito", "vida", "superación"],
+      "en": ["purpose", "life", "overcoming"],
+      "fr": ["but", "vie", "dépassement"],
+      "de": ["Zweck", "Leben", "Überwindung"],
+      "pt": ["propósito", "vida", "superação"]
+    },
+    "historical_context": "Friedrich Nietzsche fue un filósofo alemán, cuyo trabajo abordó la moral, la religión y la cultura, y es conocido por su concepto del 'superhombre' y su crítica al cristianismo.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "He who has a why to live can bear almost any how.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Celui qui a un pourquoi pour vivre peut supporter presque tous les comment.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Wer ein Warum zum Leben hat, kann fast jedes Wie ertragen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Quem tem um porquê para viver, pode suportar quase qualquer como.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito.",
+    "author": "Albert Schweitzer",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1875-01-14",
+    "date_of_death": "1965-09-04",
+    "reflection": "Schweitzer subraya que la felicidad es la base para alcanzar el éxito, y que si disfrutas de lo que haces, el éxito llega como consecuencia natural.",
+    "tags": {
+      "es": ["éxito", "felicidad", "amor por el trabajo"],
+      "en": ["success", "happiness", "love for work"],
+      "fr": ["succès", "bonheur", "amour du travail"],
+      "de": ["Erfolg", "Glück", "Liebe zur Arbeit"],
+      "pt": ["sucesso", "felicidade", "amor pelo trabalho"]
+    },
+    "historical_context": "Albert Schweitzer fue un teólogo, músico y médico misionero franco-alemán, famoso por su trabajo humanitario y su filosofía de 'reverencia por la vida'.",
+    "career": "Médico, Filántropo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Erfolg ist nicht der Schlüssel zum Glück. Glück ist der Schlüssel zum Erfolg. Wenn du liebst, was du tust, wirst du erfolgreich sein.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "O sucesso não é a chave para a felicidade. A felicidade é a chave para o sucesso. Se você ama o que faz, terá sucesso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Las personas no son recordadas por el número de veces que fracasan, sino por el número de veces que tienen éxito.",
+    "author": "Thomas Edison",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "1847-02-11",
+    "date_of_death": "1931-10-18",
+    "reflection": "Edison recalca que, aunque el fracaso es parte del camino, lo que realmente importa es la perseverancia que lleva al éxito final, lo que deja una huella en la historia.",
+    "tags": {
+      "es": ["fracaso", "éxito", "perseverancia"],
+      "en": ["failure", "success", "perseverance"],
+      "fr": ["échec", "succès", "persévérance"],
+      "de": ["Scheitern", "Erfolg", "Durchhaltevermögen"],
+      "pt": ["fracasso", "sucesso", "perseverança"]
+    },
+    "historical_context": "Thomas Edison fue un prolífico inventor estadounidense que desarrolló muchos dispositivos que influyeron en la vida moderna, incluyendo la bombilla y el fonógrafo.",
+    "career": "Inventor, Empresario",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "People are not remembered for the number of times they fail, but for the number of times they succeed.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Les gens ne sont pas retenus pour le nombre de fois où ils échouent, mais pour le nombre de fois où ils réussissent.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Die Menschen werden nicht für die Anzahl der Male, die sie scheitern, in Erinnerung behalten, sondern für die Anzahl der Male, die sie erfolgreich sind.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "As pessoas não são lembradas pelo número de vezes que fracassam, mas pelo número de vezes que têm sucesso.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  },
+  {
+    "text": "Nuestra mayor gloria no es no caer nunca, sino levantarnos cada vez que caemos.",
+    "author": "Confucio",
+    "alias": null,
+    "category": "Frase ilustre",
+    "date_of_birth": "-551-09-28",
+    "date_of_death": "-479-04-11",
+    "reflection": "Confucio nos enseña que el verdadero éxito no está en evitar los fracasos, sino en nuestra capacidad para aprender de ellos y seguir adelante.",
+    "tags": {
+      "es": ["gloria", "caída", "superación"],
+      "en": ["glory", "fall", "overcoming"],
+      "fr": ["gloire", "chute", "dépassement"],
+      "de": ["Ruhm", "Fall", "Überwindung"],
+      "pt": ["glória", "queda", "superação"]
+    },
+    "historical_context": "Confucio fue un filósofo chino cuyas enseñanzas sobre la moral, el comportamiento y la responsabilidad social siguen siendo influyentes en la actualidad.",
+    "career": "Filósofo",
+    "author_image": null,
+    "default_background_image": "url_to_default_background_image",
+    "custom_background_image": null,
+    "submitted_by": "user_system",
+    "created_at": "2024-10-14T12:00:00Z",
+    "last_edited_by": null,
+    "last_edited_at": null,
+    "original_language": "es",
+    "translations": [
+      {
+        "language": "en",
+        "translated_text": "Our greatest glory is not in never falling, but in rising every time we fall.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "fr",
+        "translated_text": "Notre plus grande gloire n'est pas de ne jamais tomber, mais de nous relever chaque fois que nous tombons.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "de",
+        "translated_text": "Unsere größte Ehre liegt nicht darin, niemals zu fallen, sondern darin, jedes Mal wieder aufzustehen.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      },
+      {
+        "language": "pt",
+        "translated_text": "Nossa maior glória não está em nunca cair, mas em nos levantarmos a cada vez que caímos.",
+        "submitted_by": "user_system",
+        "last_edited_by": null,
+        "last_edited_at": null
+      }
+    ],
+    "is_verified": true,
+    "is_editable": false
+  }
+]
