@@ -226,10 +226,7 @@ const PhrasePage: React.FC = () => {
 
 
       </IonToolbar>
-                  <DesignFabSelector 
-  selectedDesign={selectedDesign}
-  onDesignChange={setSelectedDesign}
-/>
+
       {/* Solo mostrar PhraseStats cuando phrases está definido */}
       {phrases && phrases.length > 0 && 
     <PhraseStats 
