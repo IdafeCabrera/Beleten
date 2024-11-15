@@ -1,18 +1,22 @@
 // frontend/src/components/PhraseStats.tsx
 import React from 'react';
-import { IonCard, IonCardContent, IonIcon, IonText } from '@ionic/react';
+import { IonCard, IonCardContent, IonIcon, IonItem, IonLabel, IonText, IonToggle } from '@ionic/react';
 import { 
   documentTextOutline, 
   starOutline, 
   heartOutline,
-  languageOutline 
+  languageOutline, 
+  bookmarkOutline
 } from 'ionicons/icons';
 import { Phrase } from '../types/Phrase';
 import './PhraseStats.css';
+import PhraseSearch from './PhraseSearch';
 
 interface PhraseStatsProps {
   phrases: Phrase[];
 }
+
+
 
 const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
   // Cálculos de estadísticas con comprobaciones de nulo
@@ -25,13 +29,16 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
   };
 
   return (
+    
     <IonCard className="stats-card">
       <IonCardContent>
+      
         <div className="stats-container">
+          
           <div className="stat-item">
             <IonIcon icon={documentTextOutline} color="primary" />
             <div className="stat-info">
-              <IonText color="medium">Total</IonText>
+              {/* <IonText color="medium">Total</IonText> */}
               <IonText className="stat-number">{stats.total}</IonText>
             </div>
           </div>
@@ -39,7 +46,7 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
           <div className="stat-item">
             <IonIcon icon={starOutline} color="warning" />
             <div className="stat-info">
-              <IonText color="medium">Verificadas</IonText>
+              {/* <IonText color="medium">Verificadas</IonText> */}
               <IonText className="stat-number">{stats.verified}</IonText>
             </div>
           </div>
@@ -48,7 +55,7 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
             <div className="stat-item">
               <IonIcon icon={heartOutline} color="danger" />
               <div className="stat-info">
-                <IonText color="medium">Favoritas</IonText>
+                {/* <IonText color="medium">Favoritas</IonText> */}
                 <IonText className="stat-number">{stats.favorites}</IonText>
               </div>
             </div>
@@ -57,11 +64,25 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
           <div className="stat-item">
             <IonIcon icon={languageOutline} color="success" />
             <div className="stat-info">
-              <IonText color="medium">Traducidas</IonText>
+              {/* <IonText color="medium">Traducidas</IonText> */}
               <IonText className="stat-number">{stats.withTranslations}</IonText>
             </div>
           </div>
+
+
+
+          <div className="stat-item">
+                    <IonIcon icon={heartOutline} color="danger" />
+                    <div className="stat-info">
+                      {/* <IonText color="medium">Mis Favoritas</IonText> */}
+                      <div className="stat-number">0</div>
+                    </div>
+                  </div>
+                  
+
+
         </div>
+
       </IonCardContent>
     </IonCard>
   );

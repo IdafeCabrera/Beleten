@@ -8,6 +8,7 @@ export interface Translation {
 }
 
 export interface Phrase {
+  favorite: unknown;
   id: number;
   text: string;
   author: string;

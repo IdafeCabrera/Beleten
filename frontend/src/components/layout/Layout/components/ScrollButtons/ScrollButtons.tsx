@@ -40,7 +40,7 @@ export const ScrollButtons = memo<ScrollButtonsProps>(({
   <div className={`floating-buttons-container ${visible ? 'is-visible' : ''}`}>
    
     <div className="floating-buttons-wrapper">
-    <ExpandableFab buttons={fabButtons} vertical={true} />
+    {/* <ExpandableFab buttons={fabButtons} vertical={true} /> */}
       <IonFabButton
         size={BUTTON_CONFIG.SIZE}
         color={BUTTON_CONFIG.COLOR}
@@ -66,6 +66,7 @@ export const ScrollButtons = memo<ScrollButtonsProps>(({
       >
         <IonIcon icon={saveOutline} />
       </IonFabButton>
+      
       
       
     </div>

@@ -1,42 +1,64 @@
-/* PhraseStats.css */
 .stats-card {
-    margin: 16px;
-    border-radius: 12px;
-  }
-  
+  margin: 8px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  background: var(--ion-card-background);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-content-md {
+  -webkit-padding-start: 2px;
+  padding-inline-start: 2px;
+  -webkit-padding-end: 2px;
+  padding-inline-end: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  overflow-x: auto;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  min-width: fit-content;
+  gap: 8px;
+}
+
+.stat-item ion-icon {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stat-number {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--ion-color-primary);
+}
+
+@media (max-width: 480px) {
   .stats-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 8px;
-  }
-  
-  .stat-item {
-    display: flex;
-    align-items: center;
     gap: 8px;
   }
   
-  .stat-info {
-    display: flex;
-    flex-direction: column;
+  .stat-item {
+    padding: 8px;
   }
-  
-  .stat-number {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--ion-color-primary);
-  }
-  
-  /* Responsive */
-  @media (max-width: 576px) {
-    .stats-container {
-      flex-direction: column;
-      gap: 16px;
-    }
-    
-    .stat-item {
-      width: 100%;
-      justify-content: center;
-    }
-  }
+}

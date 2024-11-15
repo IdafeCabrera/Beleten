@@ -2,6 +2,7 @@
 import { Sequelize, DataTypes, Model } from 'sequelize';
 import { BaseModel } from './BaseModel';
 import Tag from './Tag';
+import User from './User';
 
 class Phrase extends BaseModel {
   addTag(tagRecord: Tag) {
@@ -57,10 +58,25 @@ class Phrase extends BaseModel {
     });
   }
 
-  static associate(models: any) {
-    this.belongsToMany(models.Tag, { through: 'phrase_tags', foreignKey: 'phraseId' });
+   static associate(models: any) {
+    this.belongsToMany(models.Tag, {
+       through: 'phrase_tags', 
+       foreignKey: 'phraseId' });
     
   }
 }
+
+/* static associate(models: any) {
+    this.belongsToMany(models.User, {
+      through: 'user_phrase_interactions',
+      foreignKey: 'phraseId',
+      as: 'users'
+    });
+    this.belongsToMany(models.Tag, { 
+      through: 'phrase_tags', 
+      foreignKey: 'phraseId' 
+    });
+  }
+}  */
 
 export default Phrase;
