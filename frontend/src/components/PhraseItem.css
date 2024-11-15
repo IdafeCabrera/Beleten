@@ -243,7 +243,7 @@ ion-content {
 
 /* PhraseItem.css */
 .phrase-id-badge {
-  position: absolute;
+  position: static;
   top: 8px;
   right: 8px;
   background: var(--ion-color-medium);
@@ -272,4 +272,161 @@ ion-content {
 .minimal-card .phrase-id-badge {
   background: var(--ion-color-light);
   color: var(--ion-color-medium);
+}
+
+.custom-card {
+  position: relative;
+  overflow: visible;
+}
+
+ion-fab {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 100;
+}
+
+ion-fab-button {
+  --background: var(--ion-color-primary);
+  --color: white;
+  width: 32px;
+  height: 32px;
+}
+
+ion-fab-list ion-fab-button {
+  margin: 4px 0;
+}
+
+.modal-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.modal-content .author {
+  font-style: italic;
+  color: var(--ion-color-medium);
+  margin-bottom: 2rem;
+}
+
+.modal-content h3 {
+  font-size: 1.2rem;
+  color: var(--ion-color-primary);
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  ion-fab-button {
+    width: 28px;
+    height: 28px;
+    --ionicon-stroke-width: 32px;
+  }
+}
+
+.action-buttons-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.05), transparent);
+  border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  width: 100%;
+}
+
+ion-card {
+  position: relative;
+}
+
+.action-buttons ion-button {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .action-buttons ion-button {
+    --padding-start: 4px;
+    --padding-end: 4px;
+    height: 28px;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  width: 100%;
+}
+
+.button-container .left-buttons,
+.button-container .right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.button-container .center-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+/* Estilos para los botones */
+.button-container ion-button {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  height: 36px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button-container {
+    padding: 4px;
+  }
+
+  .button-container ion-button {
+    --padding-start: 4px;
+    --padding-end: 4px;
+    height: 32px;
+  }
+}
+
+/* Para cuando el espacio es muy reducido */
+@media (max-width: 480px) {
+  .button-container {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .button-container .center-buttons {
+    order: -1;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+
+.center-buttons {
+  position: static;
+  transform: none;
+  order: -1;
+  width: 25%;
 }

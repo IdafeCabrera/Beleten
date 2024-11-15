@@ -43,19 +43,7 @@ const PhrasePage: React.FC = () => {
   );
   const [viewType, setViewType] = useState<"grid" | "list">("grid");
 
-  const toggleView = () => {
-    setViewType((currentView) => (currentView === "grid" ? "list" : "grid"));
-  };
 
-  // Función para obtener el icono y texto opuesto a la vista actual
-  const getToggleIcon = () => {
-    return viewType === "list" ? gridOutline : listOutline;
-  };
-  const getToggleText = () => {
-    return viewType === "list"
-      ? "Cambiar a vista cuadrícula"
-      : "Cambiar a vista lista";
-  };
 
   const {
     phrases,
@@ -180,20 +168,27 @@ const PhrasePage: React.FC = () => {
             Añadir Nueva Frase
           </IonButton>
         </div>
+        
       );
     }
 
     return (
       <>
-
-
         <div className="add-button-container">
           <IonButton onClick={() => openEditModal()}>
             <IonIcon icon={addOutline} slot="start" />
             Nueva Frase
           </IonButton>
         </div>
-
+        <div className="search-container">
+  <PhraseSearch 
+    phrases={phrases}
+    onSearch={(text, type) => {
+      // Implementa la lógica de búsqueda aquí
+      console.log('Searching:', text, 'by', type);
+    }}
+  />
+</div>
         <PhraseList
           phrases={sortedPhrases}
           design={selectedDesign}
@@ -202,7 +197,6 @@ const PhrasePage: React.FC = () => {
           onDelete={deletePhrase}
           isLoading={isLoading}
         />
-
         {isLoading && (
           <div className="loading-more">
             <PhraseSkeleton
@@ -225,31 +219,25 @@ const PhrasePage: React.FC = () => {
 
       </IonToolbar>
       <IonToolbar>
+{/*       <DesignSelector 
+          selectedDesign={selectedDesign}
+          onDesignChange={setSelectedDesign}
+        /> */}
 
 
-        <IonButtons slot="end" className="view-toggle-buttons">
-          <IonButton
-            onClick={toggleView}
-            className="view-toggle-btn"
-            title={getToggleText()} // Usando title nativo en lugar de IonTooltip
-            aria-label={getToggleText()} // Añadiendo aria-label para accesibilidad
-          >
-            <IonIcon icon={getToggleIcon()} className="toggle-icon" />
-
-          </IonButton>
-        </IonButtons>
       </IonToolbar>
-      <DesignFabSelector 
+                  <DesignFabSelector 
   selectedDesign={selectedDesign}
   onDesignChange={setSelectedDesign}
 />
       {/* Solo mostrar PhraseStats cuando phrases está definido */}
-      {phrases && phrases.length > 0 && <PhraseStats phrases={phrases} />}
-
-      <PhraseSortControls
-        currentSort={sortConfig}
-        onSortChange={handleSortChange}
-      />
+      {phrases && phrases.length > 0 && 
+    <PhraseStats 
+      phrases={phrases} 
+      viewType={viewType}
+      onViewChange={setViewType}
+    />
+  }
       {renderContent()}
       <IonInfiniteScroll
         onIonInfinite={handleInfiniteScroll}

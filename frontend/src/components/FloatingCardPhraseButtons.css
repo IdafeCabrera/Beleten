@@ -1,0 +1,50 @@
+.floating-buttons-container {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+  
+  .floating-buttons-container.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .floating-buttons-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+  
+  ion-fab-button {
+    --background: var(--ion-color-primary);
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Añadir hover effect al IonCard para mostrar los botones */
+  .custom-card {
+    position: relative;
+    overflow: visible !important;
+  }
+  
+  .custom-card:hover .floating-buttons-container {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .floating-buttons-wrapper {
+      gap: 2px;
+    }
+  
+    ion-fab-button {
+      width: 28px;
+      height: 28px;
+    }
+  }

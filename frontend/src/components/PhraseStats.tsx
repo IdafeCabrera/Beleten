@@ -1,12 +1,14 @@
 // frontend/src/components/PhraseStats.tsx
 import React from 'react';
-import { IonCard, IonCardContent, IonIcon, IonItem, IonLabel, IonText, IonToggle } from '@ionic/react';
+import { IonButton, IonCard, IonCardContent, IonIcon, IonItem, IonLabel, IonText, IonToggle } from '@ionic/react';
 import { 
   documentTextOutline, 
   starOutline, 
   heartOutline,
   languageOutline, 
-  bookmarkOutline
+  bookmarkOutline,
+  gridOutline,
+  listOutline
 } from 'ionicons/icons';
 import { Phrase } from '../types/Phrase';
 import './PhraseStats.css';
@@ -14,11 +16,13 @@ import PhraseSearch from './PhraseSearch';
 
 interface PhraseStatsProps {
   phrases: Phrase[];
+  viewType: "grid" | "list";
+  onViewChange: (viewType: "grid" | "list") => void;
 }
 
 
 
-const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
+const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [], viewType, onViewChange }) => {
   // Cálculos de estadísticas con comprobaciones de nulo
   const stats = {
     total: phrases?.length || 0,
@@ -26,6 +30,9 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
     favorites: phrases?.filter(p => p?.favorite)?.length || 0,
     withTranslations: phrases?.filter(p => p?.translations && p.translations.length > 0)?.length || 0,
     categories: new Set(phrases?.map(p => p?.category).filter(Boolean))?.size || 0
+  };
+  const toggleView = () => {
+    onViewChange(viewType === "grid" ? "list" : "grid");
   };
 
   return (
@@ -79,10 +86,17 @@ const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [] }) => {
                     </div>
                   </div>
                   
+                  <div className="view-toggle">
+            <IonButton fill="clear" onClick={toggleView}>
+              <IonIcon icon={viewType === "list" ? gridOutline : listOutline} />
+            </IonButton>
+          </div>
+
+
 
 
         </div>
-
+        
       </IonCardContent>
     </IonCard>
   );
