@@ -43,7 +43,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
   const [currentPage, setCurrentPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [totalPhrases, setTotalPhrases] = useState(0);
-  const ITEMS_PER_PAGE = 20;
+  const ITEMS_PER_PAGE = 25;
 
   const lastScrollPosition = useRef<number>(0);
   const loadingRef = useRef(false);
@@ -87,61 +87,54 @@ export const usePhraseController = (): PhraseControllerReturn => {
 
   
   const loadMorePhrases = async () => {
-    // Usar una ref para evitar carreras de condiciones
+    // Verifica si ya está en carga o si no hay más frases para cargar
     if (loadingRef.current || !hasMore) {
       console.log('⏭️ Skipping load:', { loading: loadingRef.current, hasMore });
       return;
     }
-
+  
     try {
+      // aqui estaba el error porque no seguía cargando las frases, era porque estaban inicializadas en true
       loadingRef.current = true;
-      setIsLoading(true);
-      lastScrollPosition.current = window.scrollY;
+      setIsLoading(false); // Marca como cargando
+  
       const nextPage = currentPage + 1;
-
       console.log(`📥 Loading page ${nextPage} (${phrases.length}/${totalPhrases} loaded)`);
+  
+      // Llamada a la API para cargar la siguiente página
       const data = await fetchPhrases(nextPage);
-
-      if (data.phrases && data.phrases.length > 0) {
+  
+      if (data.phrases.length > 0) {
         setPhrases(prevPhrases => {
           const existingIds = new Set(prevPhrases.map(p => p.id));
           const newPhrases = data.phrases.filter(p => !existingIds.has(p.id));
-          const updatedPhrases = [...prevPhrases, ...newPhrases];
-          
-          console.log(`✨ Added ${newPhrases.length} new phrases. Total: ${updatedPhrases.length}/${totalPhrases}`);
-          
-          // Actualizar hasMore basado en el total real
-          const remainingItems = totalPhrases - updatedPhrases.length;
-          console.log(`📊 Remaining items: ${remainingItems}`);
-          setHasMore(remainingItems > 0);
-          
-          return updatedPhrases;
+          return [...prevPhrases, ...newPhrases];
         });
-
+  
         setCurrentPage(nextPage);
-
-        // Restaurar posición del scroll
-        if (lastScrollPosition.current) {
-          requestAnimationFrame(() => {
-            window.scrollTo({
-              top: lastScrollPosition.current,
-              behavior: 'instant'
-            });
-          });
+        setTotalPhrases(data.pagination.totalItems);
+  
+        // Actualiza el estado de 'hasMore' en función de si hay más datos
+        if (data.pagination.hasMore) {
+          setHasMore(true);
+        } else {
+          setHasMore(false);
         }
+  
+        console.log(`✅ Load more completed. Total phrases: ${phrases.length}/${totalPhrases}`);
       } else {
         console.log('🏁 No more phrases available');
-        setHasMore(false);
+        setHasMore(false); // Marca como que no hay más frases para cargar
       }
     } catch (err) {
       console.error("❌ Error loading more phrases:", err);
       setError("Error al cargar más frases: " + err);
     } finally {
-      setIsLoading(false);
-      loadingRef.current = false;
+      setIsLoading(false); // Desmarca como cargando
+      loadingRef.current = false; // Restablece la bandera
     }
   };
-
+  
 
   useEffect(() => {
     const loadInitialPhrases = async () => {
@@ -153,7 +146,6 @@ export const usePhraseController = (): PhraseControllerReturn => {
         setTotalPhrases(data.pagination.totalItems);
         setHasMore(data.pagination.hasMore);
         setCurrentPage(1);
-        
         console.log(`🚀 Initial load complete: ${data.phrases.length}/${data.pagination.totalItems}`);
       } catch (err) {
         setError("Error al cargar las frases. " + err);
@@ -162,7 +154,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
         setIsLoading(false);
       }
     };
-
+  
     loadInitialPhrases();
   }, []);
 
