@@ -1,26 +1,33 @@
-// /backend/src/server.ts
+// backend/src/server.ts
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { sequelize } from './models/index';
+import { sequelize, syncDatabase } from './models/index';
 import phraseRoutes from './routes/phraseRoutes';
 
 const app = express();
+const isDevelopment = process.env.NODE_ENV === 'development';
+
+console.log(`Iniciando servidor en modo ${isDevelopment ? 'desarrollo' : 'producción'}`);
+
 app.use(cors());
 app.use(bodyParser.json());
-// RUTAS
 
 app.use('/api/phrases', phraseRoutes);
 
-// Iniciar la base de datos y sincronizar tablas 
-sequelize.sync({ alter: true }) // Al usar { force: true } eliminas y recreas las tablas
-  .then(() => {
-    console.log('Base de datos sincronizada correctamente.');
-    // Iniciar el servidor
-    app.listen(8080, () => {
-      console.log('Servidor corriendo en el puerto 8080');
+const startServer = async () => {
+  try {
+    await syncDatabase();
+    
+    const port = process.env.PORT || 8080;
+    app.listen(port, () => {
+      console.log(`🚀 Servidor corriendo en http://localhost:${port}`);
+      console.log(`🔧 Modo: ${isDevelopment ? 'Desarrollo' : 'Producción'}`);
     });
-  })
-  .catch((error) => {
-    console.error('Error al sincronizar la base de datos:', error);
-  });
+  } catch (error) {
+    console.error('❌ Error al iniciar el servidor:', error);
+    process.exit(1);
+  }
+};
+
+startServer();

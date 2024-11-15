@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const isDevelopment = process.env.NODE_ENV === 'development';
+
 const sequelize = new Sequelize(
   process.env.DB_NAME as string,
   process.env.DB_USER as string,
@@ -11,7 +13,8 @@ const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST,
     dialect: 'mysql',
-    logging: console.log
+    logging: isDevelopment ? console.log : false,
+     timezone: '+00:00'
   }
 );
 

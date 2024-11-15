@@ -1,16 +1,21 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon src/server.ts"
+    "start": "cross-env NODE_ENV=production ts-node src/server.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/server.ts",
+    "ionic:serve": "cross-env NODE_ENV=development ts-node src/server.ts",
+    "build": "tsc",
+    "typechecks": "tsc --noEmit",
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Backend for Beleten application",
   "dependencies": {
     "@capacitor/app": "6.0.1",
     "@capacitor/cli": "6.1.2",
@@ -32,6 +37,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.7",
     "sequelize-cli": "^6.6.2"
   }

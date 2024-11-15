@@ -17,6 +17,16 @@ interface Environment {
     return '/api';
   };
   
-  export const environment: Environment = {
+
+
+  export const environment = {
     apiUrl: getApiUrl(),
+    
+    isDevelopment: process.env.NODE_ENV === 'development',
+    isProduction: process.env.NODE_ENV === 'production',
+    database: {
+      syncForce: false, // Nunca usar force en producción
+      syncAlter: process.env.NODE_ENV === 'development',
+      logging: process.env.NODE_ENV === 'development',
+    }
   };

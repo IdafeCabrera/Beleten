@@ -1,5 +1,5 @@
 // backend/src/models/index.ts
-import sequelize from '../config/config'; // Conexión a la base de datos
+import sequelize from '../config/config';
 import User from './User';
 import Role from './Role';
 import Phrase from './Phrase';
@@ -8,39 +8,57 @@ import Tag from './Tag';
 import UserPhraseInteraction from './UserPhraseInteraction';
 import UserPhrasePermission from './UserPhrasePermission';
 
-// Inicializar modelos (el orden importa)
-console.log("Iniciando inicialización de los modelos");
+const isDevelopment = process.env.NODE_ENV === 'development';
 
-Role.initialize(sequelize); 
-console.log("Role inicializado");
+// Inicializar modelos inmediatamente
+console.log("🚀 Iniciando inicialización de modelos...");
 
-User.initialize(sequelize); 
-console.log("User inicializado");
+const models = [
+  Role,
+  User,
+  Phrase,
+  PhraseTags,
+  Tag,
+  UserPhraseInteraction,
+  UserPhrasePermission
+];
 
-Phrase.initialize(sequelize); 
-console.log("Phrase inicializado");
+// Inicializar todos los modelos
+for (const model of models) {
+  model.initialize(sequelize);
+  console.log(`✅ Modelo ${model.name} inicializado correctamente.`);
+}
 
-PhraseTags.initialize(sequelize); 
-console.log("PhraseTags inicializado");
-
-Tag.initialize(sequelize); 
-console.log("Tag inicializado");
-
-UserPhraseInteraction.initialize(sequelize);
-console.log("UserPhraseInteraction inicializado");
-
-UserPhrasePermission.initialize(sequelize);
-console.log("UserPhrasePermission inicializado");
-
-console.log("Modelos inicializados correctamente");
-
-// Establecer asociaciones después de inicializar los modelos
+// Establecer asociaciones
 User.associate({ Role, UserPhrasePermission, UserPhraseInteraction });
 Role.associate({ User });
-Phrase.associate({ Tag, UserPhraseInteraction, UserPhrasePermission });  // Asocia Phrase con Tag
-Tag.associate({ Phrase });  // Asocia Tag con Phrase
+Phrase.associate({ Tag, UserPhraseInteraction, UserPhrasePermission });
+Tag.associate({ Phrase });
 UserPhraseInteraction.associate({ User, Phrase });
 UserPhrasePermission.associate({ User, Phrase });
 
-// Exportar sequelize y modelos
-export { sequelize, User, UserPhraseInteraction, UserPhrasePermission, Role, Phrase, Tag };
+console.log("✨ Inicialización de modelos y asociaciones completada");
+
+// Función para sincronizar la base de datos
+export const syncDatabase = async () => {
+  if (isDevelopment) {
+    console.log('🔄 Sincronizando base de datos en modo desarrollo...');
+    await sequelize.sync({ alter: true });
+    console.log('✅ Base de datos sincronizada con alter:true');
+  } else {
+    console.log('🔍 Verificando conexión a base de datos...');
+    await sequelize.authenticate();
+    console.log('✅ Conexión a base de datos verificada');
+  }
+};
+
+// Exportar modelos y funciones
+export {
+  sequelize,
+  User,
+  UserPhraseInteraction,
+  UserPhrasePermission,
+  Role,
+  Phrase,
+  Tag
+};
