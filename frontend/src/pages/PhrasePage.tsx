@@ -1,8 +1,9 @@
 // frontend/src/pages/PhrasePage.tsx
 import React, { useRef, useState, useMemo } from "react";
 import PhraseSortControls from "../components/PhraseSortControls";
-import type { SortField, SortOrder } from "../components/PhraseSortControls";
+
 import DesignSelector from '../components/DesignSelector';
+import { SortField, SortOrder } from '../types/sorting';
 import {
   IonToolbar,
   IonTitle,
@@ -14,6 +15,7 @@ import {
   IonButton,
   IonInfiniteScroll,
   IonInfiniteScrollContent,
+  IonFabButton,
 } from "@ionic/react";
 
 import {
@@ -36,8 +38,10 @@ import ViewToggleButton from "../components/ViewToggleButton";
 import PhraseStats from "../components/PhraseStats";
 import PhraseSearch from "../components/PhraseSearch";
 import DesignFabSelector from "../components/DesignFabSelector";
+import PhraseSearchControls from "../components/PhraseSearchControls";
 
 const PhrasePage: React.FC = () => {
+  
   const [selectedDesign, setSelectedDesign] = useState<CardDesign>(
     CardDesign.CLASSIC
   );
@@ -175,12 +179,26 @@ const PhrasePage: React.FC = () => {
     return (
       <>
         <div className="add-button-container">
-          <IonButton onClick={() => openEditModal()}>
-            <IonIcon icon={addOutline} slot="start" />
-            Nueva Frase
-          </IonButton>
+          <IonFabButton className=".ion-button" onClick={() => openEditModal()}>
+            <IonIcon  icon={addOutline} />
+          </IonFabButton>
         </div>
-        <div className="search-container">
+       
+        <PhraseSearchControls
+  phrases={phrases}
+  onSearch={(text, type) => {
+    // Implementa la lógica de búsqueda
+    console.log('Searching:', text, 'by', type);
+  }}
+  onSortChange={handleSortChange}
+  currentSort={sortConfig}
+/>
+
+{/*         <PhraseSortControls
+        currentSort={sortConfig}
+        onSortChange={handleSortChange}
+      /> */}
+{/*         <div className="search-container">
   <PhraseSearch 
     phrases={phrases}
     onSearch={(text, type) => {
@@ -188,7 +206,7 @@ const PhrasePage: React.FC = () => {
       console.log('Searching:', text, 'by', type);
     }}
   />
-</div>
+</div> */}
         <PhraseList
           phrases={sortedPhrases}
           design={selectedDesign}

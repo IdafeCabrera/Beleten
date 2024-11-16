@@ -13,15 +13,7 @@
     color: var(--ion-color-danger);
   }
   
-  .add-button-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    
-  }
+
 
   .info-button-container {
     display: flex;
@@ -207,3 +199,20 @@
 :root[mode=dark] .phrases-info {
   background: var(--ion-color-step-100);
 }
+
+
+.add-button-container {
+
+  position: fixed;
+  bottom: 20px;  /* Distancia desde el borde inferior */
+  right: 25px;   /* Distancia desde el borde derecho */
+  z-index: 1001;  /* Asegúrate de que el botón esté por encima de otros elementos */
+  display: flex; /* Usamos flexbox para alinear el botón */
+  justify-content: flex-end;  /* Alinea el botón a la derecha */
+  align-items: flex-end;  /* Alinea el botón en la parte inferior */
+
+}
+
+
+
+

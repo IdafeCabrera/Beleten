@@ -58,6 +58,7 @@ const PhraseSortControls: React.FC<PhraseSortControlsProps> = ({
           <IonIcon icon={pricetagOutline} />
           <IonLabel>Categoría</IonLabel>
         </IonSegmentButton>
+        
       </IonSegment>
 
       <IonButtons slot="end">
