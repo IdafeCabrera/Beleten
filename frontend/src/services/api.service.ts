@@ -1,5 +1,6 @@
 // frontend/src/services/api.service.ts
-import { Capacitor } from '@capacitor/core';
+import { Capacitor, HttpHeaders } from '@capacitor/core';
+import { CapacitorHttp } from '@capacitor/core';
 // Interfaces
 interface ApiConfig {
   baseURL: string;
@@ -25,13 +26,7 @@ const getApiConfig = (): ApiConfig => {
   // Si estamos en Android y en desarrollo, usa la IP del emulador
   if (Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android') {
     return {
-      baseURL: 'http://10.0.2.2:8080/api' // Puerto donde corre tu backend
-    };
-  }
-  // Para desarrollo web
-  if (import.meta.env.DEV) {
-    return {
-      baseURL: '/api'
+      baseURL: 'http://192.168.86.29:8080/api' // Puerto donde corre tu backend
     };
   }
   // Para producción
@@ -53,6 +48,8 @@ class ApiService {
       baseURL: this.config.baseURL
     });
   }
+
+
 
   public static getInstance(): ApiService {
     if (!ApiService.instance) {
@@ -117,7 +114,7 @@ class ApiService {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
     };
-    
+
     // Aquí puedes agregar headers adicionales como autenticación
     // const token = localStorage.getItem('token');
     // if (token) {
@@ -127,6 +124,14 @@ class ApiService {
     return headers;
   }
 
+  private getNativeHeaders(): HttpHeaders {
+    // Convierte los headers al formato que espera CapacitorHttp
+    const headers = this.getHeaders();
+    return Object.fromEntries(
+      Object.entries(headers).map(([key, value]) => [key, value.toString()])
+    );
+  }
+
   public cancelRequest() {
     if (this.controller) {
       this.controller.abort();
@@ -134,7 +139,7 @@ class ApiService {
     }
   }
 
-  public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
+/*   public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
     try {
       const baseUrl = this.config.baseURL;
       const normalizedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
@@ -168,7 +173,49 @@ class ApiService {
       });
       throw error;
     }
-  }
+  } */
+
+    public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
+      try {
+        let urlString = this.buildUrl(endpoint);
+        if (params) {
+          const queryParams = new URLSearchParams();
+          Object.entries(params).forEach(([key, value]) => {
+            if (value !== undefined) {
+              queryParams.append(key, value.toString());
+            }
+          });
+          urlString += `?${queryParams.toString()}`;
+        }
+  
+        console.log('Making request to:', urlString);
+  
+        if (Capacitor.isNativePlatform()) {
+          // Usar CapacitorHttp para peticiones en nativo
+          const response = await CapacitorHttp.get({
+            url: urlString,
+            headers: this.getNativeHeaders()
+          });
+  
+          console.log('Native response:', response);
+          return response.data;
+        } else {
+          // Usar fetch para web
+          const response = await fetch(urlString, {
+            headers: this.getHeaders()
+          });
+  
+          return this.handleResponse<T>(response);
+        }
+      } catch (error) {
+        console.error('Request error:', {
+          error,
+          platform: Capacitor.getPlatform(),
+          isNative: Capacitor.isNativePlatform()
+        });
+        throw error;
+      }
+    }
 
 
   public async post<T>(endpoint: string, data: any): Promise<T> {
