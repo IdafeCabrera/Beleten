@@ -84,12 +84,13 @@ const PhraseSearchControls: React.FC<PhraseSearchControlsProps> = ({
   };
 
   return (
-<div className="search-controls1">
+    
+<div className="">
 
 
-
+<div className="search-container">
     {/* Text Controls */}
-    <div className="control-group">
+    <div className="">
       <IonButton fill="clear" size="small" onClick={() => handleSort('text')}>
         <IonIcon icon={currentSort.field === 'text' && currentSort.order === 'asc' ? arrowUp : arrowDown} />
       </IonButton>
@@ -123,9 +124,9 @@ const PhraseSearchControls: React.FC<PhraseSearchControlsProps> = ({
       <IonButton fill="clear" size="small" onClick={() => setSearchType('tag')}>
         <IonIcon icon={pricetagOutline} />
       </IonButton>
-
+      </div>
   </div>
-
+  <div className="search-container">
   {suggestions.length > 0 && (
     <IonList className="suggestions-list">
       {suggestions.map((suggestion, index) => (
@@ -153,7 +154,7 @@ const PhraseSearchControls: React.FC<PhraseSearchControlsProps> = ({
     debounce={300}
   />
 </div>
-
+</div>
 
   );
 };

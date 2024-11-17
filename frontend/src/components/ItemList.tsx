@@ -1,6 +1,6 @@
-// /src/components/ItemList.tsx
+// frontend/src/components/ItemList.tsx
 import React, { useEffect, useState } from 'react';
-import { getItems, toggleFavorite, searchItemsByTag } from '../services/api';
+import { apiService } from '../services/api.service';
 
 interface Item {
   id: number;
@@ -18,21 +18,33 @@ const ItemList: React.FC<{ collection: string }> = ({ collection }) => {
   }, [collection]);
 
   const loadItems = async () => {
-    const response = await getItems(collection);
-    setItems(response.data);
+    try {
+      const response = await apiService.get<Item[]>(`${collection}`);
+      setItems(response);
+    } catch (error) {
+      console.error('Error loading items:', error);
+    }
   };
 
   const handleFavorite = async (id: number) => {
-    await toggleFavorite(collection, id);
-    loadItems();
+    try {
+      await apiService.put(`${collection}/${id}/favorite`, {});
+      loadItems();
+    } catch (error) {
+      console.error('Error toggling favorite:', error);
+    }
   };
 
   const handleSearch = async () => {
-    if (searchTag) {
-      const response = await searchItemsByTag(collection, searchTag);
-      setItems(response.data);
-    } else {
-      loadItems();
+    try {
+      if (searchTag) {
+        const response = await apiService.get<Item[]>(`${collection}`, { tag: searchTag });
+        setItems(response);
+      } else {
+        loadItems();
+      }
+    } catch (error) {
+      console.error('Error searching items:', error);
     }
   };
 
@@ -42,14 +54,16 @@ const ItemList: React.FC<{ collection: string }> = ({ collection }) => {
         type="text"
         value={searchTag}
         onChange={(e) => setSearchTag(e.target.value)}
-        placeholder="Search by tag"
+        placeholder="Buscar por etiqueta"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}>Buscar</button>
       {items.map(item => (
         <div key={item.id}>
           <span>{item.title}</span>
           <span>{item.favorite ? '★' : '☆'}</span>
-          <button onClick={() => handleFavorite(item.id)}>Toggle Favorite</button>
+          <button onClick={() => handleFavorite(item.id)}>
+            Toggle Favorite
+          </button>
         </div>
       ))}
     </div>

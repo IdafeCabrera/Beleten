@@ -1,17 +1,5 @@
 /* PhrasePage.css */
-.center-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    min-height: 200px;
-  }
-  
-  .center-content.error {
-    color: var(--ion-color-danger);
-  }
+
   
 
 
@@ -75,10 +63,7 @@
   }
   
   /* Estilos para el scroll infinito */
-  .infinite-scroll-content {
-    text-align: center;
-    padding: 20px 0;
-  }
+
   
   .infinite-scroll-content svg {
     width: 20px;
@@ -135,11 +120,12 @@
   margin-bottom: 20px;
 }
 
-.infinite-scroll-custom {
-  margin: 1rem 0;
-}
+
 
 .infinite-scroll-content {
+  text-align: center;
+  padding: 20px 0;
+  margin: 1rem 0;
   min-height: 40px;
   display: flex;
   align-items: center;
@@ -152,11 +138,6 @@
   position: relative;
 }
 
-/* Mantener la posición del scroll durante la carga */
-.loading-more {
-  opacity: 0.7;
-  pointer-events: none;
-}
 
 
 /* PhrasePage.css */
@@ -175,10 +156,18 @@
   border-radius: 4px;
 }
 
+
+/* Mantener la posición del scroll durante la carga */
+
 .loading-more {
-  margin-top: 1rem;
   opacity: 0.7;
+  pointer-events: none;
+  margin-top: 1rem;
 }
+
+
+
+
 
 .center-content {
   display: flex;
@@ -187,6 +176,7 @@
   justify-content: center;
   padding: 2rem;
   text-align: center;
+  min-height: 200px;
 }
 
 .center-content.error {
@@ -213,6 +203,34 @@
 
 }
 
+.search-container {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
+
+
+}
+
+
+.center-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+.center-title ion-title {
+
+  word-wrap: break-word; /* O 'overflow-wrap: break-word;' */
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%; /* Asegura que se ajuste al ancho del contenedor */
+}
 
 

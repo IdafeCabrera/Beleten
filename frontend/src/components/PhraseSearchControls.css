@@ -1,75 +1,107 @@
 .search-controls {
-    padding: 228px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  padding: 16px; /* Reducido para más flexibilidad */
+  display: flex;
+  flex-direction: column; /* Permite centrar todo en un solo eje */
+  align-items: center;
+  justify-content: center; /* Asegura que esté centrado verticalmente */
+  gap: 8px;
+  width: 100%; /* Para que ocupe el ancho completo disponible */
+  max-width: 600px; /* Ancho máximo para mayor control */
+  margin: auto; /* Centra horizontalmente */
+}
+
+.search-bar {
+  flex: 1;
+  --border-radius: 8px;
+  --box-shadow: none;
+  --background: var(--ion-color-light);
+  margin: 0;
+  min-width: 150px;
+  width: 100%; /* Asegura que se ajuste al contenedor */
+}
+
+.controls-row {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  gap: 4px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+  padding: 4px;
+  height: 40px;
+  white-space: nowrap;
+  width: 100%; /* Asegura que use el ancho completo del contenedor */
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.control-group ion-button {
+  --padding-start: 4px;
+  --padding-end: 4px;
+  height: 32px;
+}
+
+.control-group ion-segment-button {
+  min-width: 40px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-top: 4px;
+  border-radius: 8px;
+  background: var(--ion-background-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-controls {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px; /* Reduce padding en pantallas más pequeñas */
   }
-  
+
   .search-bar {
-    flex: 1;
-    --border-radius: 8px;
-    --box-shadow: none;
-    --background: var(--ion-color-light);
-    margin: 0;
-    min-width: 150px;
+    min-width: 120px;
   }
-  
-  .controls-row {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    background: var(--ion-color-light);
-    border-radius: 8px;
-    padding: 4px;
-    height: 40px;
-    white-space: nowrap;
-  }
-  
-  .control-group {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-  }
-  
-  .control-group ion-button {
+
+  .control-group ion-button,
+  .control-group ion-segment-button {
+    min-width: 32px;
     --padding-start: 4px;
     --padding-end: 4px;
-    height: 32px;
   }
-  
-  .control-group ion-segment-button {
-    min-width: 40px;
-    --padding-start: 8px;
-    --padding-end: 8px;
-  }
-  
-  .suggestions-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    margin-top: 4px;
-    border-radius: 8px;
-    background: var(--ion-background-color);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .search-controls {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    }
-  
-    .search-bar {
-      min-width: 120px;
-    }
-  
-    .control-group ion-button,
-    .control-group ion-segment-button {
-      min-width: 32px;
-      --padding-start: 4px;
-      --padding-end: 4px;
-    }
-  }
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 16px; /* Opcional */
+  box-sizing: border-box;
+}
+
+
+
+
+.search-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
+
+
+}
+

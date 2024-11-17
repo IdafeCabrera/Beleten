@@ -1,5 +1,5 @@
 // frontend/src/services/api.service.ts
-
+import { Capacitor } from '@capacitor/core';
 // Interfaces
 interface ApiConfig {
   baseURL: string;
@@ -22,6 +22,19 @@ interface QueryParams {
 
 // Config
 const getApiConfig = (): ApiConfig => {
+  // Si estamos en Android y en desarrollo, usa la IP del emulador
+  if (Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android') {
+    return {
+      baseURL: 'http://10.0.2.2:8080/api' // Puerto donde corre tu backend
+    };
+  }
+  // Para desarrollo web
+  if (import.meta.env.DEV) {
+    return {
+      baseURL: '/api'
+    };
+  }
+  // Para producción
   return {
     baseURL: '/api'
   };
@@ -34,6 +47,11 @@ class ApiService {
 
   private constructor() {
     this.config = getApiConfig();
+    console.log('API Config:', {
+      platform: Capacitor.getPlatform(),
+      isNative: Capacitor.isNativePlatform(),
+      baseURL: this.config.baseURL
+    });
   }
 
   public static getInstance(): ApiService {
@@ -46,8 +64,16 @@ class ApiService {
   private buildUrl(endpoint: string): string {
     const baseUrl = this.config.baseURL;
     const normalizedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+    
+    // Para Android, usa la URL completa
+    if (Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android') {
+      return `${baseUrl}${normalizedEndpoint}`;
+    }
+    
+    // Para web, usa la ruta relativa
     return `${baseUrl}${normalizedEndpoint}`;
   }
+  
 
   private createError(message: string, status?: number, data?: any): ApiError {
     const error: ApiError = new Error(message);
@@ -110,31 +136,40 @@ class ApiService {
 
   public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
     try {
-      const url = new URL(this.buildUrl(endpoint), window.location.origin);
+      const baseUrl = this.config.baseURL;
+      const normalizedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+      let finalUrl = `${baseUrl}${normalizedEndpoint}`;
+
+      // Añadir parámetros de consulta si existen
       if (params) {
+        const queryParams = new URLSearchParams();
         Object.entries(params).forEach(([key, value]) => {
           if (value !== undefined) {
-            url.searchParams.append(key, value.toString());
+            queryParams.append(key, value.toString());
           }
         });
+        finalUrl += `?${queryParams.toString()}`;
       }
-  
-      console.log('Fetching:', url.toString());
+
+      console.log('Making request to:', finalUrl);
       
-      const response = await fetch(url.toString(), {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include'
+      const response = await fetch(finalUrl, {
+        headers: this.getHeaders(),
+        credentials: 'include',
+        mode: 'cors' // Añadir modo CORS explícito
       });
-  
+
       return this.handleResponse<T>(response);
     } catch (error) {
-      console.error('Request error:', error);
+      console.error('Request error:', {
+        error,
+        platform: Capacitor.getPlatform(),
+        isNative: Capacitor.isNativePlatform()
+      });
       throw error;
     }
   }
+
 
   public async post<T>(endpoint: string, data: any): Promise<T> {
     try {

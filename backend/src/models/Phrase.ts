@@ -1,10 +1,12 @@
 // backend/src/models/Phrase.ts
-import { Sequelize, DataTypes, Model } from 'sequelize';
+import { Sequelize, DataTypes} from 'sequelize';
 import { BaseModel } from './BaseModel';
 import Tag from './Tag';
-import User from './User';
+
 
 class Phrase extends BaseModel {
+  public filename!: string;
+
   addTag(tagRecord: Tag) {
     throw new Error('Method not implemented.');
   }
@@ -51,6 +53,11 @@ class Phrase extends BaseModel {
       original_language: { type: DataTypes.STRING, allowNull: true },
       is_verified: { type: DataTypes.BOOLEAN, defaultValue: false },
       is_editable: { type: DataTypes.BOOLEAN, defaultValue: true },
+      filename: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        comment: 'Nombre del archivo de imagen asociado a la frase'
+      }
     }, {
       sequelize,
       tableName: 'phrases',

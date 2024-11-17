@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Phrase } from "../types/Phrase";
 import { apiService } from "../services/api.service";
+import { Capacitor } from '@capacitor/core';
 
 // Actualizar las interfaces
 interface PaginationData {
@@ -50,12 +51,21 @@ export const usePhraseController = (): PhraseControllerReturn => {
 
   const fetchPhrases = async (page: number): Promise<ApiResponse> => {
     try {
+      console.log('Diagnostic Info:', {
+        platform: Capacitor.getPlatform(),
+        isNative: Capacitor.isNativePlatform(),
+        page,
+        itemsPerPage: ITEMS_PER_PAGE
+      });
+
       console.log(`⬇️ Fetching page ${page} with limit ${ITEMS_PER_PAGE}`);
       
       const response = await apiService.get<any>("phrases", {
         page,
         limit: ITEMS_PER_PAGE
       });
+
+      console.log('API Response:', response);
 
       if (Array.isArray(response)) {
         const total = response.length;
@@ -64,6 +74,13 @@ export const usePhraseController = (): PhraseControllerReturn => {
         const paginatedPhrases = response.slice(startIndex, endIndex);
         
         console.log(`📦 Page ${page}: Got ${paginatedPhrases.length} items (${startIndex}-${endIndex} of ${total})`);
+
+        console.log('Pagination Info:', {
+          total,
+          startIndex,
+          endIndex,
+          resultCount: paginatedPhrases.length
+        });
 
         return {
           phrases: paginatedPhrases,
@@ -79,7 +96,13 @@ export const usePhraseController = (): PhraseControllerReturn => {
 
       return response;
     } catch (err) {
-      console.error("❌ Error fetching phrases:", err);
+      console.error("❌ Error fetching phrases:", {
+        error: err,
+        platform: Capacitor.getPlatform(),
+        isNative: Capacitor.isNativePlatform(),
+        endpoint: 'phrases',
+        params: { page, limit: ITEMS_PER_PAGE }
+      });
       throw new Error("Error al cargar las frases. " + err);
     }
   };
@@ -139,17 +162,35 @@ export const usePhraseController = (): PhraseControllerReturn => {
   useEffect(() => {
     const loadInitialPhrases = async () => {
       try {
+        console.log('🚀 Starting initial load...', {
+          platform: Capacitor.getPlatform(),
+          isNative: Capacitor.isNativePlatform()
+        });
+
         setIsLoading(true);
         setError(null);
+
         const data = await fetchPhrases(1);
         setPhrases(data.phrases);
+
         setTotalPhrases(data.pagination.totalItems);
         setHasMore(data.pagination.hasMore);
         setCurrentPage(1);
-        console.log(`🚀 Initial load complete: ${data.phrases.length}/${data.pagination.totalItems}`);
+
+        console.log('🚀 Initial load complete:', {
+          phrasesCount: data.phrases.length,
+          totalItems: data.pagination.totalItems,
+          hasMore: data.pagination.hasMore
+        });
+
+
       } catch (err) {
+        console.error("❌ Error loading initial phrases:", {
+          error: err,
+          platform: Capacitor.getPlatform(),
+          isNative: Capacitor.isNativePlatform()
+        });
         setError("Error al cargar las frases. " + err);
-        console.error("❌ Error loading initial phrases:", err);
       } finally {
         setIsLoading(false);
       }

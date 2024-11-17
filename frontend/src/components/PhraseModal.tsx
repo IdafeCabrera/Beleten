@@ -10,7 +10,7 @@ import {
   IonSelect,
   IonSelectOption,
   IonContent,
-  IonHeader,
+
   IonToolbar,
   IonTitle,
   IonButtons,
@@ -103,14 +103,6 @@ const PhraseModal: React.FC<PhraseModalProps> = ({ isOpen, phrase, onClose, onSa
       input.value = '';
     }
   };
-
-  // const handleKeyDown = (e: CustomEvent<KeyboardEvent>) => {
-  //   const input = e.target as HTMLIonInputElement;
-  //   if (e.detail.key === 'Enter' && input.value) {
-  //     setTagArray([...tagArray, input.value.toString().trim()]);
-  //     input.value = '';
-  //   }
-  // };
 
   const handleRemoveTag = (indexToRemove: number) => {
     setTagArray(tagArray.filter((_, index) => index !== indexToRemove));

@@ -183,7 +183,7 @@ const PhrasePage: React.FC = () => {
             <IonIcon  icon={addOutline} />
           </IonFabButton>
         </div>
-       
+      
         <PhraseSearchControls
   phrases={phrases}
   onSearch={(text, type) => {
@@ -194,19 +194,9 @@ const PhrasePage: React.FC = () => {
   currentSort={sortConfig}
 />
 
-{/*         <PhraseSortControls
-        currentSort={sortConfig}
-        onSortChange={handleSortChange}
-      /> */}
-{/*         <div className="search-container">
-  <PhraseSearch 
-    phrases={phrases}
-    onSearch={(text, type) => {
-      // Implementa la lógica de búsqueda aquí
-      console.log('Searching:', text, 'by', type);
-    }}
-  />
-</div> */}
+
+
+
         <PhraseList
           phrases={sortedPhrases}
           design={selectedDesign}
@@ -230,20 +220,16 @@ const PhrasePage: React.FC = () => {
 
   return (
     <Layout>
-      <IonToolbar>
-        <IonTitle>
-          Frases célebres, pensamientos, palabras y citas de la vida.
-        </IonTitle>
+        
+        <IonToolbar>
+    <div className="center-title">
+      <IonTitle className="center-title">
+        Frases célebres, pensamientos, palabras y citas de la vida.
+      </IonTitle>
+    </div>
+  </IonToolbar>
+ 
 
-      </IonToolbar>
-      <IonToolbar>
-{/*       <DesignSelector 
-          selectedDesign={selectedDesign}
-          onDesignChange={setSelectedDesign}
-        /> */}
-
-
-      </IonToolbar>
 
       {/* Solo mostrar PhraseStats cuando phrases está definido */}
       {phrases && phrases.length > 0 && 

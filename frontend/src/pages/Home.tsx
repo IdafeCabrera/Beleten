@@ -47,6 +47,7 @@ import {
 import IonCardWelcome from "../components/Cards/IonCardWelcome";
 import Menu from "../components/Menu";
 import Logo from "../components/Logo";
+import CameraClipboardTest from "../components/CameraClipboardTest";
 
 const menuItems: MenuItem[] = [
   { icon: home, text: "Inicio", url: "/home" },
@@ -155,6 +156,10 @@ const Home: React.FC = () => {
               </IonButton>
             </IonCard>
           </div>
+          <IonContent>
+    <CameraClipboardTest />
+    {/* Resto de tu contenido */}
+  </IonContent>
           </Layout>
 
     
