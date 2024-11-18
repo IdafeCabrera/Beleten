@@ -1,5 +1,5 @@
 // backend/src/routes/phraseRoutes.ts
-import { Router, Request, Response, NextFunction } from 'express';
+import { Router, Request, Response, NextFunction, RequestHandler } from 'express';
 import { ParamsDictionary } from 'express-serve-static-core';
 import Phrase from '../models/Phrase';
 import { GenericController } from '../controllers/GenericController';
@@ -16,6 +16,29 @@ interface ImageUploadResponse {
   message: string;
   filename: string;
 }
+
+// Manejador para imágenes
+const serveImage = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const filename = req.params.filename;
+    const imagePath = path.join(__dirname, '../../public/images', filename);
+    
+    if (!fs.existsSync(imagePath)) {
+      res.status(404).json({ 
+        message: 'Imagen no encontrada',
+        filename: ''
+      });
+      return;
+    }
+
+    res.setHeader('Content-Type', 'image/jpeg');
+    res.setHeader('Cache-Control', 'public, max-age=31536000');
+    res.sendFile(imagePath);
+  } catch (error) {
+    next(error);
+  }
+};
+
 
 // Tipo para el manejador de la ruta de imagen
 type ImageUploadHandler = (
@@ -83,25 +106,22 @@ router.post(
       const phrase = await Phrase.findByPk(phraseId);
 
       if (!phrase) {
-        res.status(404).json({ 
+        return res.status(404).json({ 
           message: 'Frase no encontrada',
           filename: ''
         });
-        return;
       }
 
       if (!req.file) {
-        res.status(400).json({ 
+        return res.status(400).json({ 
           message: 'No se ha proporcionado ninguna imagen',
           filename: ''
         });
-        return;
       }
 
-      // Construir la ruta de la imagen
       const imageUrl = `/images/${req.file.filename}`;
 
-      // Si ya existe una imagen anterior, eliminarla
+      // Limpiar imagen anterior
       if (phrase.filename) {
         const oldImagePath = path.join(__dirname, '../../public', phrase.filename);
         if (fs.existsSync(oldImagePath)) {
@@ -109,35 +129,23 @@ router.post(
         }
       }
 
-      // Actualizar la frase con la nueva ruta de la imagen
-      await phrase.update({
-        filename: imageUrl
-      });
+      await phrase.update({ filename: imageUrl });
 
-      res.status(200).json({
+      // Establecer headers para evitar problemas de caché
+      res.setHeader('Content-Type', 'application/json');
+      res.setHeader('Cache-Control', 'no-cache');
+      
+      return res.json({
         message: 'Imagen subida correctamente',
         filename: imageUrl
       });
     } catch (error) {
-      console.error('Error al subir la imagen:', error);
-      next(error);
+      console.error('Error al subir imagen:', error);
+      return next(error);
     }
   }) as ImageUploadHandler
 );
 
-// Ruta para servir imágenes
-router.get('/images/:filename', (req: Request, res: Response) => {
-  const filename = req.params.filename;
-  const imagePath = path.join(__dirname, '../../public/images', filename);
-  
-  if (fs.existsSync(imagePath)) {
-    res.sendFile(imagePath);
-  } else {
-    res.status(404).json({ 
-      message: 'Imagen no encontrada',
-      filename: ''
-    });
-  }
-});
+router.get('/images/:filename', serveImage);
 
 export default router;

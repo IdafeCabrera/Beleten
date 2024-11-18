@@ -1,6 +1,8 @@
 // frontend/src/services/photo.service.ts
 import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
 import { toastService } from './toast.service';
+import { config } from '../config/config';
+import { CapacitorHttp } from '@capacitor/core';
 
 export class PhotoService {
   public async takePhoto(): Promise<Photo> {
@@ -35,50 +37,43 @@ export class PhotoService {
 
   public async uploadImage(phraseId: number, photo: Photo): Promise<string> {
     try {
-      console.log('📤 Iniciando subida de imagen para frase:', phraseId);
-      
-      const formData = new FormData();
-      
-      if (photo.base64String) {
-        // Convertir Base64 a Blob
-        const byteString = atob(photo.base64String);
-        const ab = new ArrayBuffer(byteString.length);
-        const ia = new Uint8Array(ab);
-        
-        for (let i = 0; i < byteString.length; i++) {
-          ia[i] = byteString.charCodeAt(i);
-        }
-        
-        const blob = new Blob([ab], { type: 'image/jpeg' });
-        formData.append('file', blob, `phrase_${phraseId}_${Date.now()}.jpg`);
-      } else if (photo.webPath) {
-        const response = await fetch(photo.webPath);
-        const blob = await response.blob();
-        formData.append('file', blob, `phrase_${phraseId}_${Date.now()}.jpg`);
-      } else {
-        throw new Error('No se encontró contenido de imagen válido');
+      if (!photo.base64String) {
+        throw new Error('No base64 data available');
       }
 
-      console.log('📤 Enviando formData al servidor...');
+      // Crear un formData nativo
+      const formData = new FormData();
       
-      const uploadResponse = await fetch(`/api/phrases/${phraseId}/image`, {
+      // Convertir base64 a blob
+      const byteCharacters = atob(photo.base64String.split(',')[1] || photo.base64String);
+      const byteNumbers = new Array(byteCharacters.length);
+      
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      
+      const byteArray = new Uint8Array(byteNumbers);
+      const blob = new Blob([byteArray], { type: 'image/jpeg' });
+      
+      formData.append('file', blob, 'photo.jpg');
+
+      // Subir usando fetch nativo
+      const uploadUrl = `${config.baseUrl}/api/phrases/${phraseId}/image`;
+      const response = await fetch(uploadUrl, {
         method: 'POST',
         body: formData
       });
 
-      if (!uploadResponse.ok) {
-        throw new Error(`Error en la subida: ${uploadResponse.statusText}`);
+      if (!response.ok) {
+        throw new Error(`Upload failed: ${response.status}`);
       }
 
-      const result = await uploadResponse.json();
-      console.log('✅ Imagen subida correctamente:', result);
-      
-      return result.filename;
+      const data = await response.json();
+      return data.filename;
     } catch (error) {
-      console.error('❌ Error al subir la imagen:', error);
+      console.error('Upload error:', error);
       throw error;
     }
-  }
-}
+  }  }
 
 export const photoService = new PhotoService();

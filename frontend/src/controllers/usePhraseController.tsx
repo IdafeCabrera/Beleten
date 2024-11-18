@@ -216,7 +216,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
     setIsModalOpen(false);
     setCurrentPhrase(null);
   };
-
+  // @@@@@@CORREGIR arreglar que cuando scroll abajo del todo subes y creas una nueva frase, luego ya no carga mas porque se cree que ya esta todo scroleado
   const savePhrase = async (phraseData: Partial<Phrase> & { photo?: Photo }) => {
     try {
       setError(null);

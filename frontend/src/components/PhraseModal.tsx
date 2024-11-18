@@ -37,6 +37,7 @@ import { camera, images } from "ionicons/icons";
 import { Photo } from "@capacitor/camera";
 import { photoService } from "../services/photo.service";
 import { toastService } from "../services/toast.service";
+import { config } from '../config/config';
 
 interface PhraseModalProps {
   isOpen: boolean;
@@ -156,6 +157,8 @@ const PhraseModal: React.FC<PhraseModalProps> = ({
 
   useEffect(() => {
     if (phrase) {
+
+
       const formState = {
         text: phrase.text || "",
         author: phrase.author || "",
@@ -168,7 +171,17 @@ const PhraseModal: React.FC<PhraseModalProps> = ({
       setAuthor(formState.author);
       setCategory(formState.category);
       setTagArray(formState.tagArray);
-      setImageFile(formState.imageFile);
+
+      const imageUrl = config.getImageUrl(phrase.filename);
+      setImageFile(imageUrl);
+      console.log('🖼️ URL de imagen configurada:', imageUrl);
+
+
+      if (phrase.filename) {
+        const imageUrl = config.getImageUrl(phrase.filename);
+        console.log('🖼️ URL de imagen configurada:', imageUrl);
+        setImageFile(imageUrl);
+      }
 
       initialFormState.current = formState;
     } else {

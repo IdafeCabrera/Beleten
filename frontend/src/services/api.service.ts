@@ -1,7 +1,5 @@
 // frontend/src/services/api.service.ts
-import { Capacitor, HttpHeaders } from '@capacitor/core';
-import { CapacitorHttp } from '@capacitor/core';
-// Interfaces
+import { Capacitor, CapacitorHttp, HttpHeaders } from '@capacitor/core';
 interface ApiConfig {
   baseURL: string;
 }
@@ -23,16 +21,10 @@ interface QueryParams {
 
 // Config
 const getApiConfig = (): ApiConfig => {
-  // Si estamos en Android y en desarrollo, usa la IP del emulador
-  if (Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android') {
-    return {
-      baseURL: 'http://192.168.86.29:8080/api' // Puerto donde corre tu backend
-    };
-  }
-  // Para producción
-  return {
-    baseURL: '/api'
-  };
+  const baseURL = Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android'
+    ? 'http://192.168.86.29:8080/api'
+    : '/api';
+  return { baseURL };
 };
 
 class ApiService {
@@ -139,41 +131,7 @@ class ApiService {
     }
   }
 
-/*   public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
-    try {
-      const baseUrl = this.config.baseURL;
-      const normalizedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
-      let finalUrl = `${baseUrl}${normalizedEndpoint}`;
 
-      // Añadir parámetros de consulta si existen
-      if (params) {
-        const queryParams = new URLSearchParams();
-        Object.entries(params).forEach(([key, value]) => {
-          if (value !== undefined) {
-            queryParams.append(key, value.toString());
-          }
-        });
-        finalUrl += `?${queryParams.toString()}`;
-      }
-
-      console.log('Making request to:', finalUrl);
-      
-      const response = await fetch(finalUrl, {
-        headers: this.getHeaders(),
-        credentials: 'include',
-        mode: 'cors' // Añadir modo CORS explícito
-      });
-
-      return this.handleResponse<T>(response);
-    } catch (error) {
-      console.error('Request error:', {
-        error,
-        platform: Capacitor.getPlatform(),
-        isNative: Capacitor.isNativePlatform()
-      });
-      throw error;
-    }
-  } */
 
     public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
       try {
@@ -218,53 +176,57 @@ class ApiService {
     }
 
 
-  public async post<T>(endpoint: string, data: any): Promise<T> {
-    try {
-      this.controller = new AbortController();
-
-      const response = await fetch(this.buildUrl(endpoint), {
-        method: 'POST',
-        headers: this.getHeaders(),
-        body: JSON.stringify(data),
-        signal: this.controller.signal,
-        credentials: 'include'
-      });
-
-      return this.handleResponse<T>(response);
-    } catch (error) {
-      if (error instanceof Error) {
-        if (error.name === 'AbortError') {
-          throw this.createError('Solicitud cancelada', 499);
+    public async post<T>(endpoint: string, data: any): Promise<T> {
+      try {
+        const url = this.buildUrl(endpoint);
+        if (Capacitor.isNativePlatform()) {
+          const response = await CapacitorHttp.post({
+            url,
+            data,
+            headers: this.getNativeHeaders()
+          });
+          return response.data;
+        } else {
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: this.getHeaders(),
+            body: JSON.stringify(data)
+          });
+          return this.handleResponse<T>(response);
         }
-        throw this.createError(error.message);
+      } catch (error) {
+        console.error('POST error:', error);
+        throw this.createError("");
       }
-      throw this.createError('Error desconocido');
     }
-  }
+  
 
-  public async put<T>(endpoint: string, data: any): Promise<T> {
-    try {
-      this.controller = new AbortController();
-
-      const response = await fetch(this.buildUrl(endpoint), {
-        method: 'PUT',
-        headers: this.getHeaders(),
-        body: JSON.stringify(data),
-        signal: this.controller.signal,
-        credentials: 'include'
-      });
-
-      return this.handleResponse<T>(response);
-    } catch (error) {
-      if (error instanceof Error) {
-        if (error.name === 'AbortError') {
-          throw this.createError('Solicitud cancelada', 499);
+    public async put<T>(endpoint: string, data: any): Promise<T> {
+      try {
+        const url = this.buildUrl(endpoint);
+        if (Capacitor.isNativePlatform()) {
+          const response = await CapacitorHttp.put({
+            url,
+            data,
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            }
+          });
+          return response.data;
+        } else {
+          const response = await fetch(url, {
+            method: 'PUT',
+            headers: this.getHeaders(),
+            body: JSON.stringify(data)
+          });
+          return this.handleResponse<T>(response);
         }
-        throw this.createError(error.message);
+      } catch (error) {
+        console.error('PUT error:', error);
+        throw this.createError("error.message");
       }
-      throw this.createError('Error desconocido');
     }
-  }
 
   public async delete<T = void>(endpoint: string): Promise<T> {
     try {

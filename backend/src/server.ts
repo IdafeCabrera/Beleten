@@ -9,6 +9,13 @@ import path from 'path';
 const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
 
+
+// Aumentar límite de payload
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
+
+
 if (isDevelopment) {
   app.use(cors({
     origin: true,
@@ -23,11 +30,20 @@ if (isDevelopment) {
 
 console.log(`Iniciando servidor en modo ${isDevelopment ? 'desarrollo' : 'producción'}`);
 
-app.use(cors());
+// Configurar CORS para permitir solicitudes desde Android
+app.use(cors({
+  origin: ['http://localhost:8080', 'http://localhost:8100', 'capacitor://localhost'],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 // Configurar directorio de imágenes como público
-app.use('/images', express.static(path.join(__dirname, '../public/images')));
+// Servir archivos estáticos
+app.use('/images', express.static(path.join(__dirname, '../public/images'), {
+  setHeaders: (res, path, stat) => {
+    res.set('Access-Control-Allow-Origin', '*');
+  }
+}));
 
 
 app.use('/api/phrases', phraseRoutes);
