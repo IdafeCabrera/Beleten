@@ -4,10 +4,25 @@ import { ParamsDictionary } from 'express-serve-static-core';
 import Phrase from '../models/Phrase';
 import { GenericController } from '../controllers/GenericController';
 import upload from '../multer/upload';
+import path from 'path';
+import fs from 'fs';
 
-const phraseController = new GenericController(Phrase);
-const router = Router();
+// Interfaces mejoradas
+interface MulterRequest extends Request {
+  file?: Express.Multer.File;
+}
 
+interface ImageUploadResponse {
+  message: string;
+  filename: string;
+}
+
+// Tipo para el manejador de la ruta de imagen
+type ImageUploadHandler = (
+  req: MulterRequest,
+  res: Response<ImageUploadResponse>,
+  next: NextFunction
+) => Promise<void>;
 
 // Interfaces
 interface TypedRequest<T = any> extends Request {
@@ -22,6 +37,16 @@ interface TypedRequestWithFile extends TypedRequest {
 // Definir la interfaz para el request con el archivo
 interface RequestWithFile extends Request {
   file: Express.Multer.File;
+}
+
+const phraseController = new GenericController(Phrase);
+const router = Router();
+
+
+// Asegúrate de que el directorio de imágenes existe
+const imagesDir = path.join(__dirname, '../../public/images');
+if (!fs.existsSync(imagesDir)) {
+  fs.mkdirSync(imagesDir, { recursive: true });
 }
 
 // Rutas genéricas
@@ -47,38 +72,72 @@ router.post('/bulk', async (req, res) => {
 router.put('/:id/visual', (req, res) => phraseController.updateVisual(req, res));
 
 
-// Ruta para subir imagen
+
+// Ruta para subir imagen con tipos corregidos
 router.post(
   '/:id/image',
   upload.single('file'),
-  async (req: TypedRequestWithFile, res: Response, next: NextFunction) => {
+  (async (req: MulterRequest, res: Response<ImageUploadResponse>, next: NextFunction) => {
     try {
       const phraseId = req.params.id;
       const phrase = await Phrase.findByPk(phraseId);
 
       if (!phrase) {
-        res.status(404).json({ message: 'Frase no encontrada' });
+        res.status(404).json({ 
+          message: 'Frase no encontrada',
+          filename: ''
+        });
         return;
       }
 
       if (!req.file) {
-        res.status(400).json({ message: 'No se ha proporcionado ninguna imagen' });
+        res.status(400).json({ 
+          message: 'No se ha proporcionado ninguna imagen',
+          filename: ''
+        });
         return;
       }
 
+      // Construir la ruta de la imagen
+      const imageUrl = `/images/${req.file.filename}`;
+
+      // Si ya existe una imagen anterior, eliminarla
+      if (phrase.filename) {
+        const oldImagePath = path.join(__dirname, '../../public', phrase.filename);
+        if (fs.existsSync(oldImagePath)) {
+          fs.unlinkSync(oldImagePath);
+        }
+      }
+
+      // Actualizar la frase con la nueva ruta de la imagen
       await phrase.update({
-        filename: req.file.filename
+        filename: imageUrl
       });
 
       res.status(200).json({
         message: 'Imagen subida correctamente',
-        filename: req.file.filename
+        filename: imageUrl
       });
     } catch (error) {
       console.error('Error al subir la imagen:', error);
       next(error);
     }
-  }
+  }) as ImageUploadHandler
 );
+
+// Ruta para servir imágenes
+router.get('/images/:filename', (req: Request, res: Response) => {
+  const filename = req.params.filename;
+  const imagePath = path.join(__dirname, '../../public/images', filename);
+  
+  if (fs.existsSync(imagePath)) {
+    res.sendFile(imagePath);
+  } else {
+    res.status(404).json({ 
+      message: 'Imagen no encontrada',
+      filename: ''
+    });
+  }
+});
 
 export default router;

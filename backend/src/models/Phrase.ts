@@ -5,7 +5,7 @@ import Tag from './Tag';
 
 
 class Phrase extends BaseModel {
-  public filename!: string;
+  public filename!: string | null;
 
   addTag(tagRecord: Tag) {
     throw new Error('Method not implemented.');
@@ -56,7 +56,7 @@ class Phrase extends BaseModel {
       filename: {
         type: DataTypes.STRING,
         allowNull: true,
-        comment: 'Nombre del archivo de imagen asociado a la frase'
+        comment: 'Ruta del archivo de imagen asociado a la frase'
       }
     }, {
       sequelize,

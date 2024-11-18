@@ -2,7 +2,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Phrase } from "../types/Phrase";
 import { apiService } from "../services/api.service";
+import { toastService } from "../services/toast.service";
 import { Capacitor } from '@capacitor/core';
+import { Photo } from '@capacitor/camera';
+import { photoService } from '../services/photo.service';
+
+// Tipo para las propiedades comparables de una frase
+type ComparableFields = 'text' | 'author' | 'category' | 'tags' | 'reflection' | 'historical_context';
 
 // Actualizar las interfaces
 interface PaginationData {
@@ -211,24 +217,123 @@ export const usePhraseController = (): PhraseControllerReturn => {
     setCurrentPhrase(null);
   };
 
-  const savePhrase = async (phrase: Partial<Phrase>) => {
+  const savePhrase = async (phraseData: Partial<Phrase> & { photo?: Photo }) => {
     try {
       setError(null);
-      if (phrase.id) {
-        await apiService.put(`phrases/${phrase.id}`, phrase);
-      } else {
-        await apiService.post("phrases", phrase);
+      
+      // Extraer la foto del objeto de datos
+      const { photo, ...phraseDetails } = phraseData;
+      let savedPhrase: Phrase;
+
+      // Validación del texto
+      if (!phraseDetails.text?.trim()) {
+        toastService.error('El texto de la frase es obligatorio');
+        return;
       }
 
-      // Recargar la primera página después de guardar
+      // Si es una actualización
+      if (currentPhrase?.id) {
+        // Verificar si la frase es editable
+        if (!currentPhrase.is_editable) {
+          toastService.warning('Esta frase no es editable');
+          closeModal();
+          return;
+        }
+      // Lista de campos a comparar
+      const comparableFields: ComparableFields[] = [
+        'text',
+        'author',
+        'category',
+        'tags',
+        'reflection',
+        'historical_context'
+      ];
+     // Comparar cambios solo en campos relevantes
+     const hasChanges = comparableFields.some(field => {
+      const newValue = phraseDetails[field];
+      const currentValue = currentPhrase[field];
+
+             // Si el campo es tags, hacer una comparación especial
+             if (field === 'tags') {
+              return JSON.stringify(newValue) !== JSON.stringify(currentValue);
+            }
+
+            return newValue !== undefined && newValue !== currentValue;
+          });
+
+          
+
+
+
+        if (!hasChanges && !photo) {
+          toastService.info('No se han detectado cambios en la frase');
+          closeModal();
+          return;
+        }
+
+        // Actualizar frase
+        console.log('📝 Actualizando frase existente:', currentPhrase.id);
+        savedPhrase = await apiService.put(`phrases/${currentPhrase.id}`, phraseDetails);
+        console.log('✅ Frase actualizada:', savedPhrase);
+      } else {
+        // Crear nueva frase
+        console.log('✨ Creando nueva frase');
+        try {
+          savedPhrase = await apiService.post("phrases", phraseDetails);
+          console.log('✅ Frase creada:', savedPhrase);
+        } catch (err: any) {
+          if (err.status === 409) {
+            toastService.error('Ya existe una frase con este texto');
+            return;
+          }
+          throw err;
+        }
+      }
+
+      // Manejo de la imagen
+      if (photo && savedPhrase.id) {
+        console.log('📤 Subiendo imagen para la frase:', savedPhrase.id);
+        try {
+          const imageUrl = await photoService.uploadImage(savedPhrase.id, photo);
+          console.log('✅ Imagen subida correctamente:', imageUrl);
+
+          // Actualizar la frase con la URL de la imagen
+          savedPhrase = await apiService.put(`phrases/${savedPhrase.id}`, {
+            ...savedPhrase,
+            filename: imageUrl
+          });
+        } catch (imageError) {
+          console.error('❌ Error al subir la imagen:', imageError);
+          toastService.warning('La frase se guardó pero hubo un error al subir la imagen');
+        }
+      }
+
+      // Recargar frases y mostrar mensaje de éxito
       const data = await fetchPhrases(1);
       setPhrases(data.phrases);
       setTotalPhrases(data.pagination.totalItems);
       setCurrentPage(1);
+
+      toastService.success(
+        currentPhrase?.id 
+          ? 'Frase actualizada correctamente'
+          : 'Frase creada correctamente'
+      );
+      
       closeModal();
-    } catch (err) {
-      console.error("Error saving phrase:", err);
-      setError("Error al guardar la frase");
+
+    } catch (err: any) {
+      console.error("❌ Error al guardar la frase:", err);
+      
+      // Manejo específico de errores
+      if (err.status === 413) {
+        toastService.error('La imagen es demasiado grande');
+      } else if (err.status === 422) {
+        toastService.error('Datos de la frase inválidos');
+      } else {
+        toastService.error('Error al guardar la frase: ' + (err.message || 'Error desconocido'));
+      }
+      
       throw err;
     }
   };

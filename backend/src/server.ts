@@ -29,6 +29,7 @@ app.use(bodyParser.json());
 // Configurar directorio de imágenes como público
 app.use('/images', express.static(path.join(__dirname, '../public/images')));
 
+
 app.use('/api/phrases', phraseRoutes);
 
 const startServer = async () => {

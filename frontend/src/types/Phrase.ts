@@ -1,3 +1,5 @@
+import { Photo } from "@capacitor/camera";
+
 // frontend/src/types/Phrase.ts
 export interface Translation {
   language: string;
@@ -42,4 +44,12 @@ export interface Phrase {
 
   is_verified: boolean;
   is_editable: boolean;
+
+  filename: string | null;
+  photo?: Photo;
+}
+
+// Interfaz para los datos del formulario
+export interface PhraseFormData extends Partial<Phrase> {
+  photo?: Photo;
 }
