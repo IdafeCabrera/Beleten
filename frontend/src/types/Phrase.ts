@@ -1,6 +1,6 @@
+// frontend/src/types/Phrase.ts
 import { Photo } from "@capacitor/camera";
 
-// frontend/src/types/Phrase.ts
 export interface Translation {
   language: string;
   translated_text: string;
