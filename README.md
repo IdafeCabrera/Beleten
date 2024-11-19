@@ -1,189 +1,285 @@
+# Frases Célebres - Aplicación Full Stack con Ionic, Express, Sequelize y MySQL
 
-# Ionic + Express + Sequelize + MySQL App
+## 📋 Índice
+1. [Descripción General](#descripción-general)
+2. [Características Implementadas por UT](#características-implementadas-por-ut)
+3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+4. [Estructura del Proyecto](#estructura-del-proyecto)
+5. [Componentes Ionic](#componentes-ionic)
+6. [API REST Documentación](#api-rest-documentación)
+7. [Funcionalidades CRUD](#funcionalidades-crud)
+8. [Guía de Instalación](#guía-de-instalación)
+9. [Características por Implementar](#características-por-implementar)
 
-Este proyecto es una aplicación desarrollada utilizando **Ionic** para el frontend y **Express** con **Sequelize** y **MySQL** para el backend. La aplicación permite gestionar frases ilustres con funcionalidades CRUD (Create, Read, Update, Delete) conectándose a una base de datos MySQL.
+## 🎯 Descripción General
 
-## Características principales
+Aplicación full stack para la gestión de frases célebres que permite operaciones CRUD completas, incluyendo manejo de imágenes y sistema de etiquetas. La aplicación está desarrollada con Ionic/React en el frontend y Express/Sequelize/MySQL en el backend.
 
-- **Frontend**: Ionic con React, permite visualizar, crear, editar y eliminar frases ilustres.
-- **Backend**: Express con Sequelize como ORM para gestionar la base de datos MySQL.
-- **CRUD** completo: Permite realizar operaciones de **crear**, **leer**, **actualizar** y **eliminar** frases, gestionando las operaciones a través de la API.
-- **Filtros por etiquetas**: El usuario puede buscar frases basadas en las etiquetas asociadas.
-- **API REST**: Conexión entre el frontend y backend utilizando una API REST, implementada con Express y Sequelize.
+### Enlaces Importantes
+- **Repositorio GitHub**: [https://github.com/IdafeCabrera/Beleten.git](https://github.com/IdafeCabrera/Beleten.git)
+- **Documentación API Postman**: [Colección Postman](https://www.postman.com/idafe/frases-api-beleten/collection/20683089-0624c61b-d08a-4ca7-b7da-1d9f5b6fe61a/?action=share&creator=20683089)
 
-## Funcionalidades
+## ✨ Características Implementadas por UT
 
-### Frontend (Ionic + React)
+### UT1 - Funcionalidades CRUD Básicas (20%)
+- [x] API REST completa implementada
+- [x] Documentación Postman disponible
+- [x] Operaciones CRUD funcionales tanto en backend como frontend
+- [x] Integración completa entre frontend y backend
 
-- **Visualización de frases**: Se pueden ver las frases guardadas en la base de datos en una lista o cuadrícula.
-- **Buscar por etiquetas**: Se puede buscar frases en función de sus etiquetas.
-- **Añadir frases**: Los usuarios pueden agregar nuevas frases con un autor y etiquetas.
-- **Editar frases**: Las frases se pueden editar en la misma vista sin necesidad de redirigir a otra página.
-- **Eliminar frases**: Se pueden eliminar frases directamente desde la vista.
-- **Interfaz responsive**: Adaptado para diferentes resoluciones de pantalla, con efectos visuales como degradados y transparencia en los IonCard.
+### UT2 - Componentes Ionic y CRUDs Adicionales (20%)
+#### Componentes Ionic Implementados:
+1. **IonCard** - Visualización de frases
+2. **IonButton** - Acciones principales
+3. **IonFab** - Botones flotantes para acciones rápidas
+4. **IonModal** - Formularios de edición/creación
+5. **IonAlert** - Confirmaciones de eliminación
+6. **IonIcon** - Iconografía en toda la app
+7. **IonGrid** - Layout responsive
+8. **IonInfiniteScroll** - Carga paginada de frases
+9. **IonSearchbar** - Búsqueda de frases
+10. **IonSegment** - Navegación entre secciones
 
-### Backend (Express + Sequelize + MySQL)
+#### CRUDs Implementados:
+- [x] CRUD Principal de Frases
+- [ ] CRUD de Categorías (pendiente)
+- [ ] CRUD de Autores (pendiente)
 
-- **Gestión de frases**: El backend maneja todas las operaciones CRUD para frases.
-- **Conexión con MySQL**: Sequelize se utiliza como ORM para interactuar con la base de datos MySQL.
-- **Validación de datos**: El backend valida los datos antes de guardarlos en la base de datos.
-- **Sincronización automática**: Sequelize sincroniza los modelos con las tablas de la base de datos.
+### UT3 - Funcionalidades de Cámara (10%)
+- [x] Captura de fotos implementada
+- [x] Integración con el CRUD de frases
+- [x] Almacenamiento de imágenes en backend
+- [x] Previsualización de imágenes
+- [x] Selección de imágenes de la galería
 
-### RECOMIENDO ENCARECIDAMENTE EL USO DE LA EXTENSION DE VSCODE IONIC PREVIEW para arrancar la parte del BACKEND y FRONTEND
+### UT5 - Autenticación y Seguridad (10%)
+- [ ] Autenticación básica (pendiente)
+- [ ] Token Bearer (pendiente)
+- [ ] Encriptación de claves (pendiente)
 
-## Requisitos del sistema
+## 🛠 Tecnologías Utilizadas
 
-Para ejecutar este proyecto, necesitas tener instalados los siguientes programas:
+### Frontend
+- Ionic 6.x
+- React 18.x
+- Capacitor para funcionalidades nativas
+- TypeScript
 
-- **Node.js** (>= 14.x)
-- **Ionic CLI** (>= 6.x)
-- **MySQL** (>= 5.x)
+### Backend
+- Node.js
+- Express
+- Sequelize ORM
+- MySQL
 
-## Instalación
+## 📁 Estructura del Proyecto
 
-Sigue estos pasos para configurar el entorno de desarrollo:
-
-### Clonar el repositorio
-
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+```
+proyecto/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── config/
+└── backend/
+    ├── controllers/
+    ├── models/
+    ├── routes/
+    └── config/
 ```
 
-### Instalar dependencias
+## 🎨 Componentes Ionic
 
-Instala las dependencias tanto del backend como del frontend.
+Detalle de los componentes Ionic implementados y su uso:
 
-#### Backend (Express + Sequelize)
+### IonCard
+```typescript
+<IonCard className={`custom-card ${design.toLowerCase()}`}>
+  <IonCardHeader>
+    <IonCardTitle>{phrase.text}</IonCardTitle>
+  </IonCardHeader>
+  // ... más contenido
+</IonCard>
+```
 
+### IonModal (para edición/creación)
+```typescript
+<IonModal isOpen={isOpen} onDidDismiss={onClose}>
+  <IonToolbar>
+    <IonTitle>{phrase ? "Editar Frase" : "Nueva Frase"}</IonTitle>
+  </IonToolbar>
+  // ... formulario
+</IonModal>
+```
+
+### IonInfiniteScroll (para paginación)
+```typescript
+<IonInfiniteScroll
+  onIonInfinite={handleInfiniteScroll}
+  threshold="100px"
+  disabled={!hasMore}
+>
+  <IonInfiniteScrollContent />
+</IonInfiniteScroll>
+```
+
+## 📡 API REST Documentación
+
+### Endpoints Principales
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET | `/api/phrases` | Obtiene todas las frases |
+| POST | `/api/phrases` | Crea una nueva frase |
+| PUT | `/api/phrases/:id` | Actualiza una frase |
+| DELETE | `/api/phrases/:id` | Elimina una frase |
+| POST | `/api/phrases/:id/image` | Sube una imagen |
+
+### Ejemplos de Uso
+
+#### GET /api/phrases
+```bash
+GET http://localhost:8080/api/phrases
+```
+Respuesta:
+```json
+{
+  "phrases": [
+    {
+      "id": 1,
+      "text": "La vida es bella",
+      "author": "Roberto Benigni",
+      "tags": {
+        "es": ["vida", "optimismo"]
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 10,
+    "totalItems": 100
+  }
+}
+```
+
+#### POST /api/phrases
+```bash
+POST http://localhost:8080/api/phrases
+Content-Type: application/json
+
+{
+  "text": "La vida es bella",
+  "author": "Roberto Benigni",
+  "tags": {
+    "es": ["vida", "optimismo"]
+  }
+}
+```
+
+## 📱 Funcionalidades CRUD en la App
+
+### Visualización (GET)
+- Lista/Grid de frases con infinite scroll
+- Filtros por autor, categoría y tags
+- Vista detallada de cada frase
+
+### Creación (POST)
+- Formulario modal para nueva frase
+- Soporte para imágenes (cámara/galería)
+- Validación de campos
+
+### Actualización (PUT)
+- Edición inline de frases
+- Actualización de imágenes
+- Gestión de tags
+
+### Eliminación (DELETE)
+- Confirmación doble de eliminación
+- Eliminación en cascada de recursos asociados
+
+## 🚀 Guía de Instalación
+
+### Prerequisitos
+- Node.js >= 14.x
+- MySQL >= 5.7
+- Ionic CLI >= 6.x
+
+### Pasos de Instalación
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/IdafeCabrera/Beleten.git
+cd Beleten
+```
+
+2. Instalar dependencias del backend:
 ```bash
 cd backend
 npm install
 ```
 
-#### Frontend (Ionic + React)
-
+3. Instalar dependencias del frontend:
 ```bash
 cd frontend
 npm install
 ```
 
-### Configurar base de datos MySQL
-
-Crea una base de datos MySQL y actualiza las credenciales en el archivo `.env` en la carpeta del backend:
-
-```
+4. Configurar variables de entorno:
+```env
 DB_NAME=beleten_db
 DB_USER=root
 DB_PASSWORD=tu_password
 DB_HOST=localhost
-DB_DIALECT=mysql
 ```
 
-### Sincronizar la base de datos
-
-Para sincronizar la base de datos con los modelos definidos en Sequelize:
-
+5. Iniciar servicios:
 ```bash
-cd backend
-npm run db:sync
-```
-
-### Ejecutar el backend
-
-Inicia el servidor Express:
-
-```bash
-cd backend
+# Backend
 npm run dev
-```
 
-El servidor estará corriendo en `http://localhost:8080`.
-
-### Ejecutar el frontend
-
-Inicia el servidor de desarrollo de Ionic:
-
-```bash
-cd frontend
+# Frontend
 ionic serve
 ```
 
-El frontend estará corriendo en `http://localhost:8100`.
+## 🎯 Características por Implementar
 
-## Endpoints API (Express)
+### Próximas Funcionalidades
+1. **Autenticación y Autorización**
+   - Sistema de login/registro
+   - JWT para autenticación
+   - Roles de usuario
 
-A continuación se listan los principales endpoints de la API disponibles en el backend:
+2. **CRUDs Adicionales**
+   - Gestión de categorías
+   - Gestión de autores
+   - Sistema de favoritos
 
-| Método | Endpoint            | Descripción                        |
-|--------|---------------------|------------------------------------|
-| GET    | `/api/frases`        | Obtiene todas las frases           |
-| POST   | `/api/frases`        | Crea una nueva frase               |
-| PUT    | `/api/frases/:id`    | Actualiza una frase existente      |
-| DELETE | `/api/frases/:id`    | Elimina una frase                  |
+3. **Mejoras de UX**
+   - Modo offline
+   - Sincronización en segundo plano
+   - Notificaciones push
 
-### Documentación de Postman
+### Mejoras Técnicas Pendientes
+1. **Seguridad**
+   - Implementación de autenticación básica
+   - Token Bearer
+   - Encriptación de datos sensibles
 
-Puedes importar la colección de Postman desde el siguiente enlace para probar los endpoints:
+2. **Optimización**
+   - Caché de imágenes
+   - Lazy loading de componentes
+   - Compresión de imágenes
 
-[Importar colección de Postman]([https://www.getpostman.com/collections/tu-enlace-a-la-coleccion](https://www.postman.com/idafe/frases-api-beleten/collection/20683089-0624c61b-d08a-4ca7-b7da-1d9f5b6fe61a/?action=share&creator=20683089))
+3. **Testing**
+   - Pruebas unitarias
+   - Pruebas de integración
+   - E2E testing
 
+## 📞 Contacto y Soporte
 
-## Ejemplos de peticiones (Postman)
-
-Aquí tienes ejemplos de cómo realizar peticiones a la API desde Postman o cualquier cliente HTTP:
-
-### Obtener todas las frases
-
-```bash
-GET /api/frases
-```
-
-### Crear una nueva frase
-
-```bash
-POST /api/frases
-Content-Type: application/json
-{
-  "text": "La vida es bella.",
-  "author": "Desconocido",
-  "tags": ["Vida", "Belleza"]
-}
-```
-
-### Actualizar una frase
-
-```bash
-PUT /api/frases/1
-Content-Type: application/json
-{
-  "text": "El conocimiento es poder actualizado.",
-  "author": "Francis Bacon",
-  "tags": ["Conocimiento", "Poder", "Sabiduría"]
-}
-```
-
-### Eliminar una frase
-
-```bash
-DELETE /api/frases/1
-```
-
-## Diseño UI/UX
-
-La aplicación ha sido diseñada teniendo en cuenta los principios de UX/UI para ofrecer una experiencia de usuario fluida y atractiva. Se utilizan componentes de Ionic como **IonCard**, **IonGrid**, y **IonFab** para crear una interfaz interactiva, con funcionalidades como edición en la misma vista y efectos de hover.
-
-### Principales características de diseño:
-
-- **Colores suaves con transparencia**: Los colores de fondo en los IonCard utilizan degradados con transparencia para mejorar la estética.
-- **Botones flotantes (IonFab)**: Los botones de edición y eliminación se encuentran de manera accesible y están bien integrados en la UI.
-- **Modo cuadrícula y lista**: La vista de las frases se puede alternar entre cuadrícula y lista según las preferencias del usuario.
-
-## Créditos
-
-- **Frontend**: Ionic + React
-- **Backend**: Express + Sequelize
-- **Base de datos**: MySQL
+Para más información o soporte:
+- **Email**: [tu-email@ejemplo.com]
+- **GitHub**: [IdafeCabrera](https://github.com/IdafeCabrera)
 
 ## Enlaces
 
