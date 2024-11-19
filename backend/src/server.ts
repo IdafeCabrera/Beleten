@@ -6,6 +6,7 @@ import { sequelize, syncDatabase } from './models/index';
 import phraseRoutes from './routes/phraseRoutes';
 import path from 'path';
 import authRoutes from './routes/auth.routes';
+import { initDatabase } from './database/database';
 
 const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -48,17 +49,26 @@ app.use('/images', express.static(path.join(__dirname, '../public/images'), {
     res.set('Access-Control-Allow-Origin', '*');
   }
 }));
-
+// Health check
+app.get('/health', (_, res) => {
+  res.json({ status: 'ok', timestamp: new Date() });
+});
 
 app.use('/api/phrases', phraseRoutes);
 
 const startServer = async () => {
   try {
-    await syncDatabase();
+    console.log('🚀 Iniciando servidor...');
+    //await syncDatabase();
+
+        // Inicializar base de datos
+        await initDatabase();
+
     
     const port = process.env.PORT || 8080;
     app.listen(port, () => {
       console.log(`🚀 Servidor corriendo en http://localhost:${port}`);
+      console.log(`🔗 Health check disponible en http://localhost:${port}/health`);
       console.log(`🔧 Modo: ${isDevelopment ? 'Desarrollo' : 'Producción'}`);
     });
   } catch (error) {

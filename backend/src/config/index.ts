@@ -7,8 +7,8 @@ export const config = {
     },
     db: {
       name: process.env.DB_NAME || 'beleten_db',
-      user: process.env.DB_USER || 'root',
-      password: process.env.DB_PASSWORD || 'tu_password',
+      user: process.env.DB_USER || 'user_db',
+      password: process.env.DB_PASSWORD || 'password_db',
       host: process.env.DB_HOST || 'localhost'
     }
   };

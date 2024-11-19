@@ -1,3 +1,5 @@
+// backend/src/models/User.ts
+// src/models/User.ts
 import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
 import bcrypt from 'bcrypt';
 import Role from './Role';
@@ -54,7 +56,6 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
         username: {
           type: DataTypes.STRING,
           allowNull: false,
-          unique: true,
           validate: {
             len: [3, 50],
             notEmpty: true,
@@ -74,7 +75,6 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
         email: {
           type: DataTypes.STRING,
           allowNull: false,
-          unique: true,
           validate: {
             isEmail: true,
             notEmpty: true,
@@ -101,10 +101,6 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
         },
         roleId: {
           type: DataTypes.INTEGER,
-          references: {
-            model: Role,
-            key: 'id',
-          },
           allowNull: false,
         },
         lastLogin: {
@@ -123,6 +119,22 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
       {
         sequelize,
         tableName: 'users',
+        indexes: [
+          {
+            unique: true,
+            fields: ['username'],
+            name: 'users_username_unique'
+          },
+          {
+            unique: true,
+            fields: ['email'],
+            name: 'users_email_unique'
+          },
+          {
+            fields: ['roleId'],
+            name: 'users_roleId'
+          }
+        ],
         hooks: {
           // Hook para encriptar la contraseña antes de crear/actualizar
           beforeSave: async (user: User) => {
@@ -162,9 +174,18 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
   }
 
   static associate(models: any) {
-    this.belongsTo(models.Role, { foreignKey: 'roleId' });
-    this.hasMany(models.UserPhrasePermission, { foreignKey: 'userId' });
-    this.hasMany(models.UserPhraseInteraction, { foreignKey: 'userId' });
+    this.belongsTo(models.Role, { 
+      foreignKey: 'roleId',
+      as: 'role'
+    });
+    this.hasMany(models.UserPhrasePermission, { 
+      foreignKey: 'userId',
+      as: 'permissions'
+    });
+    this.hasMany(models.UserPhraseInteraction, { 
+      foreignKey: 'userId',
+      as: 'interactions'
+    });
   }
 
   // Método para generar token JWT
