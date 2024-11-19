@@ -5,6 +5,7 @@ import cors from 'cors';
 import { sequelize, syncDatabase } from './models/index';
 import phraseRoutes from './routes/phraseRoutes';
 import path from 'path';
+import authRoutes from './routes/auth.routes';
 
 const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -13,6 +14,9 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 // Aumentar límite de payload
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
+// Rutas de autenticación
+app.use('/api/auth', authRoutes);
 
 
 
