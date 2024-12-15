@@ -1,102 +1,98 @@
 // frontend/src/components/PhraseStats.tsx
 import React from 'react';
-import { IonButton, IonCard, IonCardContent, IonIcon, IonItem, IonLabel, IonText, IonToggle } from '@ionic/react';
+import { 
+  IonCard, 
+  IonCardContent, 
+  IonIcon, 
+  IonText,
+  IonButton,
+  IonButtons
+} from '@ionic/react';
 import { 
   documentTextOutline, 
   starOutline, 
   heartOutline,
-  languageOutline, 
-  bookmarkOutline,
+  languageOutline,
   gridOutline,
-  listOutline
+  listOutline 
 } from 'ionicons/icons';
 import { Phrase } from '../types/Phrase';
 import './PhraseStats.css';
-import PhraseSearch from './PhraseSearch';
+
+
 
 interface PhraseStatsProps {
   phrases: Phrase[];
+  displayedCount: number;
+  totalCount: number;
   viewType: "grid" | "list";
   onViewChange: (viewType: "grid" | "list") => void;
+  isFiltered: boolean;
 }
 
-
-
-const PhraseStats: React.FC<PhraseStatsProps> = ({ phrases = [], viewType, onViewChange }) => {
-  // Cálculos de estadísticas con comprobaciones de nulo
+const PhraseStats: React.FC<PhraseStatsProps> = ({ 
+  phrases = [], 
+  displayedCount,
+  totalCount,
+  viewType, 
+  onViewChange,
+  isFiltered
+}) => {
   const stats = {
-    total: phrases?.length || 0,
     verified: phrases?.filter(p => p?.is_verified)?.length || 0,
     favorites: phrases?.filter(p => p?.favorite)?.length || 0,
     withTranslations: phrases?.filter(p => p?.translations && p.translations.length > 0)?.length || 0,
-    categories: new Set(phrases?.map(p => p?.category).filter(Boolean))?.size || 0
   };
+
   const toggleView = () => {
     onViewChange(viewType === "grid" ? "list" : "grid");
   };
 
   return (
-    
     <IonCard className="stats-card">
       <IonCardContent>
-      
         <div className="stats-container">
-          
           <div className="stat-item">
             <IonIcon icon={documentTextOutline} color="primary" />
             <div className="stat-info">
-              {/* <IonText color="medium">Total</IonText> */}
-              <IonText className="stat-number">{stats.total}</IonText>
+              <IonText className="stat-number">
+                {isFiltered ? `${displayedCount}/${totalCount}` : displayedCount}
+              </IonText>
+              {isFiltered && (
+                <IonText color="medium" className="stat-label">
+                  Filtradas
+                </IonText>
+              )}
             </div>
           </div>
-          
+
           <div className="stat-item">
             <IonIcon icon={starOutline} color="warning" />
             <div className="stat-info">
-              {/* <IonText color="medium">Verificadas</IonText> */}
               <IonText className="stat-number">{stats.verified}</IonText>
             </div>
           </div>
-          
-          {phrases?.some(p => 'favorite' in p) && (
-            <div className="stat-item">
-              <IonIcon icon={heartOutline} color="danger" />
-              <div className="stat-info">
-                {/* <IonText color="medium">Favoritas</IonText> */}
-                <IonText className="stat-number">{stats.favorites}</IonText>
-              </div>
+
+          <div className="stat-item">
+            <IonIcon icon={heartOutline} color="danger" />
+            <div className="stat-info">
+              <IonText className="stat-number">{stats.favorites}</IonText>
             </div>
-          )}
+          </div>
 
           <div className="stat-item">
             <IonIcon icon={languageOutline} color="success" />
             <div className="stat-info">
-              {/* <IonText color="medium">Traducidas</IonText> */}
               <IonText className="stat-number">{stats.withTranslations}</IonText>
             </div>
           </div>
 
-
-
-          <div className="stat-item">
-                    <IonIcon icon={heartOutline} color="danger" />
-                    <div className="stat-info">
-                      {/* <IonText color="medium">Mis Favoritas</IonText> */}
-                      <div className="stat-number">0</div>
-                    </div>
-                  </div>
-                  
-                  <div className="view-toggle">
+          <div className="view-toggle">
             <IonButton fill="clear" onClick={toggleView}>
               <IonIcon icon={viewType === "list" ? gridOutline : listOutline} />
             </IonButton>
           </div>
-
-
-
-
         </div>
-        
       </IonCardContent>
     </IonCard>
   );

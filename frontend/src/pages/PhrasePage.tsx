@@ -36,6 +36,7 @@ import "./PhrasePage.css";
 import { InfiniteScrollCustomEvent } from "@ionic/core";
 import ViewToggleButton from "../components/ViewToggleButton";
 import PhraseStats from "../components/PhraseStats";
+
 import PhraseSearch from "../components/PhraseSearch";
 import DesignFabSelector from "../components/DesignFabSelector";
 import PhraseSearchControls from "../components/PhraseSearchControls";
@@ -62,6 +63,9 @@ const PhrasePage: React.FC = () => {
     loadMorePhrases,
     hasMore,
     totalPhrases,
+    performSearch, // Agregar esta línea
+    clearSearch,   // Agregar esta línea si la necesitas
+    isSearchActive // Agregar esta línea si la necesitas
   } = usePhraseController();
 
   // Crear un ref para el contenedor de frases
@@ -121,12 +125,12 @@ const PhrasePage: React.FC = () => {
         case "author":
           comparison = compareValue(a.author, b.author);
           break;
-        case "createdAt":
-          comparison = compareValue(
-            new Date(a.created_at),
-            new Date(b.created_at)
-          );
-          break;
+          case "created_at":
+            comparison = compareValue(
+              new Date(a.created_at),
+              new Date(b.created_at)
+            );
+            break;
         case "category":
           comparison = compareValue(a.category, b.category);
           break;
@@ -185,14 +189,17 @@ const PhrasePage: React.FC = () => {
         </div>
       
         <PhraseSearchControls
-  phrases={phrases}
-  onSearch={(text, type) => {
-    // Implementa la lógica de búsqueda
-    console.log('Searching:', text, 'by', type);
-  }}
-  onSortChange={handleSortChange}
-  currentSort={sortConfig}
-/>
+          phrases={phrases}
+          onSearch={performSearch} // Ahora performSearch está disponible
+          onSortChange={handleSortChange}
+          currentSort={sortConfig}
+          viewType={viewType}
+          onViewChange={setViewType}
+          displayedCount={phrases.length}
+          totalCount={totalPhrases}
+          isFiltered={isSearchActive} onClearSearch={function (): void {
+            throw new Error("Function not implemented.");
+          } } isSearchActive={false} isLoading={false}      />
 
 
 
@@ -234,10 +241,9 @@ const PhrasePage: React.FC = () => {
       {/* Solo mostrar PhraseStats cuando phrases está definido */}
       {phrases && phrases.length > 0 && 
     <PhraseStats 
-      phrases={phrases} 
-      viewType={viewType}
-      onViewChange={setViewType}
-    />
+        phrases={phrases}
+        viewType={viewType}
+        onViewChange={setViewType} displayedCount={0} totalCount={0} isFiltered={false}    />
   }
       {renderContent()}
       <IonInfiniteScroll

@@ -15,7 +15,7 @@ import {
   folderOutline, 
   textOutline 
 } from 'ionicons/icons';
-import { Phrase } from '../types/Phrase';
+import { Phrase } from '../types/phrase.types';
 
 interface Props {
   phrases: Phrase[];

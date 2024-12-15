@@ -5,70 +5,47 @@ import cors from 'cors';
 import { sequelize, syncDatabase } from './models/index';
 import phraseRoutes from './routes/phraseRoutes';
 import path from 'path';
-import authRoutes from './routes/auth.routes';
-import { initDatabase } from './database/database';
+import authRoutes from './routes/authRoutes';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
 
-
-// Aumentar límite de payload
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
-
-// Rutas de autenticación
-app.use('/api/auth', authRoutes);
-
-
-
 if (isDevelopment) {
   app.use(cors({
-    origin: true,
-    credentials: true
+    origin: 'http://localhost:8100', // frontend desarrollo
+    credentials: true // Permitir cookies/autenticación
   }));
 } else {
   app.use(cors({
-    origin: ['http://localhost:8080'], // Ajusta según tus necesidades en producción
-    credentials: true
+    origin: ['http://localhost:8100', 'http://192.168.86.29:8100'], // frontend producción
+    credentials: true // Permitir cookies/autenticación
   }));
 }
 
 console.log(`Iniciando servidor en modo ${isDevelopment ? 'desarrollo' : 'producción'}`);
 
-// Configurar CORS para permitir solicitudes desde Android
-app.use(cors({
-  origin: ['http://localhost:8080', 'http://localhost:8100', 'capacitor://localhost'],
-  credentials: true
-}));
+
 app.use(bodyParser.json());
 
+app.use('/api/auth', authRoutes);
+
 // Configurar directorio de imágenes como público
-// Servir archivos estáticos
-app.use('/images', express.static(path.join(__dirname, '../public/images'), {
-  setHeaders: (res, path, stat) => {
-    res.set('Access-Control-Allow-Origin', '*');
-  }
-}));
-// Health check
-app.get('/health', (_, res) => {
-  res.json({ status: 'ok', timestamp: new Date() });
-});
+app.use('/images', express.static(path.join(__dirname, '../public/images')));
+
 
 app.use('/api/phrases', phraseRoutes);
 
+// Iniciar servidor
 const startServer = async () => {
   try {
-    console.log('🚀 Iniciando servidor...');
-    //await syncDatabase();
-
-        // Inicializar base de datos
-        await initDatabase();
-
+    await syncDatabase();
     
     const port = process.env.PORT || 8080;
     app.listen(port, () => {
       console.log(`🚀 Servidor corriendo en http://localhost:${port}`);
-      console.log(`🔗 Health check disponible en http://localhost:${port}/health`);
       console.log(`🔧 Modo: ${isDevelopment ? 'Desarrollo' : 'Producción'}`);
     });
   } catch (error) {

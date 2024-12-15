@@ -1,5 +1,7 @@
 // backend/src/scripts/populatephrasesv2.ts
-// backend/src/scripts/populatephrases.ts
+// para ejectuarlo y poblar las frases que tengo en la carpeta frases con los .json
+//  npx ts-node ./scripts/populatephrasesv2.ts
+
 import fs from 'fs';
 import path from 'path';
 import { Sequelize } from 'sequelize';

@@ -1,11 +1,23 @@
 // frontend/src/controllers/usePhraseController.tsx
 import { useState, useEffect, useRef } from "react";
-import { Phrase } from "../types/Phrase";
+import { Phrase } from "../types/phrase.types";
 import { apiService } from "../services/api.service";
 import { toastService } from "../services/toast.service";
 import { Capacitor } from '@capacitor/core';
 import { Photo } from '@capacitor/camera';
 import { photoService } from '../services/photo.service';
+import { useSearch } from '../hooks/useSearch';
+import { SearchParams } from "../types/search.types";
+
+import { searchService } from '../services/search.service';
+import { phraseService } from '../services/phrase.service';
+
+
+// Tipo para el filtro de búsqueda
+interface SearchFilter {
+  text: string;
+  type: 'text' | 'author' | 'tag' | 'category';
+}
 
 // Tipo para las propiedades comparables de una frase
 type ComparableFields = 'text' | 'author' | 'category' | 'tags' | 'reflection' | 'historical_context';
@@ -33,6 +45,9 @@ interface PhraseControllerReturn {
   loadMorePhrases: () => Promise<void>;
   hasMore: boolean;
   totalPhrases: number;
+  performSearch: (text: string, type: 'text' | 'author' | 'tag' | 'category') => Promise<void>;
+  clearSearch: () => void;
+  isSearchActive: boolean;
 }
 
 // Actualizar la interfaz ApiResponse para incluir la paginación
@@ -42,8 +57,28 @@ interface ApiResponse {
 }
 
 export const usePhraseController = (): PhraseControllerReturn => {
+
+  const {
+    searchResults,
+    isSearching,
+    searchError,
+    pagination: searchPagination,
+    performSearch,
+    loadMoreResults,
+    clearSearch
+  } = useSearch();
+
+  const [searchParams, setSearchParams] = useState<SearchParams | null>(null);
+
+  const [isLoading, setIsLoading] = useState(false);
+
+
+
+
   const [phrases, setPhrases] = useState<Phrase[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [filteredPhrases, setFilteredPhrases] = useState<Phrase[]>([]);
+  const [searchFilter, setSearchFilter] = useState<SearchFilter>({ text: '', type: 'text' });
+  //const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPhrase, setCurrentPhrase] = useState<Phrase | null>(null);
@@ -52,8 +87,76 @@ export const usePhraseController = (): PhraseControllerReturn => {
   const [totalPhrases, setTotalPhrases] = useState(0);
   const ITEMS_PER_PAGE = 25;
 
-  const lastScrollPosition = useRef<number>(0);
+  const loadPhrases = async (page = 1, resetResults = false) => {
+    try {
+      setIsLoading(true);
+      let response;
+
+      if (searchParams) {
+        response = await searchService.searchPhrases({
+          ...searchParams,
+          page,
+          limit: 25
+        });
+      } else {
+        response = await phraseService.getPhrases(page);
+      }
+
+      setPhrases(prev => resetResults ? response.phrases : [...prev, ...response.phrases]);
+      return response;
+    } finally {
+      setIsLoading(false);
+    }
+  };
   const loadingRef = useRef(false);
+
+
+ // Función para filtrar frases
+ const filterPhrases = (searchText: string, searchType: 'text' | 'author' | 'tag' | 'category') => {
+  if (!searchText.trim()) {
+    setFilteredPhrases(phrases);
+    return;
+  }
+
+  const normalizedSearch = searchText.toLowerCase().trim();
+  
+  const filtered = phrases.filter(phrase => {
+    switch (searchType) {
+      case 'text':
+        return phrase.text?.toLowerCase().includes(normalizedSearch);
+      case 'author':
+        return phrase.author?.toLowerCase().includes(normalizedSearch);
+      case 'category':
+        return phrase.category?.toLowerCase().includes(normalizedSearch);
+      case 'tag':
+        return phrase.tags?.es?.some(tag => 
+          tag.toLowerCase().includes(normalizedSearch)
+        );
+      default:
+        return false;
+    }
+  });
+
+  setFilteredPhrases(filtered);
+};
+
+
+
+    // Efecto para aplicar filtros cuando cambian
+    useEffect(() => {
+      filterPhrases(searchFilter.text, searchFilter.type);
+    }, [searchFilter, phrases]);
+  
+    // Función para manejar la búsqueda
+    const handleSearch = (text: string, type: 'text' | 'author' | 'tag' | 'category') => {
+      setSearchFilter({ text, type });
+    };
+  
+    // Función para limpiar la búsqueda
+/*     const clearSearch = () => {
+      setSearchFilter({ text: '', type: 'text' });
+      setFilteredPhrases(phrases);
+    }; */
 
   const fetchPhrases = async (page: number): Promise<ApiResponse> => {
     try {
@@ -165,6 +268,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
   };
   
 
+
   useEffect(() => {
     const loadInitialPhrases = async () => {
       try {
@@ -178,7 +282,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
 
         const data = await fetchPhrases(1);
         setPhrases(data.phrases);
-
+        setFilteredPhrases(data.phrases);
         setTotalPhrases(data.pagination.totalItems);
         setHasMore(data.pagination.hasMore);
         setCurrentPage(1);
@@ -206,6 +310,10 @@ export const usePhraseController = (): PhraseControllerReturn => {
   }, []);
 
 
+
+
+
+    
 
   const openEditModal = (phrase?: Phrase | null) => {
     setCurrentPhrase(phrase || null);
@@ -351,18 +459,30 @@ export const usePhraseController = (): PhraseControllerReturn => {
     }
   };
 
+  
+
   return {
-    phrases,
-    isLoading,
-    error,
+    // phrases: searchFilter.text ? filteredPhrases : phrases,
+    phrases: searchResults.length > 0 ? searchResults : phrases,
+    //isLoading,
+    isLoading: isLoading || isSearching,
+    //error,
+    error: error || searchError,
     isModalOpen,
     currentPhrase,
     openEditModal,
     closeModal,
     savePhrase,
     deletePhrase,
-    loadMorePhrases,
-    hasMore,
-    totalPhrases
+
+
+    loadMorePhrases: searchResults.length > 0 ? loadMoreResults : loadMorePhrases,
+    hasMore: searchResults.length > 0 ? (searchPagination?.hasMore || false) : hasMore,
+    totalPhrases: searchResults.length > 0 ? (searchPagination?.totalItems || 0) : totalPhrases,
+    performSearch,
+    clearSearch,
+    isSearchActive: searchResults.length > 0
+    
+    
   };
 };

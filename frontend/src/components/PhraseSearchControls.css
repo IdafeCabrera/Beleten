@@ -105,3 +105,61 @@
 
 }
 
+
+
+// frontend/src/components/PhraseSearchControls.css
+.search-controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--ion-background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sort-controls {
+  --background: transparent;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-type-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  --border-radius: 8px;
+}
+
+.clear-search-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.suggestions-list {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sort-direction-button {
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}

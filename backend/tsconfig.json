@@ -6,7 +6,7 @@
       "esModuleInterop": true,
       "lib": ["es2017", "esnext.asynciterable"],
       "types": ["node", "express", "multer"],
-      "typeRoots": ["./node_modules/@types"],
+      "typeRoots": ["./node_modules/@types", "./types"], 
       "allowSyntheticDefaultImports": true,
       "rootDir": "./src",
       "outDir": "./dist",
@@ -28,7 +28,10 @@
       }
     },
     "include": [
-      "src/**/*.ts"  // Incluir todos los archivos .ts en la carpeta 'src'
+      "src/**/*.ts", 
+      "express.d.ts",
+      "src/**/*.ts", 
+      "src/types/**/*.d.ts" 
     ],
     "exclude": [
       "node_modules",

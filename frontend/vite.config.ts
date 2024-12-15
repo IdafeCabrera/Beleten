@@ -17,8 +17,6 @@ export default defineConfig({
         secure: false,
         rewrite: (path) => path // No reescribir la ruta, mantener /api
       }
-    },
-    cors: true
-    
+    }
   }
 });

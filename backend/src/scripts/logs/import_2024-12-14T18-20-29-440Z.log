@@ -1,0 +1,4 @@
+[2024-12-14T18:20:29.555Z] 📌 Script cargado
+[2024-12-14T18:20:29.557Z] 🚀 Iniciando script...
+[2024-12-14T18:20:29.561Z] Modo: skip
+[2024-12-14T18:20:29.635Z] ❌ Error: SequelizeConnectionError: Access denied for user 'beleten_user'@'localhost' to database 'beleten_db'

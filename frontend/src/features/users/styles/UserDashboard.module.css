@@ -1,0 +1,98 @@
+/* src/features/users/styles/UserDashboard.module.css */
+
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .userCard {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .avatar {
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--ion-color-primary);
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .email {
+    color: var(--ion-color-medium);
+    font-size: 0.9rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    color: var(--ion-color-secondary);
+  }
+  
+  .favoritesCard, .editRequestsCard {
+    padding: 20px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .listItem {
+    padding: 10px;
+    border: 1px solid var(--ion-color-light);
+    border-radius: 8px;
+    background: var(--ion-color-light-tint);
+  }
+  
+  .listItem p {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  
+  .listItem span {
+    font-size: 0.85rem;
+    color: var(--ion-color-medium);
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--ion-color-primary);
+  }
+  
+  .status.pending {
+    background-color: var(--ion-color-warning);
+  }
+  
+  .status.approved {
+    background-color: var(--ion-color-success);
+  }
+  
+  .status.rejected {
+    background-color: var(--ion-color-danger);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--ion-color-primary);
+  }
+  

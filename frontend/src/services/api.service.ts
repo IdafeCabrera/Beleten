@@ -1,11 +1,5 @@
 // frontend/src/services/api.service.ts
 import { Capacitor, CapacitorHttp, HttpHeaders } from '@capacitor/core';
-
-interface RequestOptions {
-  headers?: Record<string, string>;
-  params?: Record<string, any>;
-}
-
 interface ApiConfig {
   baseURL: string;
 }
@@ -34,8 +28,6 @@ const getApiConfig = (): ApiConfig => {
 };
 
 class ApiService {
-
-  
   private static instance: ApiService;
   private readonly config: ApiConfig;
   private controller: AbortController | null = null;
@@ -109,20 +101,24 @@ class ApiService {
   }
   
 
-  // Modificar getHeaders para incluir headers de autenticación
-  private getHeaders(additionalHeaders?: Record<string, string>): HeadersInit {
+  private getHeaders(): HeadersInit {
     const headers: HeadersInit = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      ...additionalHeaders
     };
+
+    // Aquí puedes agregar headers adicionales como autenticación
+    // const token = localStorage.getItem('token');
+    // if (token) {
+    //   headers['Authorization'] = `Bearer ${token}`;
+    // }
 
     return headers;
   }
 
-  // Modificar getNativeHeaders para incluir headers de autenticación
-  private getNativeHeaders(additionalHeaders?: Record<string, string>): HttpHeaders {
-    const headers = this.getHeaders(additionalHeaders);
+  private getNativeHeaders(): HttpHeaders {
+    // Convierte los headers al formato que espera CapacitorHttp
+    const headers = this.getHeaders();
     return Object.fromEntries(
       Object.entries(headers).map(([key, value]) => [key, value.toString()])
     );
@@ -137,8 +133,7 @@ class ApiService {
 
 
 
-  // Modificar el método get para aceptar headers adicionales
-  public async get<T>(endpoint: string, params?: Record<string, any>, additionalHeaders?: Record<string, string>): Promise<T> {
+    public async get<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
       try {
         let urlString = this.buildUrl(endpoint);
         if (params) {
@@ -165,7 +160,7 @@ class ApiService {
         } else {
           // Usar fetch para web
           const response = await fetch(urlString, {
-            headers: this.getHeaders(additionalHeaders)
+            headers: this.getHeaders()
           });
   
           return this.handleResponse<T>(response);
@@ -180,20 +175,21 @@ class ApiService {
       }
     }
 
-    public async post<T>(endpoint: string, data: any, additionalHeaders?: Record<string, string>): Promise<T> {
+
+    public async post<T>(endpoint: string, data: any): Promise<T> {
       try {
         const url = this.buildUrl(endpoint);
         if (Capacitor.isNativePlatform()) {
           const response = await CapacitorHttp.post({
             url,
             data,
-            headers: this.getNativeHeaders(additionalHeaders)
+            headers: this.getNativeHeaders()
           });
           return response.data;
         } else {
           const response = await fetch(url, {
             method: 'POST',
-            headers: this.getHeaders(additionalHeaders),
+            headers: this.getHeaders(),
             body: JSON.stringify(data)
           });
           return this.handleResponse<T>(response);

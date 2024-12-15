@@ -71,6 +71,9 @@ const imagesDir = path.join(__dirname, '../../public/images');
 if (!fs.existsSync(imagesDir)) {
   fs.mkdirSync(imagesDir, { recursive: true });
 }
+// IMPORTANTE: La ruta de búsqueda debe ir ANTES de las rutas con parámetros
+// para evitar que Express la confunda con una ruta dinámica
+router.get('/search', (req, res) => phraseController.search(req, res));
 
 // Rutas genéricas
 router.get('/', (req, res) => phraseController.getAll(req, res));
@@ -78,6 +81,8 @@ router.post('/', (req, res) => phraseController.create(req, res));
 router.put('/:id', (req, res) => phraseController.update(req, res));
 router.delete('/:id', (req, res) => phraseController.delete(req, res));
 router.put('/:id/favorite', (req, res) => phraseController.toggleFavorite(req, res));
+
+
 
 
 // Ruta para la inserción masiva

@@ -1,0 +1,367 @@
+[2024-12-14T18:22:21.436Z] 📌 Script cargado
+[2024-12-14T18:22:21.437Z] 🚀 Iniciando script...
+[2024-12-14T18:22:21.438Z] Modo: skip
+[2024-12-14T18:22:21.472Z] ✅ Conexión establecida correctamente
+[2024-12-14T18:22:22.164Z] ✅ Modelos sincronizados
+[2024-12-14T18:22:22.165Z] 📑 Encontrados 44 archivos
+[2024-12-14T18:22:22.166Z] 
+📝 Procesando archivo 1/44: tirada_01.json
+[2024-12-14T18:22:22.167Z] 📄 Procesando archivo con 3 frases
+[2024-12-14T18:22:22.494Z] ✅ Frase procesada (1/3): "Solo sé que no sé nada...."
+[2024-12-14T18:22:22.593Z] ✅ Frase procesada (2/3): "Pienso, luego existo...."
+[2024-12-14T18:22:22.835Z] ✅ Frase procesada (3/3): "El poder tiende a corromper, y..."
+[2024-12-14T18:22:22.836Z] 
+📝 Procesando archivo 2/44: tirada_02.json
+[2024-12-14T18:22:22.839Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:23.195Z] ✅ Frase procesada (4/8): "La ciencia sin religión está c..."
+[2024-12-14T18:22:23.472Z] ✅ Frase procesada (5/8): "No hay camino para la paz, la ..."
+[2024-12-14T18:22:23.651Z] ✅ Frase procesada (6/8): "La educación es el arma más po..."
+[2024-12-14T18:22:23.795Z] ✅ Frase procesada (7/8): "La imaginación es más importan..."
+[2024-12-14T18:22:24.103Z] ✅ Frase procesada (8/8): "El único límite a nuestros log..."
+[2024-12-14T18:22:24.103Z] 
+📝 Procesando archivo 3/44: tirada_03.json
+[2024-12-14T18:22:24.105Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:24.273Z] ✅ Frase procesada (9/13): "En un lugar de La Mancha, de c..."
+[2024-12-14T18:22:24.447Z] ✅ Frase procesada (10/13): "La vida es aquello que te pasa..."
+[2024-12-14T18:22:24.651Z] ✅ Frase procesada (11/13): "Un viaje de mil millas comienz..."
+[2024-12-14T18:22:24.862Z] ✅ Frase procesada (12/13): "El verdadero conocimiento es c..."
+[2024-12-14T18:22:25.090Z] ✅ Frase procesada (13/13): "La medida de la inteligencia e..."
+[2024-12-14T18:22:25.090Z] 
+📝 Procesando archivo 4/44: tirada_04.json
+[2024-12-14T18:22:25.090Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:25.306Z] ✅ Frase procesada (14/18): "No puedo enseñar nada a nadie...."
+[2024-12-14T18:22:25.584Z] ✅ Frase procesada (15/18): "La historia me absolverá...."
+[2024-12-14T18:22:25.891Z] ✅ Frase procesada (16/18): "La vida es como una bicicleta...."
+[2024-12-14T18:22:26.151Z] ✅ Frase procesada (17/18): "El hombre está condenado a ser..."
+[2024-12-14T18:22:26.391Z] ✅ Frase procesada (18/18): "Lo que no te mata te hace más ..."
+[2024-12-14T18:22:26.391Z] 
+📝 Procesando archivo 5/44: tirada_05.json
+[2024-12-14T18:22:26.393Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:26.669Z] ✅ Frase procesada (19/23): "Haz de cada día tu obra maestr..."
+[2024-12-14T18:22:26.940Z] ✅ Frase procesada (20/23): "El único modo de hacer un gran..."
+[2024-12-14T18:22:27.152Z] ✅ Frase procesada (21/23): "El que tiene un porqué para vi..."
+[2024-12-14T18:22:27.322Z] ✅ Frase procesada (22/23): "No hay nada más fuerte en el m..."
+[2024-12-14T18:22:27.457Z] ✅ Frase procesada (23/23): "Los grandes espíritus siempre ..."
+[2024-12-14T18:22:27.458Z] 
+📝 Procesando archivo 6/44: tirada_06.json
+[2024-12-14T18:22:27.460Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:27.630Z] ✅ Frase procesada (24/28): "El éxito es la suma de pequeño..."
+[2024-12-14T18:22:27.881Z] ✅ Frase procesada (25/28): "La felicidad no es algo hecho...."
+[2024-12-14T18:22:28.025Z] ✅ Frase procesada (26/28): "El hombre nunca ha encontrado ..."
+[2024-12-14T18:22:28.128Z] ✅ Frase procesada (27/28): "La verdadera medida de un homb..."
+[2024-12-14T18:22:28.211Z] ✅ Frase procesada (28/28): "El conocimiento es poder...."
+[2024-12-14T18:22:28.211Z] 
+📝 Procesando archivo 7/44: tirada_07.json
+[2024-12-14T18:22:28.212Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:28.375Z] ✅ Frase procesada (29/33): "La mente es todo. En lo que pi..."
+[2024-12-14T18:22:28.652Z] ✅ Frase procesada (30/33): "El amor no mira con los ojos, ..."
+[2024-12-14T18:22:28.989Z] ✅ Frase procesada (31/33): "La mejor manera de predecir el..."
+[2024-12-14T18:22:29.327Z] ✅ Frase procesada (32/33): "La paz comienza con una sonris..."
+[2024-12-14T18:22:29.690Z] ✅ Frase procesada (33/33): "No hay nada permanente excepto..."
+[2024-12-14T18:22:29.690Z] 
+📝 Procesando archivo 8/44: tirada_08.json
+[2024-12-14T18:22:29.693Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:29.922Z] ✅ Frase procesada (34/38): "La grandeza de un hombre está ..."
+[2024-12-14T18:22:30.197Z] ✅ Frase procesada (35/38): "Nunca interrumpas a tu enemigo..."
+[2024-12-14T18:22:30.429Z] ✅ Frase procesada (36/38): "El talento gana juegos, pero e..."
+[2024-12-14T18:22:30.438Z] ⏭️ Saltando frase existente: "La educación es el arma más po..."
+[2024-12-14T18:22:30.692Z] ✅ Frase procesada (37/38): "La fe es dar el primer paso, i..."
+[2024-12-14T18:22:30.692Z] 
+📝 Procesando archivo 9/44: tirada_09.json
+[2024-12-14T18:22:30.694Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:31.043Z] ✅ Frase procesada (38/43): "La vida es 10% lo que me ocurr..."
+[2024-12-14T18:22:31.324Z] ✅ Frase procesada (39/43): "No he fallado. He encontrado 1..."
+[2024-12-14T18:22:31.742Z] ✅ Frase procesada (40/43): "No se puede ser valiente si so..."
+[2024-12-14T18:22:32.145Z] ✅ Frase procesada (41/43): "Cree que puedes y estarás a mi..."
+[2024-12-14T18:22:32.525Z] ✅ Frase procesada (42/43): "Nada en el mundo es más peligr..."
+[2024-12-14T18:22:32.525Z] 
+📝 Procesando archivo 10/44: tirada_10.json
+[2024-12-14T18:22:32.528Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:32.736Z] ✅ Frase procesada (43/48): "La única manera de hacer un bu..."
+[2024-12-14T18:22:33.124Z] ✅ Frase procesada (44/48): "El hombre es el único animal q..."
+[2024-12-14T18:22:33.540Z] ✅ Frase procesada (45/48): "La imaginación lo es todo. Es ..."
+[2024-12-14T18:22:33.815Z] ✅ Frase procesada (46/48): "No puedo cambiar la dirección ..."
+[2024-12-14T18:22:34.047Z] ✅ Frase procesada (47/48): "Haz lo que puedas, con lo que ..."
+[2024-12-14T18:22:34.048Z] 
+📝 Procesando archivo 11/44: tirada_11.json
+[2024-12-14T18:22:34.050Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:34.432Z] ✅ Frase procesada (48/53): "La esperanza es un sueño despi..."
+[2024-12-14T18:22:34.682Z] ✅ Frase procesada (49/53): "El que tiene paciencia, obtend..."
+[2024-12-14T18:22:34.921Z] ✅ Frase procesada (50/53): "Todo lo que puedes imaginar es..."
+[2024-12-14T18:22:35.185Z] ✅ Frase procesada (51/53): "La ciencia no conoce país, por..."
+[2024-12-14T18:22:35.772Z] ✅ Frase procesada (52/53): "Es mejor ser rey de tu silenci..."
+[2024-12-14T18:22:35.772Z] 
+📝 Procesando archivo 12/44: tirada_12.json
+[2024-12-14T18:22:35.777Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:35.781Z] ⏭️ Saltando frase existente: "La esperanza es un sueño despi..."
+[2024-12-14T18:22:35.787Z] ⏭️ Saltando frase existente: "El que tiene paciencia, obtend..."
+[2024-12-14T18:22:35.790Z] ⏭️ Saltando frase existente: "Todo lo que puedes imaginar es..."
+[2024-12-14T18:22:35.794Z] ⏭️ Saltando frase existente: "La ciencia no conoce país, por..."
+[2024-12-14T18:22:35.798Z] ⏭️ Saltando frase existente: "Es mejor ser rey de tu silenci..."
+[2024-12-14T18:22:35.799Z] 
+📝 Procesando archivo 13/44: tirada_13.json
+[2024-12-14T18:22:35.802Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:36.217Z] ✅ Frase procesada (53/63): "La vida es aquello que te suce..."
+[2024-12-14T18:22:36.751Z] ✅ Frase procesada (54/63): "No cuentes los días, haz que l..."
+[2024-12-14T18:22:37.350Z] ✅ Frase procesada (55/63): "Un hombre que no se alimenta d..."
+[2024-12-14T18:22:37.780Z] ✅ Frase procesada (56/63): "Si no puedo hacer grandes cosa..."
+[2024-12-14T18:22:38.321Z] ✅ Frase procesada (57/63): "Las personas no son recordadas..."
+[2024-12-14T18:22:38.321Z] 
+📝 Procesando archivo 14/44: tirada_14.json
+[2024-12-14T18:22:38.325Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:38.838Z] ✅ Frase procesada (58/68): "El futuro pertenece a quienes ..."
+[2024-12-14T18:22:39.338Z] ✅ Frase procesada (59/68): "El éxito es ir de fracaso en f..."
+[2024-12-14T18:22:39.750Z] ✅ Frase procesada (60/68): "La forma de empezar es dejar d..."
+[2024-12-14T18:22:40.279Z] ✅ Frase procesada (61/68): "El secreto del éxito es la con..."
+[2024-12-14T18:22:40.713Z] ✅ Frase procesada (62/68): "La verdadera sabiduría está en..."
+[2024-12-14T18:22:40.714Z] 
+📝 Procesando archivo 15/44: tirada_15.json
+[2024-12-14T18:22:40.718Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:40.722Z] ⏭️ Saltando frase existente: "El futuro pertenece a quienes ..."
+[2024-12-14T18:22:40.727Z] ⏭️ Saltando frase existente: "El éxito es ir de fracaso en f..."
+[2024-12-14T18:22:40.731Z] ⏭️ Saltando frase existente: "La forma de empezar es dejar d..."
+[2024-12-14T18:22:40.734Z] ⏭️ Saltando frase existente: "El secreto del éxito es la con..."
+[2024-12-14T18:22:40.737Z] ⏭️ Saltando frase existente: "La verdadera sabiduría está en..."
+[2024-12-14T18:22:40.737Z] 
+📝 Procesando archivo 16/44: tirada_16.json
+[2024-12-14T18:22:40.740Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:40.743Z] ⏭️ Saltando frase existente: "No hay camino para la paz, la ..."
+[2024-12-14T18:22:41.284Z] ✅ Frase procesada (63/78): "Aprende a vivir y sabrás morir..."
+[2024-12-14T18:22:41.938Z] ✅ Frase procesada (64/78): "El verdadero viaje de descubri..."
+[2024-12-14T18:22:42.417Z] ✅ Frase procesada (65/78): "El conocimiento habla, pero la..."
+[2024-12-14T18:22:42.911Z] ✅ Frase procesada (66/78): "La mejor manera de predecir el..."
+[2024-12-14T18:22:42.912Z] 
+📝 Procesando archivo 17/44: tirada_17.json
+[2024-12-14T18:22:42.916Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:42.922Z] ⏭️ Saltando frase existente: "El único modo de hacer un gran..."
+[2024-12-14T18:22:43.267Z] ✅ Frase procesada (67/83): "La vida es lo que sucede mient..."
+[2024-12-14T18:22:43.870Z] ✅ Frase procesada (68/83): "El arte más poderoso de la vid..."
+[2024-12-14T18:22:44.272Z] ✅ Frase procesada (69/83): "El propósito de nuestras vidas..."
+[2024-12-14T18:22:44.871Z] ✅ Frase procesada (70/83): "No es la especie más fuerte la..."
+[2024-12-14T18:22:44.872Z] 
+📝 Procesando archivo 18/44: tirada_18.json
+[2024-12-14T18:22:44.876Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:45.254Z] ✅ Frase procesada (71/88): "El ignorante afirma, el sabio ..."
+[2024-12-14T18:22:45.257Z] ⏭️ Saltando frase existente: "El que tiene un porqué para vi..."
+[2024-12-14T18:22:45.676Z] ✅ Frase procesada (72/88): "El hombre nunca ha hecho un ma..."
+[2024-12-14T18:22:46.138Z] ✅ Frase procesada (73/88): "No es lo que te sucede, sino c..."
+[2024-12-14T18:22:46.512Z] ✅ Frase procesada (74/88): "La humildad no es pensar menos..."
+[2024-12-14T18:22:46.513Z] 
+📝 Procesando archivo 19/44: tirada_19.json
+[2024-12-14T18:22:46.519Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:46.524Z] ⏭️ Saltando frase existente: "El conocimiento es poder...."
+[2024-12-14T18:22:47.017Z] ✅ Frase procesada (75/93): "No hay atajos para llegar a lo..."
+[2024-12-14T18:22:47.024Z] ⏭️ Saltando frase existente: "Haz lo que puedas, con lo que ..."
+[2024-12-14T18:22:47.406Z] ✅ Frase procesada (76/93): "La libertad no tiene su valor ..."
+[2024-12-14T18:22:47.647Z] ✅ Frase procesada (77/93): "Quien tiene paciencia, obtendr..."
+[2024-12-14T18:22:47.647Z] 
+📝 Procesando archivo 20/44: tirada_20.json
+[2024-12-14T18:22:47.650Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:48.048Z] ✅ Frase procesada (78/98): "La felicidad no es algo hecho...."
+[2024-12-14T18:22:48.051Z] ⏭️ Saltando frase existente: "El hombre está condenado a ser..."
+[2024-12-14T18:22:48.436Z] ✅ Frase procesada (79/98): "Todo parece imposible hasta qu..."
+[2024-12-14T18:22:48.652Z] ✅ Frase procesada (80/98): "La mente lo es todo. En lo que..."
+[2024-12-14T18:22:49.069Z] ✅ Frase procesada (81/98): "Las personas exitosas no son b..."
+[2024-12-14T18:22:49.070Z] 
+📝 Procesando archivo 21/44: tirada_21.json
+[2024-12-14T18:22:49.072Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:49.427Z] ✅ Frase procesada (82/103): "El secreto de avanzar es comen..."
+[2024-12-14T18:22:49.428Z] ⏭️ Saltando frase existente: "La educación es el arma más po..."
+[2024-12-14T18:22:49.682Z] ✅ Frase procesada (83/103): "No temo al hombre que ha pract..."
+[2024-12-14T18:22:49.920Z] ✅ Frase procesada (84/103): "He fallado una y otra vez en m..."
+[2024-12-14T18:22:50.400Z] ✅ Frase procesada (85/103): "La vida no es esperar a que pa..."
+[2024-12-14T18:22:50.401Z] 
+📝 Procesando archivo 22/44: tirada_22.json
+[2024-12-14T18:22:50.404Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:50.822Z] ✅ Frase procesada (86/108): "El hombre nunca sabe de lo que..."
+[2024-12-14T18:22:51.290Z] ✅ Frase procesada (87/108): "El que busca la verdad corre e..."
+[2024-12-14T18:22:51.487Z] ✅ Frase procesada (88/108): "La libertad es el derecho a de..."
+[2024-12-14T18:22:51.488Z] ⏭️ Saltando frase existente: "El éxito es la suma de pequeño..."
+[2024-12-14T18:22:51.782Z] ✅ Frase procesada (89/108): "No hay peor tiranía que la que..."
+[2024-12-14T18:22:51.782Z] 
+📝 Procesando archivo 23/44: tirada_23.json
+[2024-12-14T18:22:51.785Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:52.062Z] ✅ Frase procesada (90/113): "La vida es muy simple, pero in..."
+[2024-12-14T18:22:52.431Z] ✅ Frase procesada (91/113): "El mejor momento para plantar ..."
+[2024-12-14T18:22:52.762Z] ✅ Frase procesada (92/113): "El único límite a nuestra real..."
+[2024-12-14T18:22:53.182Z] ✅ Frase procesada (93/113): "El que domina a otros es fuert..."
+[2024-12-14T18:22:53.393Z] ✅ Frase procesada (94/113): "El fracaso es simplemente la o..."
+[2024-12-14T18:22:53.394Z] 
+📝 Procesando archivo 24/44: tirada_24.json
+[2024-12-14T18:22:53.395Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:53.397Z] ⏭️ Saltando frase existente: "Lo que no te mata te hace más ..."
+[2024-12-14T18:22:53.751Z] ✅ Frase procesada (95/118): "Solo hay dos cosas infinitas: ..."
+[2024-12-14T18:22:54.115Z] ✅ Frase procesada (96/118): "No puedes nadar hacia nuevos h..."
+[2024-12-14T18:22:54.392Z] ✅ Frase procesada (97/118): "Cambia tus pensamientos y camb..."
+[2024-12-14T18:22:54.589Z] ✅ Frase procesada (98/118): "Las dificultades preparan a pe..."
+[2024-12-14T18:22:54.590Z] 
+📝 Procesando archivo 25/44: tirada_25.json
+[2024-12-14T18:22:54.594Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:54.864Z] ✅ Frase procesada (99/123): "El mayor error que puedes come..."
+[2024-12-14T18:22:55.138Z] ✅ Frase procesada (100/123): "No se puede desatar un nudo si..."
+[2024-12-14T18:22:55.466Z] ✅ Frase procesada (101/123): "Todo lo que puedas imaginar es..."
+[2024-12-14T18:22:55.889Z] ✅ Frase procesada (102/123): "El éxito no es el final, el fr..."
+[2024-12-14T18:22:56.176Z] ✅ Frase procesada (103/123): "Haz de tu vida un sueño, y de ..."
+[2024-12-14T18:22:56.177Z] 
+📝 Procesando archivo 26/44: tirada_26.json
+[2024-12-14T18:22:56.180Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:56.856Z] ✅ Frase procesada (104/128): "El mayor bien que puedes hacer..."
+[2024-12-14T18:22:57.308Z] ✅ Frase procesada (105/128): "No es el tamaño del perro en l..."
+[2024-12-14T18:22:57.588Z] ✅ Frase procesada (106/128): "Si no tienes la libertad inter..."
+[2024-12-14T18:22:57.741Z] ✅ Frase procesada (107/128): "El que tiene imaginación sin i..."
+[2024-12-14T18:22:57.980Z] ✅ Frase procesada (108/128): "La vida no es un problema a se..."
+[2024-12-14T18:22:57.981Z] 
+📝 Procesando archivo 27/44: tirada_27.json
+[2024-12-14T18:22:57.984Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:57.987Z] ⏭️ Saltando frase existente: "El conocimiento habla, pero la..."
+[2024-12-14T18:22:58.242Z] ✅ Frase procesada (109/133): "El hombre está hecho de sus cr..."
+[2024-12-14T18:22:58.573Z] ✅ Frase procesada (110/133): "No es más rico quien más tiene..."
+[2024-12-14T18:22:58.688Z] ✅ Frase procesada (111/133): "La fuerza no proviene de la ca..."
+[2024-12-14T18:22:58.778Z] ✅ Frase procesada (112/133): "La vida es un diez por ciento ..."
+[2024-12-14T18:22:58.779Z] 
+📝 Procesando archivo 28/44: tirada_28.json
+[2024-12-14T18:22:58.780Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:58.781Z] ⏭️ Saltando frase existente: "La verdadera medida de un homb..."
+[2024-12-14T18:22:58.783Z] ⏭️ Saltando frase existente: "Haz lo que puedas, con lo que ..."
+[2024-12-14T18:22:58.903Z] ✅ Frase procesada (113/138): "La excelencia no es un acto, s..."
+[2024-12-14T18:22:59.131Z] ✅ Frase procesada (114/138): "Nuestras vidas empiezan a term..."
+[2024-12-14T18:22:59.357Z] ✅ Frase procesada (115/138): "La imaginación es más importan..."
+[2024-12-14T18:22:59.358Z] 
+📝 Procesando archivo 29/44: tirada_29.json
+[2024-12-14T18:22:59.360Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:22:59.605Z] ✅ Frase procesada (116/143): "No hay caminos para la paz; la..."
+[2024-12-14T18:22:59.909Z] ✅ Frase procesada (117/143): "La vida es demasiado corta par..."
+[2024-12-14T18:22:59.912Z] ⏭️ Saltando frase existente: "La felicidad no es algo hecho...."
+[2024-12-14T18:22:59.915Z] ⏭️ Saltando frase existente: "La grandeza de un hombre está ..."
+[2024-12-14T18:23:00.270Z] ✅ Frase procesada (118/143): "El mejor modo de predecir el f..."
+[2024-12-14T18:23:00.271Z] 
+📝 Procesando archivo 30/44: tirada_30.json
+[2024-12-14T18:23:00.275Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:00.488Z] ✅ Frase procesada (119/148): "Lo que hacemos en la vida tien..."
+[2024-12-14T18:23:00.716Z] ✅ Frase procesada (120/148): "No se trata de vivir el mayor ..."
+[2024-12-14T18:23:00.856Z] ✅ Frase procesada (121/148): "La verdadera libertad consiste..."
+[2024-12-14T18:23:00.857Z] ⏭️ Saltando frase existente: "El ignorante afirma, el sabio ..."
+[2024-12-14T18:23:00.908Z] ✅ Frase procesada (122/148): "Cualquier cosa que la mente de..."
+[2024-12-14T18:23:00.908Z] 
+📝 Procesando archivo 31/44: tirada_31.json
+[2024-12-14T18:23:00.908Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:00.909Z] ⏭️ Saltando frase existente: "No hay nada más fuerte en el m..."
+[2024-12-14T18:23:01.012Z] ✅ Frase procesada (123/153): "El destino mezcla las cartas, ..."
+[2024-12-14T18:23:01.014Z] ⏭️ Saltando frase existente: "La educación es el arma más po..."
+[2024-12-14T18:23:01.091Z] ✅ Frase procesada (124/153): "Cuanto más grande es el caos, ..."
+[2024-12-14T18:23:01.173Z] ✅ Frase procesada (125/153): "El talento gana partidos, pero..."
+[2024-12-14T18:23:01.173Z] 
+📝 Procesando archivo 32/44: tirada_32.json
+[2024-12-14T18:23:01.174Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:01.293Z] ✅ Frase procesada (126/158): "La paciencia es amarga, pero s..."
+[2024-12-14T18:23:01.294Z] ⏭️ Saltando frase existente: "El que tiene un porqué para vi..."
+[2024-12-14T18:23:01.421Z] ✅ Frase procesada (127/158): "La suerte favorece solo a la m..."
+[2024-12-14T18:23:01.518Z] ✅ Frase procesada (128/158): "La mejor manera de encontrarte..."
+[2024-12-14T18:23:01.519Z] ⏭️ Saltando frase existente: "El éxito es la suma de pequeño..."
+[2024-12-14T18:23:01.519Z] 
+📝 Procesando archivo 33/44: tirada_33.json
+[2024-12-14T18:23:01.521Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:01.612Z] ✅ Frase procesada (129/163): "El mayor peligro para la mayor..."
+[2024-12-14T18:23:01.614Z] ⏭️ Saltando frase existente: "El poder tiende a corromper, y..."
+[2024-12-14T18:23:01.734Z] ✅ Frase procesada (130/163): "Solo hay un bien: el conocimie..."
+[2024-12-14T18:23:01.856Z] ✅ Frase procesada (131/163): "La mente es como un paracaídas..."
+[2024-12-14T18:23:02.011Z] ✅ Frase procesada (132/163): "La oscuridad no puede expulsar..."
+[2024-12-14T18:23:02.011Z] 
+📝 Procesando archivo 34/44: tirada_34.json
+[2024-12-14T18:23:02.013Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:02.111Z] ✅ Frase procesada (133/168): "La perfección no es alcanzable..."
+[2024-12-14T18:23:02.233Z] ✅ Frase procesada (134/168): "El que tiene salud tiene esper..."
+[2024-12-14T18:23:02.235Z] ⏭️ Saltando frase existente: "El éxito es ir de fracaso en f..."
+[2024-12-14T18:23:02.420Z] ✅ Frase procesada (135/168): "No midas cada día por la cosec..."
+[2024-12-14T18:23:02.614Z] ✅ Frase procesada (136/168): "Tu tiempo es limitado, así que..."
+[2024-12-14T18:23:02.618Z] 
+📝 Procesando archivo 35/44: tirada_35.json
+[2024-12-14T18:23:02.621Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:02.631Z] ⏭️ Saltando frase existente: "El hombre nunca sabe de lo que..."
+[2024-12-14T18:23:02.868Z] ✅ Frase procesada (137/173): "No es el más fuerte de las esp..."
+[2024-12-14T18:23:03.061Z] ✅ Frase procesada (138/173): "La simplicidad es la máxima so..."
+[2024-12-14T18:23:03.065Z] ⏭️ Saltando frase existente: "El conocimiento es poder...."
+[2024-12-14T18:23:03.227Z] ✅ Frase procesada (139/173): "Haz las cosas lo más simples p..."
+[2024-12-14T18:23:03.227Z] 
+📝 Procesando archivo 36/44: tirada_36.json
+[2024-12-14T18:23:03.229Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:03.372Z] ✅ Frase procesada (140/178): "El secreto del éxito no es hac..."
+[2024-12-14T18:23:03.618Z] ✅ Frase procesada (141/178): "Los hombres no se perturban po..."
+[2024-12-14T18:23:03.734Z] ✅ Frase procesada (142/178): "Un hombre con una nueva idea e..."
+[2024-12-14T18:23:03.797Z] ✅ Frase procesada (143/178): "El coraje no siempre ruge. A v..."
+[2024-12-14T18:23:03.845Z] ✅ Frase procesada (144/178): "Nunca es demasiado tarde para ..."
+[2024-12-14T18:23:03.845Z] 
+📝 Procesando archivo 37/44: tirada_37.json
+[2024-12-14T18:23:03.845Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:03.846Z] ⏭️ Saltando frase existente: "La imaginación es más importan..."
+[2024-12-14T18:23:03.892Z] ✅ Frase procesada (145/183): "El hombre es mortal por sus te..."
+[2024-12-14T18:23:03.892Z] ⏭️ Saltando frase existente: "La mejor manera de predecir el..."
+[2024-12-14T18:23:03.940Z] ✅ Frase procesada (146/183): "El éxito depende de la prepara..."
+[2024-12-14T18:23:03.978Z] ✅ Frase procesada (147/183): "El valor de una idea radica en..."
+[2024-12-14T18:23:03.978Z] 
+📝 Procesando archivo 38/44: tirada_38.json
+[2024-12-14T18:23:03.979Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:03.979Z] ⏭️ Saltando frase existente: "El que tiene paciencia, obtend..."
+[2024-12-14T18:23:04.019Z] ✅ Frase procesada (148/188): "No he fracasado. He encontrado..."
+[2024-12-14T18:23:04.058Z] ✅ Frase procesada (149/188): "Nunca dejes que el miedo se in..."
+[2024-12-14T18:23:04.100Z] ✅ Frase procesada (150/188): "La vida es como montar en bici..."
+[2024-12-14T18:23:04.150Z] ✅ Frase procesada (151/188): "Lo que obtenemos al lograr nue..."
+[2024-12-14T18:23:04.150Z] 
+📝 Procesando archivo 39/44: tirada_39.json
+[2024-12-14T18:23:04.151Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:04.199Z] ✅ Frase procesada (152/193): "La calidad nunca es un acciden..."
+[2024-12-14T18:23:04.199Z] ⏭️ Saltando frase existente: "El conocimiento habla, pero la..."
+[2024-12-14T18:23:04.278Z] ✅ Frase procesada (153/193): "Si puedes soñarlo, puedes hace..."
+[2024-12-14T18:23:04.391Z] ✅ Frase procesada (154/193): "La vida es realmente simple, p..."
+[2024-12-14T18:23:04.561Z] ✅ Frase procesada (155/193): "El arte de ser sabio es el art..."
+[2024-12-14T18:23:04.561Z] 
+📝 Procesando archivo 40/44: tirada_40.json
+[2024-12-14T18:23:04.562Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:04.690Z] ✅ Frase procesada (156/198): "El carácter es como un árbol y..."
+[2024-12-14T18:23:04.962Z] ✅ Frase procesada (157/198): "Lo que no nos mata nos hace má..."
+[2024-12-14T18:23:04.966Z] ⏭️ Saltando frase existente: "El verdadero viaje de descubri..."
+[2024-12-14T18:23:04.969Z] ⏭️ Saltando frase existente: "La mente es todo. En lo que pi..."
+[2024-12-14T18:23:05.137Z] ✅ Frase procesada (158/198): "Solo hay una felicidad en esta..."
+[2024-12-14T18:23:05.138Z] 
+📝 Procesando archivo 41/44: tirada_41.json
+[2024-12-14T18:23:05.140Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:05.143Z] ⏭️ Saltando frase existente: "La educación es el arma más po..."
+[2024-12-14T18:23:05.146Z] ⏭️ Saltando frase existente: "El que tiene un porqué para vi..."
+[2024-12-14T18:23:05.451Z] ✅ Frase procesada (159/203): "El éxito no es la clave de la ..."
+[2024-12-14T18:23:05.455Z] ⏭️ Saltando frase existente: "Las personas no son recordadas..."
+[2024-12-14T18:23:05.957Z] ✅ Frase procesada (160/203): "Nuestra mayor gloria no es no ..."
+[2024-12-14T18:23:05.957Z] 
+📝 Procesando archivo 42/44: tirada_42.json
+[2024-12-14T18:23:05.959Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:06.037Z] ✅ Frase procesada (161/208): "El amor es la fuerza más humil..."
+[2024-12-14T18:23:06.117Z] ✅ Frase procesada (162/208): "La vida es un 10% lo que te su..."
+[2024-12-14T18:23:06.200Z] ✅ Frase procesada (163/208): "El verdadero signo de la intel..."
+[2024-12-14T18:23:06.313Z] ✅ Frase procesada (164/208): "Haz el bien a otros, como te g..."
+[2024-12-14T18:23:06.422Z] ✅ Frase procesada (165/208): "La única manera de hacer un gr..."
+[2024-12-14T18:23:06.422Z] 
+📝 Procesando archivo 43/44: tirada_43.json
+[2024-12-14T18:23:06.423Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:06.482Z] ✅ Frase procesada (166/213): "El mayor enemigo del conocimie..."
+[2024-12-14T18:23:06.759Z] ✅ Frase procesada (167/213): "La vida no se mide por las vec..."
+[2024-12-14T18:23:06.874Z] ✅ Frase procesada (168/213): "El éxito es aprender a ir de f..."
+[2024-12-14T18:23:06.876Z] ⏭️ Saltando frase existente: "Nunca es demasiado tarde para ..."
+[2024-12-14T18:23:06.877Z] ⏭️ Saltando frase existente: "El único modo de hacer un gran..."
+[2024-12-14T18:23:06.877Z] 
+📝 Procesando archivo 44/44: tirada_44.json
+[2024-12-14T18:23:06.879Z] 📄 Procesando archivo con 5 frases
+[2024-12-14T18:23:07.000Z] ✅ Frase procesada (169/218): "No juzgues cada día por la cos..."
+[2024-12-14T18:23:07.201Z] ✅ Frase procesada (170/218): "La verdadera medida de la riqu..."
+[2024-12-14T18:23:07.204Z] ⏭️ Saltando frase existente: "Solo sé que no sé nada...."
+[2024-12-14T18:23:07.206Z] ⏭️ Saltando frase existente: "El hombre está condenado a ser..."
+[2024-12-14T18:23:07.349Z] ✅ Frase procesada (171/218): "No es lo que te ocurre, sino c..."
+[2024-12-14T18:23:07.349Z] 
+📊 Resumen del proceso:
+[2024-12-14T18:23:07.350Z] Total archivos: 44
+[2024-12-14T18:23:07.350Z] Total frases: 218
+[2024-12-14T18:23:07.350Z] Frases procesadas: 171
+[2024-12-14T18:23:07.350Z] Frases creadas: 171
+[2024-12-14T18:23:07.350Z] Frases actualizadas: 0
+[2024-12-14T18:23:07.350Z] Frases saltadas: 47
+[2024-12-14T18:23:07.350Z] Errores: 0
+[2024-12-14T18:23:07.350Z] 
+✅ Proceso completado

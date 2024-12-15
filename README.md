@@ -1,3 +1,4 @@
+<!-- README.md -->
 # Frases Célebres - Aplicación Full Stack con Ionic, Express, Sequelize y MySQL
 
 ## 📋 Índice

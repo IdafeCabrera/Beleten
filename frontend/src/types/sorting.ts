@@ -3,7 +3,7 @@
 import { Phrase } from "./Phrase";
 
 // types/sorting.ts
-export type SortField = 'id' | 'text' | 'author' | 'createdAt' | 'category';
+export type SortField = 'id' | 'text' | 'author' | 'created_at' | 'category';
 export type SortOrder = 'asc' | 'desc';
 export type SearchType = 'text' | 'author' | 'tag' | 'category';
 
