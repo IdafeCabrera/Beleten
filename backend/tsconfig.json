@@ -6,7 +6,7 @@
       "esModuleInterop": true,
       "lib": ["es2017", "esnext.asynciterable"],
       "types": ["node", "express", "multer"],
-      "typeRoots": ["./node_modules/@types", "./types"], 
+      "typeRoots": ["./node_modules/@types", "./src/types"], 
       "allowSyntheticDefaultImports": true,
       "rootDir": "./src",
       "outDir": "./dist",
@@ -29,9 +29,7 @@
     },
     "include": [
       "src/**/*.ts", 
-      "express.d.ts",
-      "src/**/*.ts", 
-      "src/types/**/*.d.ts" 
+    "src/types/**/*.d.ts"
     ],
     "exclude": [
       "node_modules",

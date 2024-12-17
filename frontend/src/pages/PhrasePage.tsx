@@ -1,8 +1,8 @@
 // frontend/src/pages/PhrasePage.tsx
-import React, { useRef, useState, useMemo } from "react";
-import PhraseSortControls from "../components/PhraseSortControls";
+import React, { useRef, useState, useMemo, useEffect } from "react";
+import PhraseSortControls from "../features/phrases/components/PhraseSortControls";
 
-import DesignSelector from '../components/DesignSelector';
+import DesignSelector from '../components/a_ordenar/DesignSelector';
 import { SortField, SortOrder } from '../types/sorting';
 import {
   IonToolbar,
@@ -16,6 +16,7 @@ import {
   IonInfiniteScroll,
   IonInfiniteScrollContent,
   IonFabButton,
+  IonContent,
 } from "@ionic/react";
 
 import {
@@ -26,29 +27,39 @@ import {
   addOutline,
   eye,
 } from "ionicons/icons";
-import { CardDesign } from "../types/CardDesign";
+import { CardPhraseDesign } from "../features/phrases/types/card.types";
 import { usePhraseController } from "../controllers/usePhraseController";
-import Layout from "../components/layout/Layout";
-import PhraseList from "../components/PhraseList";
-import PhraseModal from "../components/PhraseModal";
-import PhraseSkeleton from "../components/PhraseSkeleton";
+
+import PhraseList from "../features/phrases/components/PhraseList";
+import PhraseModal from "../features/phrases/components/PhraseModal";
+import PhraseSkeleton from "../features/phrases/components/loading/PhraseSkeleton";
 import "./PhrasePage.css";
 import { InfiniteScrollCustomEvent } from "@ionic/core";
-import ViewToggleButton from "../components/ViewToggleButton";
-import PhraseStats from "../components/PhraseStats";
+import ViewToggleButton from "../components/a_ordenar/ViewToggleButton";
+import PhraseStats from "../features/phrases/components/PhraseStats";
+import Layout from '../components/layout/Layout';
+import { useAuth } from '../app/providers/AuthProvider';
 
-import PhraseSearch from "../components/PhraseSearch";
-import DesignFabSelector from "../components/DesignFabSelector";
-import PhraseSearchControls from "../components/PhraseSearchControls";
+import PhraseSearch from "../features/phrases/components/PhraseSearch";
+import DesignFabSelector from "../components/a_ordenar/DesignFabSelector";
+import PhraseSearchControls from "../features/phrases/components/PhraseSearchControls";
 
 const PhrasePage: React.FC = () => {
-  
-  const [selectedDesign, setSelectedDesign] = useState<CardDesign>(
-    CardDesign.CLASSIC
+  const { isAuthenticated } = useAuth();
+  const [selectedDesign, setSelectedDesign] = useState<CardPhraseDesign>(
+    CardPhraseDesign.CLASSIC
   );
-  const [viewType, setViewType] = useState<"grid" | "list">("grid");
 
+  
+  /* const [viewType, setViewType] = useState<"grid" | "list">("grid"); */
+  const [viewType, setViewType] = useState<"grid" | "list">(
+    localStorage.getItem("preferredViewType") as "grid" | "list" || "grid"
+  );
 
+    // Guardar el tipo de vista en localStorage cuando cambie
+    useEffect(() => {
+      localStorage.setItem("preferredViewType", viewType);
+    }, [viewType]);
 
   const {
     phrases,
@@ -63,13 +74,47 @@ const PhrasePage: React.FC = () => {
     loadMorePhrases,
     hasMore,
     totalPhrases,
-    performSearch, // Agregar esta línea
-    clearSearch,   // Agregar esta línea si la necesitas
-    isSearchActive // Agregar esta línea si la necesitas
+    performSearch,
+    clearSearch,   
+    isSearchActive,
+    
   } = usePhraseController();
+
+
+    // Efecto para mantener la posición del scroll al cambiar de vista
+    useEffect(() => {
+      const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+      if (savedScrollPosition) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: parseInt(savedScrollPosition),
+            behavior: 'auto'
+          });
+          sessionStorage.removeItem("scrollPosition");
+        }, 100);
+      }
+    }, [viewType]);
+
+
+  // Modificar el handler de cambio de vista
+/*   const handleViewTypeChange = (newViewType: "grid" | "list") => {
+    sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+    setViewType(newViewType);
+  };
+ */
+
+    // Modificar el handler de cambio de vista para que sea compatible con SetStateAction
+    const handleViewTypeChange = (value: "grid" | "list" | ((prev: "grid" | "list") => "grid" | "list")) => {
+      const newViewType = typeof value === "function" ? value(viewType) : value;
+      sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+      setViewType(newViewType);
+    };
+
 
   // Crear un ref para el contenedor de frases
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+
 
   // En PhrasePage.tsx
 
@@ -181,7 +226,7 @@ const PhrasePage: React.FC = () => {
     }
 
     return (
-      <>
+      <div ref={containerRef}>
         <div className="add-button-container">
           <IonFabButton className=".ion-button" onClick={() => openEditModal()}>
             <IonIcon  icon={addOutline} />
@@ -194,13 +239,17 @@ const PhrasePage: React.FC = () => {
           onSortChange={handleSortChange}
           currentSort={sortConfig}
           viewType={viewType}
-          onViewChange={setViewType}
+          
+          /* onViewChange={setViewType} */
+          
+          
+          onViewChange={handleViewTypeChange}
+
           displayedCount={phrases.length}
           totalCount={totalPhrases}
           isFiltered={isSearchActive} onClearSearch={function (): void {
             throw new Error("Function not implemented.");
           } } isSearchActive={false} isLoading={false}      />
-
 
 
 
@@ -221,63 +270,65 @@ const PhrasePage: React.FC = () => {
             />
           </div>
         )}
-      </>
+      </div>
     );
   };
 
   return (
-    <Layout>
-        
-        <IonToolbar>
-    <div className="center-title">
-      <IonTitle className="center-title">
-        Frases célebres, pensamientos, palabras y citas de la vida.
-      </IonTitle>
-    </div>
-  </IonToolbar>
- 
-
-
-      {/* Solo mostrar PhraseStats cuando phrases está definido */}
-      {phrases && phrases.length > 0 && 
-    <PhraseStats 
-        phrases={phrases}
-        viewType={viewType}
-        onViewChange={setViewType} displayedCount={0} totalCount={0} isFiltered={false}    />
-  }
-      {renderContent()}
-      <IonInfiniteScroll
-        onIonInfinite={handleInfiniteScroll}
-        threshold="100px"
-        disabled={!hasMore || isLoading}
-        position="bottom"
-        className="infinite-scroll-custom"
-      >
-        <IonInfiniteScrollContent 
-          loadingSpinner="crescent"
-          loadingText="Cargando más frases..."
-        >
-          {isLoading && <div style={{height: "20px" }} />}
-          <div className="load-progress " >
-            {`${
-              phrases.length
-            } de ${totalPhrases} frases cargadas (${Math.round(
-              (phrases.length / totalPhrases) * 100
-            )}%)`}
-          </div>
-
-        </IonInfiniteScrollContent>
-      </IonInfiniteScroll>
-
-      <PhraseModal
-        isOpen={isModalOpen}
-        phrase={currentPhrase}
-        onClose={closeModal}
-        onSave={savePhrase}
-      />
-      
-    </Layout>
-  );
+      <Layout title="Frases">
+        <IonContent>
+          <IonToolbar>
+            <div className="center-title">
+              <IonTitle className="center-title">
+                Frases célebres, pensamientos, palabras y citas de la vida.
+              </IonTitle>
+            </div>
+          </IonToolbar>
+    
+          {/* Solo mostrar PhraseStats cuando phrases está definido */}
+          {phrases && phrases.length > 0 && 
+            <PhraseStats 
+              phrases={phrases}
+              viewType={viewType}
+              onViewChange={setViewType} 
+              displayedCount={phrases.length} 
+              totalCount={totalPhrases} 
+              isFiltered={isSearchActive}    
+            />
+          }
+          {renderContent()}
+    
+          <IonInfiniteScroll
+            onIonInfinite={handleInfiniteScroll}
+            threshold="100px"
+            disabled={!hasMore || isLoading}
+            position="bottom"
+            className="infinite-scroll-custom"
+          >
+            <IonInfiniteScrollContent 
+              loadingSpinner="crescent"
+              loadingText="Cargando más frases..."
+            >
+              {isLoading && <div style={{height: "20px" }} />}
+              <div className="load-progress " >
+                {`${
+                  phrases.length
+                } de ${totalPhrases} frases cargadas (${Math.round(
+                  (phrases.length / totalPhrases) * 100
+                )}%)`}
+              </div>
+            </IonInfiniteScrollContent>
+          </IonInfiniteScroll>
+        </IonContent>
+    
+        <PhraseModal
+          isOpen={isModalOpen}
+          phrase={currentPhrase}
+          onClose={closeModal}
+          onSave={savePhrase}
+        />
+      </Layout>
+    );
 };
 
 export default PhrasePage;

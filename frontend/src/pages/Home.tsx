@@ -31,7 +31,7 @@ import {
 
 import { MenuItem } from "../types/MenuItem";
 import "./Home.css";
-
+import AppBar from '../components/layout/AppBar';
 
 
 import Layout from '../components/layout/Layout';
@@ -44,10 +44,11 @@ import {
   faQuoteRight,
   faVrCardboard,
 } from "@fortawesome/free-solid-svg-icons";
-import IonCardWelcome from "../components/Cards/IonCardWelcome";
-import Menu from "../components/Menu";
-import Logo from "../components/Logo";
-import CameraClipboardTest from "../components/CameraClipboardTest";
+import IonCardWelcome from "../components/a_ordenar/Cards/IonCardWelcome";
+import Menu from "../components/a_ordenar/Menu";
+import Logo from "../components/a_ordenar/Logo";
+import CameraClipboardTest from "../components/a_ordenar/CameraClipboardTest";
+
 
 const menuItems: MenuItem[] = [
   { icon: home, text: "Inicio", url: "/home" },
@@ -57,6 +58,7 @@ const menuItems: MenuItem[] = [
 ];
 
 const Home: React.FC = () => {
+  
   const fabButtons = [
     { icon: call, label: "Llamar", onClick: () => console.log("Call clicked") },
     { icon: mail, label: "Correo", onClick: () => console.log("Mail clicked") },
@@ -67,11 +69,16 @@ const Home: React.FC = () => {
     { icon: heart, onClick: () => console.log("Heart clicked") },
     { icon: share, onClick: () => console.log("Share clicked") },
   ];
+
+
+
+
+
   return (
     
 
         
-        <Layout>
+        <Layout title="Inicio">
           {/* <ExpandableFab buttons={fabButtons} vertical={true} /> */}
           <IonCardWelcome />
           <div className="feature-grid">

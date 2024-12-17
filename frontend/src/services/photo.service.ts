@@ -35,6 +35,33 @@ export class PhotoService {
     }
   }
 
+
+  public async deletePhoto(filename: string): Promise<void> {
+    try {
+      // Asegúrate de que la ruta sea correcta
+      const cleanFilename = filename.startsWith('/images/') ? filename.slice(8) : filename;
+  
+      const deleteUrl = `${config.baseUrl}/api/photos/${cleanFilename}`;
+      console.log(`🗑️ Eliminando foto desde: ${deleteUrl}`);
+  
+      const response = await fetch(deleteUrl, {
+        method: 'DELETE',
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Error al eliminar la foto: ${response.status}`);
+      }
+  
+      console.log('✅ Foto eliminada exitosamente');
+    } catch (error) {
+      console.error('❌ Error al eliminar la foto:', error);
+      throw new Error(`Error al eliminar la foto: ${error}`);
+    }
+  }
+
+  
+
+
   public async uploadImage(phraseId: number, photo: Photo): Promise<string> {
     try {
       if (!photo.base64String) {

@@ -1,5 +1,5 @@
 // frontend/src/types/api.types.ts
-import { Phrase } from "./phrase.types";
+import { Phrase } from "../features/phrases/types/phrase.types";
 
 export interface PaginationData {
     currentPage: number;

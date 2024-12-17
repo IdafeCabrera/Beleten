@@ -1,5 +1,5 @@
 // backend/src/types/express.d.ts
-import { User } from '../models/User'; // Asegúrate de que la ruta es correcta
+import User from '../models/User';
 
 declare global {
   namespace Express {
@@ -8,3 +8,5 @@ declare global {
     }
   }
 }
+
+export {}; // Esto asegura que TypeScript trate el archivo como un módulo

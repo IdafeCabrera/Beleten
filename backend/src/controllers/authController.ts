@@ -1,10 +1,53 @@
 // backend/src/controllers/authController.ts
 import { Request, Response } from 'express';
-import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 import { Op } from 'sequelize';
 import  User  from '../models/User';
 import { generateToken } from '../utils/tokenUtils';
+
+interface AuthenticatedRequest extends Request {
+  user?: User;
+}
+
+export const changePassword = async (req: AuthenticatedRequest, res: Response): Promise<void> => {
+  try {
+    const { oldPassword, newPassword } = req.body;
+    const userId = req.user?.id;
+
+    if (!userId) {
+      res.status(401).json({ message: 'Usuario no autenticado' });
+      return;
+    }
+
+    if (!newPassword || newPassword.length < 6) {
+      res.status(400).json({ message: 'La nueva contraseña debe tener al menos 6 caracteres' });
+      return;
+    }
+
+    const user = await User.findByPk(userId);
+
+    if (!user) {
+      res.status(404).json({ message: 'Usuario no encontrado' });
+      return;
+    }
+
+    const isPasswordValid = await bcrypt.compare(oldPassword, user.password);
+    if (!isPasswordValid) {
+      res.status(401).json({ message: 'La contraseña actual es incorrecta' });
+      return;
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    user.password = hashedPassword;
+    await user.save();
+
+    res.status(200).json({ message: 'Contraseña actualizada correctamente' });
+  } catch (error) {
+    console.error('Error al cambiar la contraseña:', error);
+    res.status(500).json({ message: 'Error interno del servidor', error });
+  }
+};
 
 export const login = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -50,6 +93,11 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {
     const { username, email, password, roleId } = req.body;
+
+    if (!username || !email || !password) {
+      res.status(400).json({ message: 'Todos los campos son obligatorios.' });
+      return;
+    }
 
     // Validar existencia de nombre de usuario y correo
     const existingUser = await User.findOne({ where: { [Op.or]: [{ username }, { email }] } });
@@ -115,50 +163,7 @@ export const verify = (req: Request, res: Response): void => {
   }
 };
 
-export const changePassword = async (req: Request, res: Response): Promise<void> => {
-  try {
-    const { oldPassword, newPassword } = req.body;
-    const userId = req.user?.id; // El middleware authMiddleware ya debe haber agregado el ID del usuario autenticado
 
-    if (!userId) {
-      res.status(401).json({ message: 'Usuario no autenticado' });
-      return;
-    }
-
-    // Validar nueva contraseña (puedes ajustar las reglas según tus necesidades)
-    if (!newPassword || newPassword.length < 6) {
-      res.status(400).json({ message: 'La nueva contraseña debe tener al menos 6 caracteres' });
-      return;
-    }
-
-    // Buscar el usuario en la base de datos
-    const user = await User.findByPk(userId);
-
-    if (!user) {
-      res.status(404).json({ message: 'Usuario no encontrado' });
-      return;
-    }
-
-    // Verificar la contraseña actual
-    const isPasswordValid = await bcrypt.compare(oldPassword, user.password);
-    if (!isPasswordValid) {
-      res.status(401).json({ message: 'La contraseña actual es incorrecta' });
-      return;
-    }
-
-    // Generar el hash de la nueva contraseña
-    const hashedPassword = await bcrypt.hash(newPassword, 10);
-
-    // Actualizar la contraseña en la base de datos
-    user.password = hashedPassword;
-    await user.save();
-
-    res.status(200).json({ message: 'Contraseña actualizada correctamente' });
-  } catch (error) {
-    console.error('Error al cambiar la contraseña:', error);
-    res.status(500).json({ message: 'Error interno del servidor', error });
-  }
-};
 
 
 

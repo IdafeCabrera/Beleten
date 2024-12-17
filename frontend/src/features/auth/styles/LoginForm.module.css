@@ -1,0 +1,142 @@
+:root {
+    --darkBlue: #217093;
+    --medBlue: #4eb8dd;
+    --medBlue1:rgb(211, 165, 39);
+    --lightBlue: #ddf1fa;
+    --inputBG: #f3fafd;
+  }
+  
+  body {
+    background-color: #eff3f4;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+  }
+  
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2.25em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+  }
+  
+  .svgContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+    background: none;
+    border: 2.5px solid #3a5e77;
+    overflow: hidden;
+  }
+  
+  .mySVG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .inputGroup {
+    margin-bottom: 2em;
+  }
+  
+  .inputGroup label {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: var(--darkBlue);
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    height: 65px;
+    padding: 0 1em;
+    background-color: var(--inputBG);
+    border: 2px solid var(--darkBlue);
+    border-radius: 4px;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #353538;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s linear, border-color 0.25s ease-out;
+  }
+  
+  .inputGroup input:focus {
+    outline: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-color: var(--medBlue);
+  }
+  
+  .inputGroup .helper {
+    font-size: 0.95em;
+    color: var(--darkBlue);
+    opacity: 0.65;
+    transition: transform 0.2s ease-out, opacity 0.2s linear;
+  }
+  
+  .inputGroup1 input:focus + .helper {
+    transform: translateY(-1.2em) scale(0.85);
+    opacity: 1;
+  }
+  
+  .button_login {
+    width: 100%;
+    height: 55px;
+    background-color: var(--medBlue);
+    color: #fff;
+    font-size: 0.95em;
+    font-weight: 600;
+    border: none;
+    
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+  }
+  .button_register {
+    width: 50%;
+    height: 45px;
+    background-color: var(--medBlue1);
+    color: #fff;
+    font-size: 0.95em;
+    font-weight: 600;
+    border: none;
+
+    
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .button:hover {
+    background-color: var(--darkBlue);
+  }
+  
+  .error {
+    color: red;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #217093;
+    font-size: 0.9em;
+    cursor: pointer;
+  }  

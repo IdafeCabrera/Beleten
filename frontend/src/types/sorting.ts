@@ -1,6 +1,6 @@
 // frontend/src/types/sorting.ts
 
-import { Phrase } from "./Phrase";
+import { Phrase } from "../features/phrases/types/phrase.types";
 
 // types/sorting.ts
 export type SortField = 'id' | 'text' | 'author' | 'created_at' | 'category';

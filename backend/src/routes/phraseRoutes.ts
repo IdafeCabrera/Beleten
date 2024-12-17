@@ -6,8 +6,9 @@ import { GenericController } from '../controllers/GenericController';
 import upload from '../multer/upload';
 import path from 'path';
 import fs from 'fs';
+import { deletePhoto } from '../controllers/photoController';
 
-// Interfaces mejoradas
+
 interface MulterRequest extends Request {
   file?: Express.Multer.File;
 }
@@ -81,6 +82,8 @@ router.post('/', (req, res) => phraseController.create(req, res));
 router.put('/:id', (req, res) => phraseController.update(req, res));
 router.delete('/:id', (req, res) => phraseController.delete(req, res));
 router.put('/:id/favorite', (req, res) => phraseController.toggleFavorite(req, res));
+
+router.delete('/:filename', deletePhoto);
 
 
 

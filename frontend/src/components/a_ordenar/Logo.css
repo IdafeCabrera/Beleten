@@ -1,0 +1,38 @@
+.logo-container {
+    width: 100%;
+    max-width: 210px; /* Ajusta esto según el ancho máximo que desees para el logo */
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .logo-svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Puedes agregar media queries para ajustar el tamaño en diferentes breakpoints si es necesario */
+  @media (max-width: 768px) {
+    .logo-container {
+      max-width: 180px;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-container {
+      max-width: 100px;
+    }
+  }
+/* 
+  @media (max-width: 768px) {
+    svg {
+      width: 80%;  /* Ajusta el SVG para pantallas más pequeñas */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    svg {
+      width: 50%;  /* Ajusta el SVG para pantallas más grandes */
+    }
+  } */
+  

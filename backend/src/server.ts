@@ -8,6 +8,9 @@ import path from 'path';
 import authRoutes from './routes/authRoutes';
 import dotenv from 'dotenv';
 
+import userRoutes from './routes/userRoutes';
+import photoRoutes from './routes/phtoRoutes';
+
 dotenv.config();
 
 const app = express();
@@ -34,9 +37,11 @@ app.use('/api/auth', authRoutes);
 
 // Configurar directorio de imágenes como público
 app.use('/images', express.static(path.join(__dirname, '../public/images')));
-
+app.use('/api/users', userRoutes);
 
 app.use('/api/phrases', phraseRoutes);
+
+app.use('/api/photos', photoRoutes);
 
 // Iniciar servidor
 const startServer = async () => {

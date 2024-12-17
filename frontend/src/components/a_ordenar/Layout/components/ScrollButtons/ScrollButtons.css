@@ -1,0 +1,40 @@
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    transition: all var(--transition-duration, 0.3s) ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .floating-buttons-container.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  
+  .floating-buttons-wrapper {
+    display: flex;
+    gap: var(--button-gap, 10px);
+    background-color: var(--button-background, rgba(255, 255, 255, 0.9));
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: var(--button-shadow, 0 4px 12px rgba(0, 0, 0, 0.1));
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 576px) {
+    .floating-buttons-wrapper {
+      gap: 8px;
+      padding: 6px 10px;
+    }
+  
+    ion-fab-button {
+      --size: 36px;
+    }
+  }

@@ -4,7 +4,7 @@ import React from 'react';
 import { IonButton, IonIcon } from '@ionic/react';
 import { copy } from 'ionicons/icons';
 import { Clipboard } from '@capacitor/clipboard';
-import { toastService } from '../../../services/toast/toastService';
+import { toastService } from '../../../services/toast.service';
 
 interface CopyButtonProps {
   text: string;

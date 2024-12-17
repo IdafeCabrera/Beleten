@@ -1,0 +1,15 @@
+.popover {
+    --background: var(--ion-color-light);
+    --border-radius: 8px;
+  }
+  
+  .ion-toolbar {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-light);
+  }
+  
+  .ion-title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  

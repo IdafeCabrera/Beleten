@@ -1,7 +1,7 @@
 // frontend/src/services/search.service.ts
 import { apiService } from './api.service';
-import { ApiResponse } from '../types/phrase.types';
-import { SearchParams } from '../types/search.types';
+import { ApiResponse } from '../features/phrases/types/phrase.types';
+import { SearchParams } from '../features/phrases/types/search.types';
 
 class SearchService {
   async searchPhrases(params: SearchParams): Promise<ApiResponse> {

@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonAvatar, IonButton, IonIcon } from '@ionic/react';
 import { pencil, person, heart, albums } from 'ionicons/icons';
 import styles from '../styles/UserDashboard.module.css';
-import { useAuth } from '../../auth/components/AuthProvider';
-import { fetchUserFavorites, fetchEditRequests, fetchUserDetails } from '../services/userService';
+import { useAuth } from '../../../app/providers/AuthProvider';
+import { userService } from '../../../services/user.service';
+import Layout from '../../../components/layout/Layout';
 
 interface Favorite {
   id: number;
@@ -35,9 +36,9 @@ const UserDashboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const details = await fetchUserDetails();
-        const favs = await fetchUserFavorites();
-        const requests = await fetchEditRequests();
+        const details = await userService.fetchUserDetails();
+        const favs = await userService.fetchUserFavorites();
+        const requests = await userService.fetchEditRequests();
 
         setUserDetails(details);
         setFavorites(favs);
@@ -57,7 +58,9 @@ const UserDashboard: React.FC = () => {
   }
 
   return (
+<Layout title="Dashboard">
     <div className={styles.dashboardContainer}>
+          
       {/* User Info */}
       <IonCard className={styles.userCard}>
         <IonCardHeader>
@@ -120,7 +123,10 @@ const UserDashboard: React.FC = () => {
           )}
         </IonCardContent>
       </IonCard>
+     
     </div>
+    </Layout>
+
   );
 };
 

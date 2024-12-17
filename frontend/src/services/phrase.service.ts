@@ -1,6 +1,6 @@
 // frontend/src/services/phrase.service.ts
 import { apiService } from './api.service';
-import { ApiResponse, Phrase } from '../types/phrase.types';
+import { ApiResponse, Phrase } from '../features/phrases/types/phrase.types';
 
 class PhraseService {
   async getPhrases(page = 1, limit = 25): Promise<ApiResponse> {

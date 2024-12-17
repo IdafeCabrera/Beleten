@@ -1,13 +1,13 @@
 // frontend/src/controllers/usePhraseController.tsx
 import { useState, useEffect, useRef } from "react";
-import { Phrase } from "../types/phrase.types";
+import { Phrase } from "../features/phrases/types/phrase.types";
 import { apiService } from "../services/api.service";
 import { toastService } from "../services/toast.service";
 import { Capacitor } from '@capacitor/core';
 import { Photo } from '@capacitor/camera';
 import { photoService } from '../services/photo.service';
-import { useSearch } from '../hooks/useSearch';
-import { SearchParams } from "../types/search.types";
+import { useSearch } from '../app/hooks/useSearch';
+import { SearchParams } from "../features/phrases/types/search.types";
 
 import { searchService } from '../services/search.service';
 import { phraseService } from '../services/phrase.service';
@@ -48,6 +48,7 @@ interface PhraseControllerReturn {
   performSearch: (text: string, type: 'text' | 'author' | 'tag' | 'category') => Promise<void>;
   clearSearch: () => void;
   isSearchActive: boolean;
+  scrollPosition: number;
 }
 
 // Actualizar la interfaz ApiResponse para incluir la paginación
@@ -65,8 +66,15 @@ export const usePhraseController = (): PhraseControllerReturn => {
     pagination: searchPagination,
     performSearch,
     loadMoreResults,
-    clearSearch
+    
   } = useSearch();
+
+
+  const clearSearch = () => {
+    setSearchFilter({ text: '', type: 'text' });
+    setFilteredPhrases(phrases);
+  }; 
+
 
   const [searchParams, setSearchParams] = useState<SearchParams | null>(null);
 
@@ -86,6 +94,10 @@ export const usePhraseController = (): PhraseControllerReturn => {
   const [hasMore, setHasMore] = useState(true);
   const [totalPhrases, setTotalPhrases] = useState(0);
   const ITEMS_PER_PAGE = 25;
+
+  // Estado para la posición del scroll
+  const scrollPositionRef = useRef<number>(0);
+  const [shouldRestoreScroll, setShouldRestoreScroll] = useState(false);
 
   const loadPhrases = async (page = 1, resetResults = false) => {
     try {
@@ -153,10 +165,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
     };
   
     // Función para limpiar la búsqueda
-/*     const clearSearch = () => {
-      setSearchFilter({ text: '', type: 'text' });
-      setFilteredPhrases(phrases);
-    }; */
+
 
   const fetchPhrases = async (page: number): Promise<ApiResponse> => {
     try {
@@ -327,6 +336,10 @@ export const usePhraseController = (): PhraseControllerReturn => {
   // @@@@@@CORREGIR arreglar que cuando scroll abajo del todo subes y creas una nueva frase, luego ya no carga mas porque se cree que ya esta todo scroleado
   const savePhrase = async (phraseData: Partial<Phrase> & { photo?: Photo }) => {
     try {
+      // Guardar la posición actual del scroll antes de la actualización
+      scrollPositionRef.current = window.scrollY;
+      setShouldRestoreScroll(true);
+
       setError(null);
       
       // Extraer la foto del objeto de datos
@@ -398,6 +411,9 @@ export const usePhraseController = (): PhraseControllerReturn => {
         }
       }
 
+
+
+
       // Manejo de la imagen
       if (photo && savedPhrase.id) {
         console.log('📤 Subiendo imagen para la frase:', savedPhrase.id);
@@ -421,6 +437,22 @@ export const usePhraseController = (): PhraseControllerReturn => {
       setPhrases(data.phrases);
       setTotalPhrases(data.pagination.totalItems);
       setCurrentPage(1);
+      
+
+            // Recargar frases manteniendo la página actual
+            const currentPageToLoad = currentPage;
+            const allPhrases: Phrase[] = [];
+            
+            // Cargar todas las páginas hasta la actual
+            for (let page = 1; page <= currentPageToLoad; page++) {
+              const data = await fetchPhrases(page);
+              allPhrases.push(...data.phrases);
+            }
+      
+            setPhrases(allPhrases);
+            setTotalPhrases(data.pagination.totalItems);
+
+
 
       toastService.success(
         currentPhrase?.id 
@@ -459,7 +491,18 @@ export const usePhraseController = (): PhraseControllerReturn => {
     }
   };
 
-  
+   // Efecto para restaurar la posición del scroll
+  useEffect(() => {
+    if (shouldRestoreScroll && phrases.length > 0) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollPositionRef.current,
+          behavior: 'auto'
+        });
+        setShouldRestoreScroll(false);
+      }, 100);
+    }
+  }, [shouldRestoreScroll, phrases]);
 
   return {
     // phrases: searchFilter.text ? filteredPhrases : phrases,
@@ -471,6 +514,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
     isModalOpen,
     currentPhrase,
     openEditModal,
+    scrollPosition: scrollPositionRef.current,
     closeModal,
     savePhrase,
     deletePhrase,
