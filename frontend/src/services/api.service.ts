@@ -22,7 +22,7 @@ interface QueryParams {
 // Config
 const getApiConfig = (): ApiConfig => {
   const baseURL = Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android'
-    ? 'http://192.168.86.29:8080/api'
+    ? 'http://192.168.74.226:8080/api'
     : '/api';
   return { baseURL };
 };

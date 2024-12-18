@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { tokenService } from './tokenService';
 
-const API_BASE_URL = 'http://192.168.86.29:8080/api'; // Backend URL
+const API_BASE_URL = 'http://192.168.74.226:8080/api'; // Backend URL
 
 // Crear una instancia de axios con configuración predeterminada
 const apiClient = axios.create({

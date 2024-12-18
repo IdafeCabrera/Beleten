@@ -21,7 +21,7 @@ const LoginForm: React.FC = () => {
     try {
       setError(null);
       await login(identifier, password);
-      history.push('/dashboard'); 
+      history.push('/phrases'); 
     } catch (err) {
       setError('Credenciales inválidas. Intenta nuevamente.');
     }

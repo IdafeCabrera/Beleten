@@ -4,6 +4,7 @@ import { Sequelize, DataTypes, Model } from 'sequelize';
 class Role extends Model {
   public id!: number;
   public roleName!: string;
+  public description!: string;
 
   static initialize(sequelize: Sequelize) {
     this.init(
@@ -17,6 +18,10 @@ class Role extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        description: {
+          type: DataTypes.TEXT,
+          allowNull: true,
+        },
       },
       {
         sequelize,
@@ -28,7 +33,10 @@ class Role extends Model {
   static associate(models: any) {
     this.hasMany(models.User, { foreignKey: 'roleId' });  // Un rol puede tener muchos usuarios
   }
-  
+
 }
 
 export default Role;
+
+
+

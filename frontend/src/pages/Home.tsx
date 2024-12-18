@@ -44,15 +44,12 @@ import {
   faQuoteRight,
   faVrCardboard,
 } from "@fortawesome/free-solid-svg-icons";
-import IonCardWelcome from "../components/a_ordenar/Cards/IonCardWelcome";
-import Menu from "../components/a_ordenar/Menu";
-import Logo from "../components/a_ordenar/Logo";
-import CameraClipboardTest from "../components/a_ordenar/CameraClipboardTest";
+
 
 
 const menuItems: MenuItem[] = [
   { icon: home, text: "Inicio", url: "/home" },
-  { icon: personCircle, text: "Perfil", url: "/profile" },
+  { icon: personCircle, text: "Perfil", url: "/dashboard" },
   { icon: notifications, text: "Notificaciones", url: "/notifications" },
   { icon: settings, text: "Configuración", url: "/settings" },
 ];
@@ -78,9 +75,9 @@ const Home: React.FC = () => {
     
 
         
-        <Layout title="Inicio">
+        <Layout title="Inicio"> 
           {/* <ExpandableFab buttons={fabButtons} vertical={true} /> */}
-          <IonCardWelcome />
+
           <div className="feature-grid">
             <IonCard style={{ backgroundColor: "white" }}>
               <IonCardHeader style={{ textAlign: "center", color: "" }}>
@@ -100,71 +97,10 @@ const Home: React.FC = () => {
               </IonButton>
             </IonCard>
 
-            <IonCard style={{ backgroundColor: "white" }}>
-              <IonCardHeader style={{ textAlign: "center", color: "" }}>
-                <IonCardTitle>
-                  Todo-List{" "}
-                  <FontAwesomeIcon
-                    style={{ textAlign: "center", color: "" }}
-                    icon={faClipboardList}
-                  />
-                </IonCardTitle>
-              </IonCardHeader>
-              <IonCardContent>
-                Organizate tus tareas. -- En construcción
-              </IonCardContent>
-              <IonButton
-                disabled={true}
-                routerLink="/"
-                expand="block"
-                color="secondary"
-                className="ion-margin"
-              >
-                Acceder&nbsp;
-                <FontAwesomeIcon icon={faClipboardList} />
-              </IonButton>
-            </IonCard>
-
-            <IonCard style={{ backgroundColor: "white" }}>
-              <IonCardHeader style={{ textAlign: "center", color: "" }}>
-                <IonCardTitle>Flash Cards <FontAwesomeIcon icon={faChalkboard} /></IonCardTitle>
-              </IonCardHeader>
-              <IonCardContent>
-                Tus tarjetas de conocimiento. -- En construcción
-              </IonCardContent>
-              <IonButton
-                disabled={true}
-                routerLink="/"
-                expand="block"
-                color="secondary"
-                className="ion-margin"
-              >
-                Acceder&nbsp;
-                <FontAwesomeIcon icon={faChalkboard} />
-              </IonButton>
-            </IonCard>
-
-            <IonCard style={{ backgroundColor: "white" }}>
-              <IonCardHeader style={{ textAlign: "center", color: "" }}>
-                <IonCardTitle>VR <FontAwesomeIcon icon={faVrCardboard} /></IonCardTitle>
-              </IonCardHeader>
-              <IonCardContent>
-                Entra en tu Be Better virtual. -- En construcción
-              </IonCardContent>
-              <IonButton
-                disabled={true}
-                routerLink="/"
-                expand="block"
-                color="secondary"
-                className="ion-margin"
-              >
-                Acceder&nbsp;
-                <FontAwesomeIcon icon={faVrCardboard} />
-              </IonButton>
-            </IonCard>
+        
           </div>
           <IonContent>
-    <CameraClipboardTest />
+ 
     {/* Resto de tu contenido */}
   </IonContent>
           </Layout>

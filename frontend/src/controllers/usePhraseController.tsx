@@ -221,7 +221,7 @@ export const usePhraseController = (): PhraseControllerReturn => {
         endpoint: 'phrases',
         params: { page, limit: ITEMS_PER_PAGE }
       });
-      throw new Error("Error al cargar las frases. " + err);
+      throw new Error("Error al cargar las frases. prueba" + err);
     }
   };
 

@@ -1,3 +1,4 @@
+// backend/src/scripts/populate-phrases-script.ts
 import fs from 'fs';
 import path from 'path';
 import { Sequelize } from 'sequelize';

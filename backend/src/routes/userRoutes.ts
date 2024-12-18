@@ -38,4 +38,51 @@ router.get('/details', authMiddleware, async (req: Request, res: Response, next:
   }
 });
 
+
+// Obtener todos los usuarios
+router.get('/', async (req, res) => {
+  try {
+    const users = await User.findAll();
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener usuarios' });
+  }
+});
+
+// Actualizar un usuario
+router.put('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { username, email, roleId, isActive } = req.body;
+    const [updated] = await User.update({ username, email, roleId, isActive }, { where: { id } });
+
+    if (updated) {
+      const updatedUser = await User.findByPk(id);
+      res.status(200).json(updatedUser);
+    } else {
+      res.status(404).json({ error: 'Usuario no encontrado' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error al actualizar el usuario' });
+  }
+});
+
+// Eliminar un usuario
+router.delete('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await User.destroy({ where: { id } });
+    if (deleted) {
+      res.status(200).json({ message: 'Usuario eliminado correctamente' });
+    } else {
+      res.status(404).json({ error: 'Usuario no encontrado' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error al eliminar el usuario' });
+  }
+});
+
+
+
+
 export default router;

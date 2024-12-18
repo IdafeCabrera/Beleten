@@ -12,6 +12,7 @@ class User extends Model {
   public description?: string;
   public status?: string;
   public profileImage?: string;
+  public isActive!: boolean;
 
   static initialize(sequelize: Sequelize) {
     this.init(
@@ -63,6 +64,9 @@ class User extends Model {
           type: DataTypes.STRING,
           allowNull: true,
         },
+        isActive: { 
+          type: DataTypes.BOOLEAN, 
+          defaultValue: true },
       },
       {
         sequelize,

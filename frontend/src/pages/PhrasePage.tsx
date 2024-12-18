@@ -2,7 +2,7 @@
 import React, { useRef, useState, useMemo, useEffect } from "react";
 import PhraseSortControls from "../features/phrases/components/PhraseSortControls";
 
-import DesignSelector from '../components/a_ordenar/DesignSelector';
+
 import { SortField, SortOrder } from '../types/sorting';
 import {
   IonToolbar,
@@ -35,13 +35,13 @@ import PhraseModal from "../features/phrases/components/PhraseModal";
 import PhraseSkeleton from "../features/phrases/components/loading/PhraseSkeleton";
 import "./PhrasePage.css";
 import { InfiniteScrollCustomEvent } from "@ionic/core";
-import ViewToggleButton from "../components/a_ordenar/ViewToggleButton";
+
 import PhraseStats from "../features/phrases/components/PhraseStats";
 import Layout from '../components/layout/Layout';
 import { useAuth } from '../app/providers/AuthProvider';
 
 import PhraseSearch from "../features/phrases/components/PhraseSearch";
-import DesignFabSelector from "../components/a_ordenar/DesignFabSelector";
+
 import PhraseSearchControls from "../features/phrases/components/PhraseSearchControls";
 
 const PhrasePage: React.FC = () => {

@@ -9,7 +9,8 @@ import authRoutes from './routes/authRoutes';
 import dotenv from 'dotenv';
 
 import userRoutes from './routes/userRoutes';
-import photoRoutes from './routes/phtoRoutes';
+import photoRoutes from './routes/photoRoutes';
+import roleRoutes from './routes/roleRoutes';
 
 dotenv.config();
 
@@ -18,12 +19,12 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 if (isDevelopment) {
   app.use(cors({
-    origin: 'http://localhost:8100', // frontend desarrollo
+    origin: 'http://192.168.74.226:8100', // frontend desarrollo
     credentials: true // Permitir cookies/autenticación
   }));
 } else {
   app.use(cors({
-    origin: ['http://localhost:8100', 'http://192.168.86.29:8100'], // frontend producción
+    origin: ['http://localhost:8100', 'http://192.168.74.226:8100'], // frontend producción
     credentials: true // Permitir cookies/autenticación
   }));
 }
@@ -39,7 +40,11 @@ app.use('/api/auth', authRoutes);
 app.use('/images', express.static(path.join(__dirname, '../public/images')));
 app.use('/api/users', userRoutes);
 
+app.use('/api/roles', roleRoutes);
+
 app.use('/api/phrases', phraseRoutes);
+
+
 
 app.use('/api/photos', photoRoutes);
 
@@ -50,7 +55,7 @@ const startServer = async () => {
     
     const port = process.env.PORT || 8080;
     app.listen(port, () => {
-      console.log(`🚀 Servidor corriendo en http://localhost:${port}`);
+      console.log(`🚀 Servidor corriendo en http://192.168.74.226:${port}`);
       console.log(`🔧 Modo: ${isDevelopment ? 'Desarrollo' : 'Producción'}`);
     });
   } catch (error) {

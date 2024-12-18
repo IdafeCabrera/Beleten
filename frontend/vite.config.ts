@@ -12,7 +12,7 @@ export default defineConfig({
     port: 8100,
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://192.168.74.226:8080',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path // No reescribir la ruta, mantener /api

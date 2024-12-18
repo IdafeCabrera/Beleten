@@ -47,6 +47,8 @@ import '@ionic/react/css/palettes/dark.system.css';
 import '../theme/variables.css';
 import '../theme/global.css';
 import { AppActionsProvider } from '../app/providers/AppActionsContext';
+import UserCrud from '../features/users/components/UserCrud';
+import RoleCrud from '../features/roles/components/RoleCrud';
 
 
 
@@ -77,6 +79,8 @@ const App: React.FC = () => (
           
           {/* Rutas protegidas */}
           <ProtectedRoute exact path="/dashboard" component={UserDashboard} />
+          <ProtectedRoute exact path="/users" component={UserCrud} />
+          <ProtectedRoute exact path="/roles" component={RoleCrud} />
           
           {/* Redirección por defecto */}
           <Route exact path="/">

@@ -29,6 +29,7 @@ import {
   bookmark,
   share,
   closeCircleOutline,
+  text,
 } from "ionicons/icons";
 import { Phrase } from "../../phrases/types/phrase.types";
 import { CardPhraseDesign } from "../../phrases/types/card.types";
@@ -41,6 +42,7 @@ import { ROLES } from '../../../constants/roles';
 import { useAuth } from '../../../app/providers/AuthProvider';
 import { apiService } from "../../../services/api.service";
 import { toastService } from "../../../services/toast.service";
+import SharedButton from "../../../components/shared/buttons/SharedButton";
 
 interface PhraseItemProps {
   phrase: Phrase;
@@ -83,7 +85,7 @@ const PhraseDetailModal: React.FC<PhraseModalProps> = ({
             <IonIcon icon={chevronBack} />
           </IonButton>
         </IonButtons>
-        <IonTitle>#{phrase.id}</IonTitle>
+        <IonTitle>Frase #{phrase.id}</IonTitle>
         <IonButtons slot="end">
           <IonButton onClick={onNext}>
             <IonIcon icon={chevronForward} />
@@ -213,22 +215,9 @@ const PhraseItem: React.FC<PhraseItemProps> = ({
 
   const IdBadge = () => <div className="phrase-id-badge">#{phrase.id}</div>;
 
-  const shareText = async (text: string) => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "Texto para compartir",
-          text: text,
-          url: window.location.href, // O puedes omitir esta parte si no quieres compartir una URL.
-        });
-        console.log("Texto compartido correctamente");
-      } catch (error) {
-        console.error("Error al intentar compartir:", error);
-      }
-    } else {
-      console.error("La API Web Share no es compatible en este dispositivo");
-    }
-  };
+
+  
+  
 
   const handleEdit = (e: React.MouseEvent<HTMLIonButtonElement>) => {
     e.preventDefault();
@@ -261,117 +250,11 @@ const PhraseItem: React.FC<PhraseItemProps> = ({
   };
 
 
-  
-  const renderClassicDesign2 = () => {
-
-  
- 
-    return (
-      <IonCard className={`custom-card classic-card ${phrase.category?.toLowerCase()}`}>
-        {/* Botones de Acción */}
-        <div className="button-container">
-          {/* Expandir */}
-          <IonButton fill="clear" onClick={() => setIsModalOpen(true)}>
-            <IonIcon icon={expand} />
-          </IonButton>
-  
-          {/* Editar */}
-          {canEdit && (
-            <IonButton fill="clear" onClick={handleEdit}>
-              <IonIcon icon={pencil} color="success" />
-            </IonButton>
-          )}
-
-          
-  
-          {/* Eliminar */}
-          {canDelete && (
-            <IonButton fill="clear" color="danger" onClick={handleDelete}>
-              <IonIcon icon={trash} />
-            </IonButton>
-          )}
-
-          
-  
-          {/* Favoritos */}
-          {isAuthenticated && (
-            <IonButton fill="clear">
-              <IonIcon icon={heart} />
-            </IonButton>
-          )}
-  
-          {/* Solicitar Edición */}
-          {canRequestEdit && (
-            <IonButton fill="clear" onClick={handleRequestEdit}>
-              Solicitar Edición
-            </IonButton>
-          )}
-  
-          <CopyButton text={phrase.text} author={phrase.author} />
-        </div>
-  
-        {/* Contenido del Card */}
-        <IonCardHeader>
-          <IonCardTitle>{phrase.text}</IonCardTitle>
-          {phrase.author && (
-            <p className="author">
-              — {phrase.author} {phrase.alias ? `(${phrase.alias})` : ""}
-            </p>
-          )}
-          <div className="tags">
-            {phrase.tags?.es?.map((tag: string, index: number) => (
-              <IonChip key={index}>{tag}</IonChip>
-            ))}
-          </div>
-        </IonCardHeader>
-  
-        {/* Modal de Detalle */}
-        <IonModal isOpen={isModalOpen} onDidDismiss={() => setIsModalOpen(false)}>
-          <IonHeader>
-            <IonToolbar>
-              <IonTitle>Detalles de la Frase</IonTitle>
-              <IonButtons slot="end">
-                <IonButton onClick={() => setIsModalOpen(false)}>
-                  <IonIcon icon={closeCircleOutline} />
-                </IonButton>
-              </IonButtons>
-            </IonToolbar>
-          </IonHeader>
-          <IonContent>
-            <h2>{phrase.text}</h2>
-            <p className="author">— {phrase.author}</p>
-          </IonContent>
-        </IonModal>
-  
-        {/* Alertas de Confirmación */}
-        <IonAlert
-          isOpen={showFirstAlert}
-          header="Confirmar Eliminación"
-          message="¿Estás seguro de que quieres borrar esta frase?"
-          buttons={[
-            { text: "Cancelar", role: "cancel", handler: handleCancelDelete },
-            { text: "Eliminar", handler: handleConfirmDelete },
-          ]}
-          onDidDismiss={() => setShowFirstAlert(false)}
-        />
-  
-        <IonAlert
-          isOpen={showSecondAlert}
-          header="Confirmación Final"
-          message="Has elegido eliminar esta frase, ¿sí o no?"
-          buttons={[
-            { text: "Sí", handler: handleFinalDelete },
-            { text: "No", role: "cancel", handler: handleCancelDelete },
-          ]}
-          onDidDismiss={() => setShowSecondAlert(false)}
-        />
-      </IonCard>
-    );
-  };
-  
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(currentIndex);
 
   const currentPhrase = phrases[currentPhraseIndex];
+  
+  
   const renderClassicDesign = () => (
     
 
@@ -383,6 +266,9 @@ const PhraseItem: React.FC<PhraseItemProps> = ({
           <IonIcon icon={expand} />
         </IonButton>
     {/* Primera alerta: Confirmación de eliminación */}
+    
+    
+    
     <IonAlert
         isOpen={showFirstAlert}
         onDidDismiss={() => setShowFirstAlert(false)}
@@ -422,20 +308,50 @@ const PhraseItem: React.FC<PhraseItemProps> = ({
       />
         <IonButton fill="clear">
         
-        <IonButton fill="clear" onClick={handleEdit}>
-          <IonIcon icon={pencil} color="success" />
-        </IonButton>
+          {/* Editar */}
+          {canEdit && (
+            <IonButton fill="clear" onClick={handleEdit}>
+              <IonIcon icon={pencil} color="success" />
+            </IonButton>
+          )}
           
-        <IonButton fill="clear" onClick={handleDelete}>
-          <IonIcon icon={trash} color="danger" />
-        </IonButton>
-          {/* #{phrase.id} */}
+                    {/* Editar */}
+                    
+            <IonButton fill="clear" onClick={handleEdit}>
+              <IonIcon icon={pencil} color="success" />
+            </IonButton>
+          
+
+          {/* Eliminar */}
+          {canDelete && (
+            <IonButton fill="clear" color="danger" onClick={handleDelete}>
+              <IonIcon icon={trash} />
+            </IonButton>
+          )}
+          {/* Copiar frase */}
           <CopyButton text={phrase.text} author={phrase.author} />
         </IonButton>
 
-        <IonButton fill="clear">
-          <IonIcon icon={heart} />
-        </IonButton>
+                  {/* Compartir frase */}
+                  <SharedButton text={phrase.text} author={phrase.author} />
+   
+
+
+
+          {/* Favoritos */}
+          {isAuthenticated && (
+            <IonButton fill="clear">
+              <IonIcon icon={heart} />
+            </IonButton>
+          )}
+
+                    {/* Solicitar Edición */}
+                    {canRequestEdit && (
+            <IonButton fill="clear" onClick={handleRequestEdit}>
+              Solicitar Edición
+            </IonButton>
+          )}
+
         
       </div>
 
